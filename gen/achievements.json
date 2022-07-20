@@ -6,6 +6,9 @@
         "nether": {
             "name": "Nether"
         },
+        "end": {
+            "name": "End"
+        },
         "adventure": {
             "name": "Adventure"
         },
