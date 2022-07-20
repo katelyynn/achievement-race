@@ -28,7 +28,7 @@
 
     $.get('achievements.json', function(data) {
         for (let i in data.achievements) {
-            text_load = `${text_load}scoreboard players add achievement.${data.achievements[i].category}_${data.achievements[i].id} dummy<br>`;
+            text_load = `${text_load}scoreboard objectives add achievement.${data.achievements[i].category}_${data.achievements[i].id} dummy<br>`;
             text_checks = `${text_checks}## ${data.achievements[i].name}<br>
             execute as @a[advancements={minecraft:${data.achievements[i].category}/${data.achievements[i].id}=true}] at @s unless score @s achievement.${data.achievements[i].category}_${data.achievements[i].id} matches 1.. run function acrace:pick/take<br>
             execute as @a[advancements={minecraft:${data.achievements[i].category}/${data.achievements[i].id}=true}] at @s unless score @s achievement.${data.achievements[i].category}_${data.achievements[i].id} matches 1.. run scoreboard players set @s achievement.${data.achievements[i].category}_${data.achievements[i].id} 1<br>`;

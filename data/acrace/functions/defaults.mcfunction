@@ -23,4 +23,8 @@ scoreboard players set score_increase global 10
 scoreboard players set end_time global 2400
 
 
+# initialise achievements
+function acrace:load_achievements
+
+
 scoreboard players set defaults internal 1
