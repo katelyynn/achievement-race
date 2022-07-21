@@ -16,7 +16,7 @@ execute if score speed_uhc global matches 1.. run function acrace:extras/speed_u
 execute if score speed_uhc global matches 1.. run function acrace:extras/grindstone
 
 # win checks
-execute if score time_s internal >= end_time global run function acrace:win/checks
+execute if score period internal matches 1 if score time_s internal >= end_time global run function acrace:win/checks
 
 # range check for points
 execute as @a unless score @s score matches 0.. run scoreboard players set @s score 0
