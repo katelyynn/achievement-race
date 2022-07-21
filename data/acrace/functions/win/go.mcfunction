@@ -17,6 +17,3 @@ execute as @a[tag=win] at @s run summon firework_rocket ~ ~1 ~ {FireworksItem:{i
 
 # effects
 effect give @a[tag=win] glowing 9999 255 true
-
-# reset
-scoreboard players reset alive internal
