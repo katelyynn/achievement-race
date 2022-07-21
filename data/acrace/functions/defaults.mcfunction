@@ -12,6 +12,8 @@ scoreboard players set speed_uhc global 1
 worldborder set 10
 gamerule doImmediateRespawn true
 gamerule keepInventory false
+gamerule announceAdvancements false
+gamerule playersSleepingPercentage 0
 effect clear @a
 gamemode adventure @a[gamemode=!spectator]
 
