@@ -7,7 +7,7 @@ gamemode spectator @a[tag=!win]
 # announce
 title @a title {"text":"GAME OVER!","color":"gold","bold":true}
 title @a subtitle ["",{"selector":"@a[tag=win,limit=1]","color":"yellow","bold":true},{"text":" has won!","color":"yellow"}]
-tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"!","color":"green"},{"text":"] ","color":"dark_gray"},{"selector":"@a[tag=win,limit=1]","color":"green"},{"text":" has won!","color":"green"}]
+tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"!","color":"green","bold":true},{"text":"] ","color":"dark_gray"},{"selector":"@a[tag=win,limit=1]","color":"yellow"},{"text":" has won!","color":"yellow"}]
 # sfx
 execute as @a at @s run playsound ui.toast.challenge_complete player @s ~ ~ ~
 
