@@ -147,7 +147,7 @@
             "category": "nether"
         },
         {
-            "icon": "ancient_debris",
+            "icon": "ancient_debris_side",
             "name": "Hidden in the Depths",
             "description": "Obtain Ancient Debris",
             "id": "obtain_ancient_debris",
@@ -205,7 +205,7 @@
             "category": "nether"
         },
         {
-            "icon": "lodestone",
+            "icon": "lodestone_side",
             "name": "Country Lode, Take Me Home",
             "description": "Use a compass on a Lodestone",
             "id": "use_lodestone",
@@ -397,7 +397,7 @@
             "category": "adventure"
         },
         {
-            "icon": "honey_block",
+            "icon": "honey_block_side",
             "name": "Sticky Situation",
             "description": "Jump into a Honey Block to break your fall",
             "id": "honey_block_slide",
@@ -425,7 +425,7 @@
             "category": "adventure"
         },
         {
-            "icon": "sculk_sensor",
+            "icon": "sculk_sensor_side",
             "name": "Sneak 100",
             "description": "Sneak near a Sculk Sensor or Warden to prevent it from detecting you",
             "id": "avoid_vibration",
@@ -461,7 +461,7 @@
             "category": "adventure"
         },
         {
-            "icon": "sculk_catalyst",
+            "icon": "sculk_catalyst_side",
             "name": "It Spreads",
             "description": "Kill a mob near a Sculk Catalyst",
             "id": "kill_mob_near_sculk_catalyst",
@@ -538,7 +538,7 @@
             "type": "fancy"
         },
         {
-            "icon": "jukebox",
+            "icon": "jukebox_side",
             "name": "Sound of Music",
             "description": "Make the Meadows come alive with the sound of music from a Jukebox",
             "id": "play_jukebox_in_meadows",
@@ -574,7 +574,7 @@
             "type": "fancy"
         },
         {
-            "icon": "target_block",
+            "icon": "target_side",
             "name": "Bullseye",
             "description": "Hit the bullseye of a Target block from at least 30 meters away",
             "id": "bullseye",
@@ -631,7 +631,7 @@
             "category": "husbandry"
         },
         {
-            "icon": "bee_nest",
+            "icon": "bee_nest_front",
             "name": "Total Beelocation",
             "description": "Move a Bee Nest, with 3 bees inside, using Silk Touch",
             "id": "silk_touch_nest",
@@ -727,7 +727,7 @@
             "category": "husbandry"
         },
         {
-            "icon": "froglight",
+            "icon": "verdant_froglight_side",
             "name": "With Our Powers Combined!",
             "description": "Have all Froglights in your inventory",
             "id": "froglights",
