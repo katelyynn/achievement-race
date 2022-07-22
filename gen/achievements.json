@@ -230,7 +230,7 @@
             "category": "nether"
         },
         {
-            "icon": "respawn_anchor",
+            "icon": "respawn_anchor_side0",
             "name": "Not Quite \"Nine\" Lives",
             "description": "Charge a Respawn Anchor to the maximum",
             "id": "charge_respawn_anchor",

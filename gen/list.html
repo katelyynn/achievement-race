@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://plexion.dev/css/reset.css">
+    <link rel="stylesheet" href="https://plexion.dev/css/style.css">
+
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title>Achievement list</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://plexion.dev/js/scroll.js"></script>
+</head>
+<body class="dark" style="--accent-page: var(--library);">
+    <section class="left header sep no-align" style="bottom: 0;">
+        <h4>All achievements<span class="text-14" id="full" style="font-weight: 500; color: var(--text-main); margin-left: 10px;"></span></h4>
+        <br>
+        <label class="over">Minecraft</label>
+        <div class="supports" id="story"></div>
+        <label class="over">Nether</label>
+        <div class="supports" id="nether"></div>
+        <label class="over">End</label>
+        <div class="supports" id="end"></div>
+        <label class="over">Adventure</label>
+        <div class="supports" id="adventure"></div>
+        <label class="over">Husbandry</label>
+        <div class="supports" id="husbandry"></div>
+    </section>
+</body>
+<script>
+    // parse
+    let hook = document.getElementById("hook");
+
+    $.get('achievements.json', function(data) {
+        document.getElementById("full").innerHTML = ` ${data.achievements.length} items`;
+        for (let i in data.achievements) {
+            if (data.achievements[i].description == "") { continue };
+            let em = document.createElement('span');
+            em.classList.add('desc');
+            if (data.achievements[i].type != null) {
+                em.classList.add(data.achievements[i].type);
+            }
+
+            em.innerHTML = (`
+            <span class="icon"><img src="https://res.plexion.dev/minecraft/item/${data.achievements[i].icon}.png"></span>
+            <span class="text"><h5>${data.achievements[i].name}</h5><p>${data.achievements[i].description}</p></span>
+            `);
+
+
+            // append
+            document.getElementById(data.achievements[i].category).appendChild(em);
+        }
+    });
+</script>
+<style>
+    .supports .icon img {
+        width: 32px !important;
+        margin: 0 10px;
+        height: 32px;
+        image-rendering: pixelated;
+        position: relative;
+        right: 1px;
+        bottom: 1px;
+    }
+    .supports .icon {
+        width: 52px !important;
+        height: 52px !important;
+        image-rendering: pixelated;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(achievement.png);
+        background-size: 52px;
+    }
+
+    /* fancy */
+    .fancy .icon {
+        background-image: url(achievement-fancy.png);
+    }
+    /* oval */
+    .oval .icon {
+        background-image: url(achievement-oval.png);
+    }
+</style>
+<script>
+    feather.replace();
+</script>
