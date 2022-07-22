@@ -81,6 +81,14 @@
             "category": "story"
         },
         {
+            "icon": "diamond_pickaxe",
+            "name": "Isn't It?",
+            "description": "Putting those diamonds to good use",
+            "id": "diamond_tools",
+            "category": "story",
+            "custom": true
+        },
+        {
             "icon": "flint_and_steel",
             "name": "We Need to Go Deeper",
             "description": "Build, light and enter a Nether Portal",
