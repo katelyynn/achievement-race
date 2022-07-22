@@ -16,7 +16,7 @@ execute as @a at @s run playsound block.note_block.pling player @s ~ ~ ~
 scoreboard players set @a score 0
 
 # world
-worldborder set 2000 5
+worldborder set 10000 5
 gamemode survival @a[gamemode=!spectator]
 
 # set period
