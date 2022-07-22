@@ -114,7 +114,8 @@
             "name": "Zombie Doctor",
             "description": "Weaken and then cure a Zombie Villager",
             "id": "cure_zombie_villager",
-            "category": "story"
+            "category": "story",
+            "type": "oval"
         },
         {
             "icon": "ender_eye",
@@ -157,7 +158,8 @@
             "name": "Subspace Bubble",
             "description": "Use the Nether to travel 7 km in the Overworld",
             "id": "fast_travel",
-            "category": "nether"
+            "category": "nether",
+            "type": "fancy"
         },
         {
             "icon": "nether_bricks",
@@ -192,7 +194,8 @@
             "name": "Uneasy Alliance",
             "description": "Rescue a Ghast from the Nether, bring it safely home to the Overworld... and then kill it",
             "id": "uneasy_alliance",
-            "category": "nether"
+            "category": "nether",
+            "type": "fancy"
         },
         {
             "icon": "chest",
@@ -213,7 +216,8 @@
             "name": "Cover Me in Debris",
             "description": "Get a full suit of Netherite armor",
             "id": "netherite_armor",
-            "category": "nether"
+            "category": "nether",
+            "type": "fancy"
         },
         {
             "icon": "wither_skull",
@@ -248,7 +252,8 @@
             "name": "Hot Tourist Destinations",
             "description": "Explore all Nether biomes",
             "id": "explore_nether",
-            "category": "nether"
+            "category": "nether",
+            "type": "fancy"
         },
         {
             "icon": "nether_star",
@@ -276,21 +281,24 @@
             "name": "A Furious Cocktail",
             "description": "Have every potion effect applied at the same time",
             "id": "all_potions",
-            "category": "nether"
+            "category": "nether",
+            "type": "fancy"
         },
         {
             "icon": "beacon",
             "name": "Beaconator",
             "description": "Bring a beacon to full power",
             "id": "create_full_beacon",
-            "category": "nether"
+            "category": "nether",
+            "type": "oval"
         },
         {
             "icon": "bucket",
             "name": "How Did We Get Here?",
             "description": "Have every effect applied at the same time",
             "id": "all_effects",
-            "category": "nether"
+            "category": "nether",
+            "type": "fancy"
         },
         {
             "icon": "end_stone",
@@ -311,7 +319,8 @@
             "name": "The Next Generation",
             "description": "Hold the Dragon Egg",
             "id": "dragon_egg",
-            "category": "end"
+            "category": "end",
+            "type": "oval"
         },
         {
             "icon": "ender_pearl",
@@ -325,14 +334,16 @@
             "name": "The End... Again...",
             "description": "Respawn the Ender Dragon",
             "id": "respawn_dragon",
-            "category": "end"
+            "category": "end",
+            "type": "oval"
         },
         {
             "icon": "dragon_breath",
             "name": "You Need a Mint",
             "description": "Collect dragon's breath in a glass bottle",
             "id": "dragon_breath",
-            "category": "end"
+            "category": "end",
+            "type": "oval"
         },
         {
             "icon": "purpur_block",
@@ -346,14 +357,16 @@
             "name": "Sky's the Limit",
             "description": "Find elytra",
             "id": "elytra",
-            "category": "end"
+            "category": "end",
+            "type": "oval"
         },
         {
             "icon": "shulker_shell",
             "name": "Great View From Up Here",
             "description": "Levitate up 50 blocks from the attacks of a Shulker",
             "id": "levitate",
-            "category": "end"
+            "category": "end",
+            "type": "fancy"
         },
         {
             "icon": "banner",
@@ -430,7 +443,8 @@
             "name": "Hero of the Village",
             "description": "Successfully defend a village from a raid",
             "id": "hero_of_the_village",
-            "category": "adventure"
+            "category": "adventure",
+            "type": "fancy"
         },
         {
             "icon": "spyglass",
@@ -451,7 +465,8 @@
             "name": "It Spreads",
             "description": "Kill a mob near a Sculk Catalyst",
             "id": "kill_mob_near_sculk_catalyst",
-            "category": "adventure"
+            "category": "adventure",
+            "type": "fancy"
         },
         {
             "icon": "bow",
@@ -465,21 +480,24 @@
             "name": "Monsters Hunted",
             "description": "Kill one of every hostile monster",
             "id": "kill_all_mobs",
-            "category": "adventure"
+            "category": "adventure",
+            "type": "fancy"
         },
         {
             "icon": "totem_of_undying",
             "name": "Postmortal",
             "description": "Use a Totem of Undying to cheat death",
             "id": "totem_of_undying",
-            "category": "adventure"
+            "category": "adventure",
+            "type": "oval"
         },
         {
             "icon": "carved_pumpkin",
             "name": "Hired Help",
             "description": "Summon an Iron Golem to help defend a village",
             "id": "summon_iron_golem",
-            "category": "adventure"
+            "category": "adventure",
+            "type": "oval"
         },
         {
             "icon": "emerald",
@@ -493,7 +511,8 @@
             "name": "Two Birds, One Arrow",
             "description": "Kill two Phantoms with a piercing arrow",
             "id": "two_birds_one_arrow",
-            "category": "adventure"
+            "category": "adventure",
+            "type": "fancy"
         },
         {
             "icon": "crossbow_standby",
@@ -507,14 +526,16 @@
             "name": "Arbalistic",
             "description": "Kill five unique mobs with one crossbow shot",
             "id": "arbalistic",
-            "category": "adventure"
+            "category": "adventure",
+            "type": "fancy"
         },
         {
             "icon": "diamond_boots",
             "name": "Adventuring Time",
             "description": "Discover every biome",
             "id": "adventuring_time",
-            "category": "adventure"
+            "category": "adventure",
+            "type": "fancy"
         },
         {
             "icon": "jukebox",
@@ -549,14 +570,16 @@
             "name": "Sniper Duel",
             "description": "Kill a Skeleton from at least 50 meters away",
             "id": "sniper_duel",
-            "category": "adventure"
+            "category": "adventure",
+            "type": "fancy"
         },
         {
             "icon": "target_block",
             "name": "Bullseye",
             "description": "Hit the bullseye of a Target block from at least 30 meters away",
             "id": "bullseye",
-            "category": "adventure"
+            "category": "adventure",
+            "type": "fancy"
         },
         {
             "icon": "honey_bottle",
@@ -640,21 +663,24 @@
             "name": "Two by Two",
             "description": "Breed all the animals!",
             "id": "bred_all_animals",
-            "category": "husbandry"
+            "category": "husbandry",
+            "type": "fancy"
         },
         {
             "icon": "note_block",
             "name": "Birthday Song",
             "description": "Have an Allay drop a Cake at a Note Block",
             "id": "allay_deliver_cake_to_note_block",
-            "category": "husbandry"
+            "category": "husbandry",
+            "type": "fancy"
         },
         {
             "icon": "cod",
             "name": "A Complete Catalogue",
             "description": "Tame all cat variants!",
             "id": "complete_catalogue",
-            "category": "husbandry"
+            "category": "husbandry",
+            "type": "fancy"
         },
         {
             "icon": "pufferfish_bucket",
@@ -675,14 +701,16 @@
             "name": "A Balanced Diet",
             "description": "Eat everything that is edible, even if it's not good for you",
             "id": "balanced_diet",
-            "category": "husbandry"
+            "category": "husbandry",
+            "type": "fancy"
         },
         {
             "icon": "netherite_hoe",
             "name": "Serious Dedication",
             "description": "Use a Netherite Ingot to upgrade a hoe, and then reevaluate your life choices",
             "id": "obtain_netherite_hoe",
-            "category": "husbandry"
+            "category": "husbandry",
+            "type": "fancy"
         },
         {
             "icon": "stone_axe",
@@ -703,10 +731,11 @@
             "name": "With Our Powers Combined!",
             "description": "Have all Froglights in your inventory",
             "id": "froglights",
-            "category": "husbandry"
+            "category": "husbandry",
+            "type": "fancy"
         },
         {
-            "icon": "tropical_bucket",
+            "icon": "tropical_fish_bucket",
             "name": "The Healing Power of Friendship!",
             "description": "Team up with an axolotl and win a fight",
             "id": "kill_axolotl_target",
