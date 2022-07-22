@@ -32,6 +32,9 @@ execute as @a[advancements={minecraft:story/form_obsidian=true}] at @s unless sc
 ## Diamonds!
 execute as @a[advancements={minecraft:story/mine_diamond=true}] at @s unless score @s achievement.story_mine_diamond matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:story/mine_diamond=true}] at @s unless score @s achievement.story_mine_diamond matches 1.. run scoreboard players set @s achievement.story_mine_diamond 1
+## Isn't It?
+execute as @a[advancements={minecraft:story/diamond_tools=true}] at @s unless score @s achievement.story_diamond_tools matches 1.. run function acrace:pick/take
+execute as @a[advancements={minecraft:story/diamond_tools=true}] at @s unless score @s achievement.story_diamond_tools matches 1.. run scoreboard players set @s achievement.story_diamond_tools 1
 ## We Need to Go Deeper
 execute as @a[advancements={minecraft:story/enter_the_nether=true}] at @s unless score @s achievement.story_enter_the_nether matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:story/enter_the_nether=true}] at @s unless score @s achievement.story_enter_the_nether matches 1.. run scoreboard players set @s achievement.story_enter_the_nether 1

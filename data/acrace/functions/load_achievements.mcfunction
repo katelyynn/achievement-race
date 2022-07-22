@@ -13,6 +13,7 @@ scoreboard objectives add achievement.story_iron_tools dummy
 scoreboard objectives add achievement.story_deflect_arrow dummy
 scoreboard objectives add achievement.story_form_obsidian dummy
 scoreboard objectives add achievement.story_mine_diamond dummy
+scoreboard objectives add achievement.story_diamond_tools dummy
 scoreboard objectives add achievement.story_enter_the_nether dummy
 scoreboard objectives add achievement.story_shiny_gear dummy
 scoreboard objectives add achievement.story_enchant_item dummy
