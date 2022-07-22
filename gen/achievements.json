@@ -263,7 +263,7 @@
             "category": "nether"
         },
         {
-            "icon": "water_bottle",
+            "icon": "glass_bottle",
             "name": "Local Brewery",
             "description": "Brew a potion",
             "id": "brew_potion",
