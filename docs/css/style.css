@@ -5,11 +5,11 @@
     border: 1px solid currentColor;
 }
 /* easy */
-.count.easy, .count.bit_harder {
+.count.easy, .count.bit_harder, .count.start_less {
     border-color: rgba(255,255,255,0.15);
 }
-.count.start_less {
-    border-color: rgba(255,255,255,0.22);
+.count.start_bit_less, .count.start {
+    border-color: rgba(255,255,255,0.3);
 }
 .count.mid, .count.speedrun, .count.speedrun_a_bit {
     color: var(--text-main);

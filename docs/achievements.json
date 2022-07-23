@@ -75,7 +75,7 @@
             "description": "Fill a bucket with lava",
             "id": "lava_bucket",
             "category": "story",
-            "points": "start"
+            "points": "start_bit_less"
         },
         {
             "icon": "iron_pickaxe",
@@ -83,7 +83,7 @@
             "description": "Upgrade your pickaxe",
             "id": "iron_tools",
             "category": "story",
-            "points": "start"
+            "points": "start_bit_less"
         },
         {
             "icon": "shield",
@@ -117,7 +117,7 @@
             "category": "story",
             "type": "goal",
             "custom": true,
-            "points": "start_but_not"
+            "points": "start"
         },
         {
             "icon": "flint_and_steel",
@@ -125,7 +125,7 @@
             "description": "Build, light and enter a Nether Portal",
             "id": "enter_the_nether",
             "category": "story",
-            "points": "speedrun"
+            "points": "start_bit_less"
         },
         {
             "icon": "diamond_chestplate",
@@ -167,7 +167,7 @@
             "description": "Follow an Ender Eye",
             "id": "follow_ender_eye",
             "category": "story",
-            "points": "speedrun_a_bit"
+            "points": "speedrun"
         },
         {
             "icon": "end_stone",
@@ -324,7 +324,7 @@
             "description": "Summon the Wither",
             "id": "summon_wither",
             "category": "nether",
-            "points": "advanced_cheat"
+            "points": "normal"
         },
         {
             "icon": "glass_bottle",
@@ -332,7 +332,7 @@
             "description": "Brew a potion",
             "id": "brew_potion",
             "category": "nether",
-            "points": "speedrun_end"
+            "points": "speedrun"
         },
         {
             "icon": "beacon",
@@ -340,7 +340,7 @@
             "description": "Construct and place a beacon",
             "id": "create_beacon",
             "category": "nether",
-            "points": "speedrun_a_bit"
+            "points": "start_but_not"
         },
         {
             "icon": "milk_bucket",
