@@ -775,7 +775,7 @@
             "description": "Apply Honeycomb to a Copper block!",
             "id": "wax_on",
             "category": "husbandry",
-            "points": "advanced_full"
+            "points": "start"
         },
         {
             "icon": "golden_carrot",
