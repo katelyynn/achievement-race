@@ -1,0 +1,22 @@
+/* achievement list */
+
+
+.count.mid, .count.speedrun {
+    color: var(--text-main);
+}
+.count.speedrun_end, .count.normal {
+    color: var(--text-head);
+}
+.count.advanced_cheat {
+    color: #d0ade4;
+}
+.count.advanced {
+    color: #be8bf8;
+}
+.count.advanced_full {
+    color: #8b6bff;
+}
+.count.advanced_max {
+    color: #4f7eff;
+    font-weight: 900;
+}
