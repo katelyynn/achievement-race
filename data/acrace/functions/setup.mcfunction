@@ -1,9 +1,29 @@
-# DS setup
+# ACRACE setup
+## dynamically generated
 
 
-#> TODO: rework to generate line-by-line
 # tellraw
-tellraw @a ["",{"text":"\nDEATHSWAP Setup\n\n","color":"red","bold":true},{"text":"Before the game begins, check your options and invite everyone to the game.\n"},{"text":"\nOPTIONS:","color":"red","bold":true},{"text":"\nCut Clean: "},{"text":"[ON]","color":"green","bold":true,"underlined":true,"hoverEvent":{"action":"show_text","contents":[{"text":"(default)"}]},"clickEvent":{"action":"run_command","value":"/scoreboard players set cut_clean global 1"}},{"text":" [OFF]","color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set cut_clean global 0"}},{"text":"\nSpeed UHC: "},{"text":"[ON]","color":"green","bold":true,"underlined":true,"hoverEvent":{"action":"show_text","contents":[{"text":"(default)"}]},"clickEvent":{"action":"run_command","value":"/scoreboard players set speed_uhc global 1"}},{"text":" [OFF]","color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set speed_uhc global 0"}},{"text":"\nSwap interval: "},{"text":"[1m]","color":"gray","clickEvent":{"action":"run_command","value":"/scoreboard players set interval global 60"}},{"text":" [3m]","color":"gray","clickEvent":{"action":"run_command","value":"/scoreboard players set interval global 180"}},{"text":" [5m]","color":"gold","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"text":"(default)"}]},"clickEvent":{"action":"run_command","value":"/scoreboard players set interval global 500"}},{"text":" [7m]","color":"gray","clickEvent":{"action":"run_command","value":"/scoreboard players set interval global 420"}},{"text":" [10m]","color":"gray","clickEvent":{"action":"run_command","value":"/scoreboard players set interval global 600"}},{"text":"\n\nTo configure the interval more precisely, run "},{"text":"/scoreboard players set interval global ","color":"dark_gray"},{"text":"[value in s]","color":"gray"},{"text":"\nThe interval is also lowered every swap at 20s, configure with: "},{"text":"/scoreboard players set interval_lower global ","color":"dark_gray"},{"text":"[value in s]\n","color":"gray"},{"text":"\nOnce you're ready, run "},{"text":"/function ds:start","color":"green","clickEvent":{"action":"run_command","value":"/function ds:start"}},{"text":" and let the games begin!\n"}]
+## header
+tellraw @a ["",{"text":"\nACHIEVEMENT ","color":"green","bold":true},{"text":"RACE\n","color":"yellow","bold":true}]
+## intro
+tellraw @a ["",{"text":"Before the game begins, check your options and invite everyone to the game.\n"}]
+## options
+tellraw @a ["",{"text":"Options:","color":"yellow"}]
+
+# cut clean
+## enabled
+execute if score cut_clean global matches 1.. run tellraw @a ["",{"text":"Cut Clean"},{"text":"[","color":"white"},{"text":"✔","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set cut_clean global 1"}},{"text":"]","color":"white"},{"text":" [","color":"dark_gray"},{"text":"X","color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set cut_clean global 0"}},{"text":"]","color":"dark_gray"}]
+## disabled
+execute unless score cut_clean global matches 1.. run tellraw @a ["",{"text":"Cut Clean"},{"text":"[","color":"dark_gray"},{"text":"✔","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set cut_clean global 1"}},{"text":"]","color":"dark_gray"},{"text":" [","color":"white"},{"text":"X","color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set cut_clean global 0"}},{"text":"]","color":"white"}]
+
+# speed uhc
+## enabled
+execute if score speed_uhc global matches 1.. run tellraw @a ["",{"text":"Speed UHC"},{"text":"[","color":"white"},{"text":"✔","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set speed_uhc global 1"}},{"text":"]","color":"white"},{"text":" [","color":"dark_gray"},{"text":"X","color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set speed_uhc global 0"}},{"text":"]","color":"dark_gray"}]
+## disabled
+execute unless score speed_uhc global matches 1.. run tellraw @a ["",{"text":"Speed UHC"},{"text":"[","color":"dark_gray"},{"text":"✔","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set speed_uhc global 1"}},{"text":"]","color":"dark_gray"},{"text":" [","color":"white"},{"text":"X","color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set speed_uhc global 0"}},{"text":"]","color":"white"}]
+
+## footer
+tellraw @a ["",{"text":"\nOnce you're ready, run "},{"text":"/function acrace:start","color":"yellow","underlined":true,"clickEvent":{"action":"run_command","value":"/function acrace:start"}},{"text":" and let the games begin!\n"}]
 
 
 scoreboard players set setup internal 1
