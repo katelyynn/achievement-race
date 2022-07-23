@@ -44,7 +44,6 @@ scoreboard objectives add achievement.nether_create_beacon dummy
 scoreboard objectives add achievement.nether_all_potions dummy
 scoreboard objectives add achievement.nether_create_full_beacon dummy
 scoreboard objectives add achievement.nether_all_effects dummy
-scoreboard objectives add achievement.end_root dummy
 scoreboard objectives add achievement.end_kill_dragon dummy
 scoreboard objectives add achievement.end_dragon_egg dummy
 scoreboard objectives add achievement.end_enter_end_gateway dummy
