@@ -371,7 +371,7 @@
             "points": "speedrun"
         },
         {
-            "icon": "ender_dragon_head",
+            "icon": "dragon_head",
             "name": "Free the End",
             "description": "Good luck",
             "id": "kill_dragon",
@@ -379,7 +379,7 @@
             "points": "speedrun_end"
         },
         {
-            "icon": "ender_dragon_egg",
+            "icon": "dragon_egg",
             "name": "The Next Generation",
             "description": "Hold the Dragon Egg",
             "id": "dragon_egg",
