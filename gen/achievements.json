@@ -103,6 +103,13 @@
             "category": "story"
         },
         {
+            "icon": "diamond_chestplate",
+            "name": "A Full Set",
+            "description": "Obtain a full set of diamond armor",
+            "id": "diamond_armor",
+            "category": "story"
+        },
+        {
             "icon": "enchanted_book",
             "name": "Enchanter",
             "description": "Enchant an item at an Enchantment Table",
