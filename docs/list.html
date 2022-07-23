@@ -46,7 +46,7 @@
 
             em.innerHTML = (`
             <span class="icon"><img src="https://res.plexion.dev/minecraft/item/${data.achievements[i].icon}.png"></span>
-            <span class="text"><h5>${data.achievements[i].name}</h5><p>${data.achievements[i].description}</p></span>
+            <span class="text"><h5>${data.achievements[i].name} <label class="count ${data.achievements[i].points}" data-points="${data.points[data.achievements[i].points]}">${data.points[data.achievements[i].points]}</label></h5><p>${data.achievements[i].description}</p></span>
             `);
 
 
