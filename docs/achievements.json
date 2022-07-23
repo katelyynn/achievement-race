@@ -99,7 +99,7 @@
             "description": "Obtain a block of obsidian",
             "id": "form_obsidian",
             "category": "story",
-            "points": "start"
+            "points": "start_bit_less"
         },
         {
             "icon": "diamond",
@@ -192,7 +192,7 @@
             "description": "Enter a Bastion Remnant",
             "id": "find_bastion",
             "category": "nether",
-            "points": "start_but_not"
+            "points": "start"
         },
         {
             "icon": "ancient_debris_side",
@@ -217,7 +217,7 @@
             "description": "Break your way into a Nether Fortress",
             "id": "find_fortress",
             "category": "nether",
-            "points": "mid"
+            "points": "start_bit_less"
         },
         {
             "icon": "crying_obsidian",
@@ -233,7 +233,7 @@
             "description": "Distract Piglins with gold",
             "id": "distract_piglin",
             "category": "nether",
-            "points": "start_but_not"
+            "points": "start"
         },
         {
             "icon": "warped_fungus_on_a_stick",
