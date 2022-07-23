@@ -18,8 +18,8 @@ effect clear @a
 gamemode adventure @a[gamemode=!spectator]
 
 
-# score
-scoreboard players set score_increase global 10
+# hide point gain
+scoreboard players set hide_point_gain global 0
 # win time
 ## 2400 = 40 min
 scoreboard players set end_time global 2400
