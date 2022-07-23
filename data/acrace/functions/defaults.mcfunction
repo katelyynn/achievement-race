@@ -13,7 +13,7 @@ worldborder set 10
 gamerule doImmediateRespawn true
 gamerule keepInventory false
 gamerule announceAdvancements false
-gamerule playersSleepingPercentage 0
+gamerule playersSleepingPercentage 25
 effect clear @a
 gamemode adventure @a[gamemode=!spectator]
 
