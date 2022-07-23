@@ -184,7 +184,7 @@
             "id": "return_to_sender",
             "category": "nether",
             "type": "fancy",
-            "points": "start"
+            "points": "start_less"
         },
         {
             "icon": "polished_blackstone_bricks",
@@ -209,7 +209,7 @@
             "id": "fast_travel",
             "category": "nether",
             "type": "fancy",
-            "points": "advanced_cheat"
+            "points": "advanced_cheat_a_bit"
         },
         {
             "icon": "nether_bricks",

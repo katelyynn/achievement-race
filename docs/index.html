@@ -16,26 +16,31 @@
         <span class="logo"><h5>Achievement generator</h5></span>
     </section>
     <section style="padding: 15px var(--padding-min);">
-        <br><label class="overl">acrace:load</label>
+        <br><label class="overl">acrace:load_achievements</label>
         <div id="text_load"></div>
+        <br><label class="overl">acrace:set_achievements</label>
+        <div id="text_set"></div>
         <br><label class="overl">acrace:pick/checks</label>
         <div id="text_checks"></div>
     </section>
 </body>
 <script>
     let text_load = '';
+    let text_set = '';
     let text_checks = '';
 
     $.get('achievements.json', function(data) {
         for (let i in data.achievements) {
             text_load = `${text_load}scoreboard objectives add achievement.${data.achievements[i].category}_${data.achievements[i].id} dummy<br>`;
+            text_set = `${text_set}scoreboard players set ${data.achievements[i].category}_${data.achievements[i].id} achievement.values ${data.points[data.achievements[i].points]}<br>`;
             text_checks = `${text_checks}## ${data.achievements[i].name}<br>
-            execute as @a[advancements={minecraft:${data.achievements[i].category}/${data.achievements[i].id}=true}] at @s unless score @s achievement.${data.achievements[i].category}_${data.achievements[i].id} matches 1.. run scoreboard players set @s achievement.claiming_points ${data.points[data.achievements[i].points]}<br>
+            execute as @a[advancements={minecraft:${data.achievements[i].category}/${data.achievements[i].id}=true}] at @s unless score @s achievement.${data.achievements[i].category}_${data.achievements[i].id} matches 1.. run scoreboard players operation @s achievement.claiming_points = ${data.achievements[i].category}_${data.achievements[i].id} achievement.values<br>
             execute as @a[advancements={minecraft:${data.achievements[i].category}/${data.achievements[i].id}=true}] at @s unless score @s achievement.${data.achievements[i].category}_${data.achievements[i].id} matches 1.. run function acrace:pick/take<br>
             execute as @a[advancements={minecraft:${data.achievements[i].category}/${data.achievements[i].id}=true}] at @s unless score @s achievement.${data.achievements[i].category}_${data.achievements[i].id} matches 1.. run scoreboard players set @s achievement.${data.achievements[i].category}_${data.achievements[i].id} 1<br>`;
         }
 
         document.getElementById('text_load').innerHTML = text_load;
+        document.getElementById('text_set').innerHTML = text_set;
         document.getElementById('text_checks').innerHTML = text_checks;
     });
 </script>

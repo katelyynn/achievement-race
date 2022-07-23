@@ -15,6 +15,9 @@ scoreboard objectives add score.temp dummy
 ## as achievements have seperate points, the value
 ## is temporarily stored here for calculations
 scoreboard objectives add achievement.claiming_points dummy
+# scoreboard to track achievement values
+## used to apply multipliers
+scoreboard objectives add achievement.values dummy
 
 # bossbar
 bossbar add acrace:main ""

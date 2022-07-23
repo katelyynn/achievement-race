@@ -24,7 +24,10 @@ scoreboard players set end_time global 2700
 
 
 # initialise achievements
+## create scoreboards
 function acrace:load_achievements
+## set initial values
+function acrace:set_achievements
 
 
 scoreboard players set defaults internal 1
