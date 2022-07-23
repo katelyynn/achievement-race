@@ -86,6 +86,7 @@
             "description": "Putting those diamonds to good use",
             "id": "diamond_tools",
             "category": "story",
+            "type": "goal",
             "custom": true
         },
         {
@@ -107,7 +108,8 @@
             "name": "A Full Set",
             "description": "Obtain a full set of diamond armor",
             "id": "diamond_armor",
-            "category": "story"
+            "category": "story",
+            "custom": true
         },
         {
             "icon": "enchanted_book",

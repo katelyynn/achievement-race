@@ -19,7 +19,7 @@
     "description": {
       "text": "Putting those diamonds to good use"
     },
-    "frame": "task",
+    "frame": "goal",
     "hidden": false,
     "icon": {
       "item": "minecraft:diamond_pickaxe",
