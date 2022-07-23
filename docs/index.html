@@ -16,9 +16,11 @@
         <span class="logo"><h5>Achievement generator</h5></span>
     </section>
     <section style="padding: 15px var(--padding-min);">
-        <br><label class="overl">acrace:load_achievements</label>
+        <br><label class="overl">acrace:load/scores</label>
         <div id="text_load"></div>
-        <br><label class="overl">acrace:set_achievements</label>
+        <br><label class="overl">acrace:load/create</label>
+        <div id="text_create"></div>
+        <br><label class="overl">acrace:load/values</label>
         <div id="text_set"></div>
         <br><label class="overl">acrace:pick/checks</label>
         <div id="text_checks"></div>
@@ -26,12 +28,14 @@
 </body>
 <script>
     let text_load = '';
+    let text_create = '';
     let text_set = '';
     let text_checks = '';
 
     $.get('achievements.json', function(data) {
         for (let i in data.achievements) {
             text_load = `${text_load}scoreboard objectives add achievement.${data.achievements[i].category}_${data.achievements[i].id} dummy<br>`;
+            text_create = `${text_create}summon armor_stand 0 0 0 {NoGravity:1b,Silent:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["achievement","${data.achievements[i].category}_${data.achievements[i].id}"]}<br>`;
             text_set = `${text_set}scoreboard players set @e[tag=achievement,tag=${data.achievements[i].category}_${data.achievements[i].id},limit=1] achievement.values ${data.points[data.achievements[i].points]}<br>`;
             text_checks = `${text_checks}## ${data.achievements[i].name}<br>
             execute as @a[advancements={minecraft:${data.achievements[i].category}/${data.achievements[i].id}=true}] at @s unless score @s achievement.${data.achievements[i].category}_${data.achievements[i].id} matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=${data.achievements[i].category}_${data.achievements[i].id},limit=1] achievement.values<br>
@@ -40,6 +44,7 @@
         }
 
         document.getElementById('text_load').innerHTML = text_load;
+        document.getElementById('text_create').innerHTML = text_create;
         document.getElementById('text_set').innerHTML = text_set;
         document.getElementById('text_checks').innerHTML = text_checks;
     });
