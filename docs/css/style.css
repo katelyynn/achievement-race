@@ -4,19 +4,23 @@
 .count {
     border: 1px solid currentColor;
 }
-.count.start_less, .count.start, .count.start_bit_less {
-    border-color: rgba(255,255,255,0.2);
+/* easy */
+.count.easy, .count.bit_harder {
+    border-color: rgba(255,255,255,0.15);
 }
-.count.mid, .count.speedrun {
+.count.start_less {
+    border-color: rgba(255,255,255,0.22);
+}
+.count.mid, .count.speedrun, .count.speedrun_a_bit {
     color: var(--text-main);
 }
-.count.speedrun_end, .count.normal {
+.count.speedrun_end, .count.normal, .count.advanced_cheat_a_bit {
     color: var(--text-head);
 }
 .count.advanced_cheat {
     color: #d0ade4;
 }
-.count.advanced {
+.count.advanced, .count.advanced_almost_full {
     color: #be8bf8;
     font-weight: 700;
 }
