@@ -1,0 +1,56 @@
+{
+  "parent": "minecraft:story/shiny_gear",
+  "criteria": {
+    "diamond_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:diamond_helmet"
+            ]
+          },
+          {
+            "items": [
+              "minecraft:diamond_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "minecraft:diamond_leggings"
+            ]
+          },
+          {
+            "items": [
+              "minecraft:diamond_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Obtain a full set of diamond armor"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:diamond_chestplate",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "A Full Set"
+    }
+  },
+  "requirements": [
+    [
+      "diamond_armor"
+    ]
+  ],
+  "rewards": {
+    "experience": 60
+  }
+}
