@@ -17,6 +17,7 @@
         }
     },
     "points": {
+        "start_less": 3,
         "start": 5,
         "start_but_not": 6,
         "mid": 7,
@@ -461,6 +462,14 @@
             "id": "kill_a_mob",
             "category": "adventure",
             "points": "start"
+        },
+        {
+            "icon": "creeper_head",
+            "name": "Creeper?",
+            "description": "Aw man.",
+            "id": "kill_creeper",
+            "category": "adventure",
+            "points": "start_less"
         },
         {
             "icon": "emerald",

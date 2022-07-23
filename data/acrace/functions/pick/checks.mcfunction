@@ -213,6 +213,10 @@ execute as @a[advancements={minecraft:adventure/spyglass_at_parrot=true}] at @s 
 execute as @a[advancements={minecraft:adventure/kill_a_mob=true}] at @s unless score @s achievement.adventure_kill_a_mob matches 1.. run scoreboard players set @s achievement.claiming_points 5
 execute as @a[advancements={minecraft:adventure/kill_a_mob=true}] at @s unless score @s achievement.adventure_kill_a_mob matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:adventure/kill_a_mob=true}] at @s unless score @s achievement.adventure_kill_a_mob matches 1.. run scoreboard players set @s achievement.adventure_kill_a_mob 1
+## Creeper?
+execute as @a[advancements={minecraft:adventure/kill_creeper=true}] at @s unless score @s achievement.adventure_kill_creeper matches 1.. run scoreboard players set @s achievement.claiming_points 3
+execute as @a[advancements={minecraft:adventure/kill_creeper=true}] at @s unless score @s achievement.adventure_kill_creeper matches 1.. run function acrace:pick/take
+execute as @a[advancements={minecraft:adventure/kill_creeper=true}] at @s unless score @s achievement.adventure_kill_creeper matches 1.. run scoreboard players set @s achievement.adventure_kill_creeper 1
 ## What a Deal!
 execute as @a[advancements={minecraft:adventure/trade=true}] at @s unless score @s achievement.adventure_trade matches 1.. run scoreboard players set @s achievement.claiming_points 5
 execute as @a[advancements={minecraft:adventure/trade=true}] at @s unless score @s achievement.adventure_trade matches 1.. run function acrace:pick/take

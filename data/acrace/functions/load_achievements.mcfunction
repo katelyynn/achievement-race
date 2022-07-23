@@ -56,6 +56,7 @@ scoreboard objectives add achievement.end_levitate dummy
 scoreboard objectives add achievement.adventure_voluntary_exile dummy
 scoreboard objectives add achievement.adventure_spyglass_at_parrot dummy
 scoreboard objectives add achievement.adventure_kill_a_mob dummy
+scoreboard objectives add achievement.adventure_kill_creeper dummy
 scoreboard objectives add achievement.adventure_trade dummy
 scoreboard objectives add achievement.adventure_honey_block_slide dummy
 scoreboard objectives add achievement.adventure_ol_betsy dummy
