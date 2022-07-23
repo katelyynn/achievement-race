@@ -99,7 +99,7 @@
             "description": "Obtain a block of obsidian",
             "id": "form_obsidian",
             "category": "story",
-            "points": "start_bit_less"
+            "points": "start_less"
         },
         {
             "icon": "diamond",
@@ -375,7 +375,7 @@
             "description": "Good luck",
             "id": "kill_dragon",
             "category": "end",
-            "points": "speedrun_end"
+            "points": "start_less"
         },
         {
             "icon": "dragon_egg",
@@ -384,7 +384,7 @@
             "id": "dragon_egg",
             "category": "end",
             "type": "oval",
-            "points": "speedrun"
+            "points": "bit_harder"
         },
         {
             "icon": "ender_pearl",
@@ -392,7 +392,7 @@
             "description": "Escape the island",
             "id": "enter_end_gateway",
             "category": "end",
-            "points": "speedrun_end"
+            "points": "start"
         },
         {
             "icon": "end_crystal",
@@ -401,7 +401,7 @@
             "id": "respawn_dragon",
             "category": "end",
             "type": "oval",
-            "points": "speedrun"
+            "points": "start_but_not"
         },
         {
             "icon": "dragon_breath",
@@ -410,7 +410,7 @@
             "id": "dragon_breath",
             "category": "end",
             "type": "oval",
-            "points": "start"
+            "points": "start_less"
         },
         {
             "icon": "purpur_block",
@@ -418,7 +418,7 @@
             "description": "Go on in, what could happen?",
             "id": "find_end_city",
             "category": "end",
-            "points": "advanced_cheat"
+            "points": "speedrun"
         },
         {
             "icon": "elytra",
@@ -427,7 +427,7 @@
             "id": "elytra",
             "category": "end",
             "type": "oval",
-            "points": "advanced"
+            "points": "normal"
         },
         {
             "icon": "shulker_shell",
@@ -436,7 +436,7 @@
             "id": "levitate",
             "category": "end",
             "type": "fancy",
-            "points": "start_but_not"
+            "points": "start"
         },
         {
             "icon": "banner",
@@ -508,7 +508,7 @@
             "description": "Free fall from the top of the world (build limit) to the bottom of the world and survive",
             "id": "fall_from_world_height",
             "category": "adventure",
-            "points": "speedrun_end"
+            "points": "speedrun_a_bit"
         },
         {
             "icon": "sculk_sensor_side",
@@ -516,7 +516,7 @@
             "description": "Sneak near a Sculk Sensor or Warden to prevent it from detecting you",
             "id": "avoid_vibration",
             "category": "adventure",
-            "points": "start_bit_less"
+            "points": "start_less"
         },
         {
             "icon": "red_bed",
@@ -541,7 +541,7 @@
             "description": "Look at a ghast through a spyglass",
             "id": "spyglass_at_ghast",
             "category": "adventure",
-            "points": "start_but_not"
+            "points": "start"
         },
         {
             "icon": "trident",
@@ -636,7 +636,7 @@
             "id": "adventuring_time",
             "category": "adventure",
             "type": "fancy",
-            "points": "advanced"
+            "points": "advanced_almost_full"
         },
         {
             "icon": "jukebox_side",

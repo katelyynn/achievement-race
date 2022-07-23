@@ -34,7 +34,7 @@ execute as @a[advancements={minecraft:story/deflect_arrow=true}] at @s unless sc
 execute as @a[advancements={minecraft:story/deflect_arrow=true}] at @s unless score @s achievement.story_deflect_arrow matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:story/deflect_arrow=true}] at @s unless score @s achievement.story_deflect_arrow matches 1.. run scoreboard players set @s achievement.story_deflect_arrow 1
 ## Ice Bucket Challenge
-execute as @a[advancements={minecraft:story/form_obsidian=true}] at @s unless score @s achievement.story_form_obsidian matches 1.. run scoreboard players set @s achievement.claiming_points 4
+execute as @a[advancements={minecraft:story/form_obsidian=true}] at @s unless score @s achievement.story_form_obsidian matches 1.. run scoreboard players set @s achievement.claiming_points 3
 execute as @a[advancements={minecraft:story/form_obsidian=true}] at @s unless score @s achievement.story_form_obsidian matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:story/form_obsidian=true}] at @s unless score @s achievement.story_form_obsidian matches 1.. run scoreboard players set @s achievement.story_form_obsidian 1
 ## Diamonds!
@@ -166,35 +166,35 @@ execute as @a[advancements={minecraft:nether/all_effects=true}] at @s unless sco
 execute as @a[advancements={minecraft:nether/all_effects=true}] at @s unless score @s achievement.nether_all_effects matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:nether/all_effects=true}] at @s unless score @s achievement.nether_all_effects matches 1.. run scoreboard players set @s achievement.nether_all_effects 1
 ## Free the End
-execute as @a[advancements={minecraft:end/kill_dragon=true}] at @s unless score @s achievement.end_kill_dragon matches 1.. run scoreboard players set @s achievement.claiming_points 9
+execute as @a[advancements={minecraft:end/kill_dragon=true}] at @s unless score @s achievement.end_kill_dragon matches 1.. run scoreboard players set @s achievement.claiming_points 3
 execute as @a[advancements={minecraft:end/kill_dragon=true}] at @s unless score @s achievement.end_kill_dragon matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:end/kill_dragon=true}] at @s unless score @s achievement.end_kill_dragon matches 1.. run scoreboard players set @s achievement.end_kill_dragon 1
 ## The Next Generation
-execute as @a[advancements={minecraft:end/dragon_egg=true}] at @s unless score @s achievement.end_dragon_egg matches 1.. run scoreboard players set @s achievement.claiming_points 7
+execute as @a[advancements={minecraft:end/dragon_egg=true}] at @s unless score @s achievement.end_dragon_egg matches 1.. run scoreboard players set @s achievement.claiming_points 2
 execute as @a[advancements={minecraft:end/dragon_egg=true}] at @s unless score @s achievement.end_dragon_egg matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:end/dragon_egg=true}] at @s unless score @s achievement.end_dragon_egg matches 1.. run scoreboard players set @s achievement.end_dragon_egg 1
 ## Remote Getaway
-execute as @a[advancements={minecraft:end/enter_end_gateway=true}] at @s unless score @s achievement.end_enter_end_gateway matches 1.. run scoreboard players set @s achievement.claiming_points 9
+execute as @a[advancements={minecraft:end/enter_end_gateway=true}] at @s unless score @s achievement.end_enter_end_gateway matches 1.. run scoreboard players set @s achievement.claiming_points 5
 execute as @a[advancements={minecraft:end/enter_end_gateway=true}] at @s unless score @s achievement.end_enter_end_gateway matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:end/enter_end_gateway=true}] at @s unless score @s achievement.end_enter_end_gateway matches 1.. run scoreboard players set @s achievement.end_enter_end_gateway 1
 ## The End... Again...
-execute as @a[advancements={minecraft:end/respawn_dragon=true}] at @s unless score @s achievement.end_respawn_dragon matches 1.. run scoreboard players set @s achievement.claiming_points 7
+execute as @a[advancements={minecraft:end/respawn_dragon=true}] at @s unless score @s achievement.end_respawn_dragon matches 1.. run scoreboard players set @s achievement.claiming_points 6
 execute as @a[advancements={minecraft:end/respawn_dragon=true}] at @s unless score @s achievement.end_respawn_dragon matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:end/respawn_dragon=true}] at @s unless score @s achievement.end_respawn_dragon matches 1.. run scoreboard players set @s achievement.end_respawn_dragon 1
 ## You Need a Mint
-execute as @a[advancements={minecraft:end/dragon_breath=true}] at @s unless score @s achievement.end_dragon_breath matches 1.. run scoreboard players set @s achievement.claiming_points 5
+execute as @a[advancements={minecraft:end/dragon_breath=true}] at @s unless score @s achievement.end_dragon_breath matches 1.. run scoreboard players set @s achievement.claiming_points 3
 execute as @a[advancements={minecraft:end/dragon_breath=true}] at @s unless score @s achievement.end_dragon_breath matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:end/dragon_breath=true}] at @s unless score @s achievement.end_dragon_breath matches 1.. run scoreboard players set @s achievement.end_dragon_breath 1
 ## The City at the End of the Game
-execute as @a[advancements={minecraft:end/find_end_city=true}] at @s unless score @s achievement.end_find_end_city matches 1.. run scoreboard players set @s achievement.claiming_points 12
+execute as @a[advancements={minecraft:end/find_end_city=true}] at @s unless score @s achievement.end_find_end_city matches 1.. run scoreboard players set @s achievement.claiming_points 7
 execute as @a[advancements={minecraft:end/find_end_city=true}] at @s unless score @s achievement.end_find_end_city matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:end/find_end_city=true}] at @s unless score @s achievement.end_find_end_city matches 1.. run scoreboard players set @s achievement.end_find_end_city 1
 ## Sky's the Limit
-execute as @a[advancements={minecraft:end/elytra=true}] at @s unless score @s achievement.end_elytra matches 1.. run scoreboard players set @s achievement.claiming_points 14
+execute as @a[advancements={minecraft:end/elytra=true}] at @s unless score @s achievement.end_elytra matches 1.. run scoreboard players set @s achievement.claiming_points 10
 execute as @a[advancements={minecraft:end/elytra=true}] at @s unless score @s achievement.end_elytra matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:end/elytra=true}] at @s unless score @s achievement.end_elytra matches 1.. run scoreboard players set @s achievement.end_elytra 1
 ## Great View From Up Here
-execute as @a[advancements={minecraft:end/levitate=true}] at @s unless score @s achievement.end_levitate matches 1.. run scoreboard players set @s achievement.claiming_points 6
+execute as @a[advancements={minecraft:end/levitate=true}] at @s unless score @s achievement.end_levitate matches 1.. run scoreboard players set @s achievement.claiming_points 5
 execute as @a[advancements={minecraft:end/levitate=true}] at @s unless score @s achievement.end_levitate matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:end/levitate=true}] at @s unless score @s achievement.end_levitate matches 1.. run scoreboard players set @s achievement.end_levitate 1
 ## Voluntary Exile
@@ -230,11 +230,11 @@ execute as @a[advancements={minecraft:adventure/lightning_rod_with_villager_no_f
 execute as @a[advancements={minecraft:adventure/lightning_rod_with_villager_no_fire=true}] at @s unless score @s achievement.adventure_lightning_rod_with_villager_no_fire matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:adventure/lightning_rod_with_villager_no_fire=true}] at @s unless score @s achievement.adventure_lightning_rod_with_villager_no_fire matches 1.. run scoreboard players set @s achievement.adventure_lightning_rod_with_villager_no_fire 1
 ## Caves & Cliffs
-execute as @a[advancements={minecraft:adventure/fall_from_world_height=true}] at @s unless score @s achievement.adventure_fall_from_world_height matches 1.. run scoreboard players set @s achievement.claiming_points 9
+execute as @a[advancements={minecraft:adventure/fall_from_world_height=true}] at @s unless score @s achievement.adventure_fall_from_world_height matches 1.. run scoreboard players set @s achievement.claiming_points 8
 execute as @a[advancements={minecraft:adventure/fall_from_world_height=true}] at @s unless score @s achievement.adventure_fall_from_world_height matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:adventure/fall_from_world_height=true}] at @s unless score @s achievement.adventure_fall_from_world_height matches 1.. run scoreboard players set @s achievement.adventure_fall_from_world_height 1
 ## Sneak 100
-execute as @a[advancements={minecraft:adventure/avoid_vibration=true}] at @s unless score @s achievement.adventure_avoid_vibration matches 1.. run scoreboard players set @s achievement.claiming_points 4
+execute as @a[advancements={minecraft:adventure/avoid_vibration=true}] at @s unless score @s achievement.adventure_avoid_vibration matches 1.. run scoreboard players set @s achievement.claiming_points 3
 execute as @a[advancements={minecraft:adventure/avoid_vibration=true}] at @s unless score @s achievement.adventure_avoid_vibration matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:adventure/avoid_vibration=true}] at @s unless score @s achievement.adventure_avoid_vibration matches 1.. run scoreboard players set @s achievement.adventure_avoid_vibration 1
 ## Sweet Dreams
@@ -246,7 +246,7 @@ execute as @a[advancements={minecraft:adventure/hero_of_the_village=true}] at @s
 execute as @a[advancements={minecraft:adventure/hero_of_the_village=true}] at @s unless score @s achievement.adventure_hero_of_the_village matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:adventure/hero_of_the_village=true}] at @s unless score @s achievement.adventure_hero_of_the_village matches 1.. run scoreboard players set @s achievement.adventure_hero_of_the_village 1
 ## Is It a Balloon?
-execute as @a[advancements={minecraft:adventure/spyglass_at_ghast=true}] at @s unless score @s achievement.adventure_spyglass_at_ghast matches 1.. run scoreboard players set @s achievement.claiming_points 6
+execute as @a[advancements={minecraft:adventure/spyglass_at_ghast=true}] at @s unless score @s achievement.adventure_spyglass_at_ghast matches 1.. run scoreboard players set @s achievement.claiming_points 5
 execute as @a[advancements={minecraft:adventure/spyglass_at_ghast=true}] at @s unless score @s achievement.adventure_spyglass_at_ghast matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:adventure/spyglass_at_ghast=true}] at @s unless score @s achievement.adventure_spyglass_at_ghast matches 1.. run scoreboard players set @s achievement.adventure_spyglass_at_ghast 1
 ## A Throwaway Joke
@@ -290,7 +290,7 @@ execute as @a[advancements={minecraft:adventure/arbalistic=true}] at @s unless s
 execute as @a[advancements={minecraft:adventure/arbalistic=true}] at @s unless score @s achievement.adventure_arbalistic matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:adventure/arbalistic=true}] at @s unless score @s achievement.adventure_arbalistic matches 1.. run scoreboard players set @s achievement.adventure_arbalistic 1
 ## Adventuring Time
-execute as @a[advancements={minecraft:adventure/adventuring_time=true}] at @s unless score @s achievement.adventure_adventuring_time matches 1.. run scoreboard players set @s achievement.claiming_points 14
+execute as @a[advancements={minecraft:adventure/adventuring_time=true}] at @s unless score @s achievement.adventure_adventuring_time matches 1.. run scoreboard players set @s achievement.claiming_points 15
 execute as @a[advancements={minecraft:adventure/adventuring_time=true}] at @s unless score @s achievement.adventure_adventuring_time matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:adventure/adventuring_time=true}] at @s unless score @s achievement.adventure_adventuring_time matches 1.. run scoreboard players set @s achievement.adventure_adventuring_time 1
 ## Sound of Music
