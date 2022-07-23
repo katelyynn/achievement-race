@@ -35,7 +35,7 @@
     $.get('achievements.json', function(data) {
         for (let i in data.achievements) {
             text_load = `${text_load}scoreboard objectives add achievement.${data.achievements[i].category}_${data.achievements[i].id} dummy<br>`;
-            text_create = `${text_create}summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,Tags:["achievement","${data.achievements[i].category}_${data.achievements[i].id}"]}<br>`;
+            text_create = `${text_create}summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"${data.achievements[i].name}"}',Tags:["achievement","${data.achievements[i].category}_${data.achievements[i].id}"]}<br>`;
             text_set = `${text_set}scoreboard players set @e[tag=achievement,tag=${data.achievements[i].category}_${data.achievements[i].id},limit=1] achievement.values ${data.points[data.achievements[i].points]}<br>`;
             text_checks = `${text_checks}## ${data.achievements[i].name}<br>
             execute as @a[advancements={minecraft:${data.achievements[i].category}/${data.achievements[i].id}=true}] at @s unless score @s achievement.${data.achievements[i].category}_${data.achievements[i].id} matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=${data.achievements[i].category}_${data.achievements[i].id},limit=1] achievement.values<br>
