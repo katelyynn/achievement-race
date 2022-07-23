@@ -34,7 +34,7 @@
         "advanced_almost_full": 15,
         "advanced_full": 16,
         "advanced_max": 20,
-        "what": 727
+        "what": 100
     },
     "achievements": [
         {
@@ -75,7 +75,7 @@
             "description": "Fill a bucket with lava",
             "id": "lava_bucket",
             "category": "story",
-            "points": "start_bit_less"
+            "points": "start_less"
         },
         {
             "icon": "iron_pickaxe",
@@ -91,7 +91,7 @@
             "description": "Block a projectile using your shield.",
             "id": "deflect_arrow",
             "category": "story",
-            "points": "start_less"
+            "points": "bit_harder"
         },
         {
             "icon": "obsidian",
@@ -117,7 +117,7 @@
             "category": "story",
             "type": "goal",
             "custom": true,
-            "points": "start"
+            "points": "start_bit_less"
         },
         {
             "icon": "flint_and_steel",
@@ -150,7 +150,7 @@
             "description": "Enchant an item at an Enchantment Table",
             "id": "enchant_item",
             "category": "story",
-            "points": "speedrun_a_bit"
+            "points": "speedrun"
         },
         {
             "icon": "golden_apple",
@@ -159,7 +159,7 @@
             "id": "cure_zombie_villager",
             "category": "story",
             "type": "oval",
-            "points": "advanced"
+            "points": "advanced_cheat"
         },
         {
             "icon": "ender_eye",
@@ -167,7 +167,7 @@
             "description": "Follow an Ender Eye",
             "id": "follow_ender_eye",
             "category": "story",
-            "points": "speedrun"
+            "points": "start_but_not"
         },
         {
             "icon": "end_stone",
@@ -175,7 +175,7 @@
             "description": "Enter the End Portal",
             "id": "enter_the_end",
             "category": "story",
-            "points": "start_bit_less"
+            "points": "start_less"
         },
         {
             "icon": "fire_charge",
@@ -209,7 +209,7 @@
             "id": "fast_travel",
             "category": "nether",
             "type": "fancy",
-            "points": "advanced"
+            "points": "advanced_cheat"
         },
         {
             "icon": "nether_bricks",
@@ -225,7 +225,7 @@
             "description": "Obtain Crying Obsidian",
             "id": "obtain_crying_obsidian",
             "category": "nether",
-            "points": "start"
+            "points": "start_bit_less"
         },
         {
             "icon": "gold_ingot",
@@ -275,7 +275,7 @@
             "id": "netherite_armor",
             "category": "nether",
             "type": "fancy",
-            "points": "advanced_almost_full"
+            "points": "advanced"
         },
         {
             "icon": "wither_skeleton_skull",
@@ -460,7 +460,7 @@
             "description": "Kill any hostile monster",
             "id": "kill_a_mob",
             "category": "adventure",
-            "points": "start_bit_less"
+            "points": "start_less"
         },
         {
             "icon": "creeper_head",
@@ -468,7 +468,7 @@
             "description": "Aw man.",
             "id": "kill_creeper",
             "category": "adventure",
-            "points": "start_less"
+            "points": "bit_harder"
         },
         {
             "icon": "emerald",
@@ -734,7 +734,7 @@
             "description": "Make the text of a sign glow",
             "id": "make_a_sign_glow",
             "category": "husbandry",
-            "points": "start_bit_less"
+            "points": "start_less"
         },
         {
             "icon": "fishing_rod",
@@ -750,7 +750,7 @@
             "description": "Move a Bee Nest, with 3 bees inside, using Silk Touch",
             "id": "silk_touch_nest",
             "category": "husbandry",
-            "points": "speedrun_end"
+            "points": "speedrun_a_bit"
         },
         {
             "icon": "tadpole_bucket",
@@ -774,7 +774,7 @@
             "description": "Apply Honeycomb to a Copper block!",
             "id": "wax_on",
             "category": "husbandry",
-            "points": "start_bit_less"
+            "points": "start_less"
         },
         {
             "icon": "golden_carrot",
@@ -843,7 +843,7 @@
             "description": "Scrape Wax off of a Copper block!",
             "id": "wax_off",
             "category": "husbandry",
-            "points": "start_less"
+            "points": "bit_harder"
         },
         {
             "icon": "axolotl_bucket",
@@ -868,7 +868,7 @@
             "description": "Team up with an axolotl and win a fight",
             "id": "kill_axolotl_target",
             "category": "husbandry",
-            "points": "speedrun_end"
+            "points": "speedrun"
         }
     ]
 }

@@ -22,7 +22,7 @@ execute as @a[advancements={minecraft:story/obtain_armor=true}] at @s unless sco
 execute as @a[advancements={minecraft:story/obtain_armor=true}] at @s unless score @s achievement.story_obtain_armor matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:story/obtain_armor=true}] at @s unless score @s achievement.story_obtain_armor matches 1.. run scoreboard players set @s achievement.story_obtain_armor 1
 ## Hot Stuff
-execute as @a[advancements={minecraft:story/lava_bucket=true}] at @s unless score @s achievement.story_lava_bucket matches 1.. run scoreboard players set @s achievement.claiming_points 4
+execute as @a[advancements={minecraft:story/lava_bucket=true}] at @s unless score @s achievement.story_lava_bucket matches 1.. run scoreboard players set @s achievement.claiming_points 3
 execute as @a[advancements={minecraft:story/lava_bucket=true}] at @s unless score @s achievement.story_lava_bucket matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:story/lava_bucket=true}] at @s unless score @s achievement.story_lava_bucket matches 1.. run scoreboard players set @s achievement.story_lava_bucket 1
 ## Isn't It Iron Pick
@@ -30,7 +30,7 @@ execute as @a[advancements={minecraft:story/iron_tools=true}] at @s unless score
 execute as @a[advancements={minecraft:story/iron_tools=true}] at @s unless score @s achievement.story_iron_tools matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:story/iron_tools=true}] at @s unless score @s achievement.story_iron_tools matches 1.. run scoreboard players set @s achievement.story_iron_tools 1
 ## Not Today, Thank You
-execute as @a[advancements={minecraft:story/deflect_arrow=true}] at @s unless score @s achievement.story_deflect_arrow matches 1.. run scoreboard players set @s achievement.claiming_points 3
+execute as @a[advancements={minecraft:story/deflect_arrow=true}] at @s unless score @s achievement.story_deflect_arrow matches 1.. run scoreboard players set @s achievement.claiming_points 2
 execute as @a[advancements={minecraft:story/deflect_arrow=true}] at @s unless score @s achievement.story_deflect_arrow matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:story/deflect_arrow=true}] at @s unless score @s achievement.story_deflect_arrow matches 1.. run scoreboard players set @s achievement.story_deflect_arrow 1
 ## Ice Bucket Challenge
@@ -42,7 +42,7 @@ execute as @a[advancements={minecraft:story/mine_diamond=true}] at @s unless sco
 execute as @a[advancements={minecraft:story/mine_diamond=true}] at @s unless score @s achievement.story_mine_diamond matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:story/mine_diamond=true}] at @s unless score @s achievement.story_mine_diamond matches 1.. run scoreboard players set @s achievement.story_mine_diamond 1
 ## Isn't It?
-execute as @a[advancements={minecraft:story/diamond_tools=true}] at @s unless score @s achievement.story_diamond_tools matches 1.. run scoreboard players set @s achievement.claiming_points 5
+execute as @a[advancements={minecraft:story/diamond_tools=true}] at @s unless score @s achievement.story_diamond_tools matches 1.. run scoreboard players set @s achievement.claiming_points 4
 execute as @a[advancements={minecraft:story/diamond_tools=true}] at @s unless score @s achievement.story_diamond_tools matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:story/diamond_tools=true}] at @s unless score @s achievement.story_diamond_tools matches 1.. run scoreboard players set @s achievement.story_diamond_tools 1
 ## We Need to Go Deeper
@@ -58,19 +58,19 @@ execute as @a[advancements={minecraft:story/diamond_armor=true}] at @s unless sc
 execute as @a[advancements={minecraft:story/diamond_armor=true}] at @s unless score @s achievement.story_diamond_armor matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:story/diamond_armor=true}] at @s unless score @s achievement.story_diamond_armor matches 1.. run scoreboard players set @s achievement.story_diamond_armor 1
 ## Enchanter
-execute as @a[advancements={minecraft:story/enchant_item=true}] at @s unless score @s achievement.story_enchant_item matches 1.. run scoreboard players set @s achievement.claiming_points 8
+execute as @a[advancements={minecraft:story/enchant_item=true}] at @s unless score @s achievement.story_enchant_item matches 1.. run scoreboard players set @s achievement.claiming_points 7
 execute as @a[advancements={minecraft:story/enchant_item=true}] at @s unless score @s achievement.story_enchant_item matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:story/enchant_item=true}] at @s unless score @s achievement.story_enchant_item matches 1.. run scoreboard players set @s achievement.story_enchant_item 1
 ## Zombie Doctor
-execute as @a[advancements={minecraft:story/cure_zombie_villager=true}] at @s unless score @s achievement.story_cure_zombie_villager matches 1.. run scoreboard players set @s achievement.claiming_points 14
+execute as @a[advancements={minecraft:story/cure_zombie_villager=true}] at @s unless score @s achievement.story_cure_zombie_villager matches 1.. run scoreboard players set @s achievement.claiming_points 12
 execute as @a[advancements={minecraft:story/cure_zombie_villager=true}] at @s unless score @s achievement.story_cure_zombie_villager matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:story/cure_zombie_villager=true}] at @s unless score @s achievement.story_cure_zombie_villager matches 1.. run scoreboard players set @s achievement.story_cure_zombie_villager 1
 ## Eye Spy
-execute as @a[advancements={minecraft:story/follow_ender_eye=true}] at @s unless score @s achievement.story_follow_ender_eye matches 1.. run scoreboard players set @s achievement.claiming_points 7
+execute as @a[advancements={minecraft:story/follow_ender_eye=true}] at @s unless score @s achievement.story_follow_ender_eye matches 1.. run scoreboard players set @s achievement.claiming_points 6
 execute as @a[advancements={minecraft:story/follow_ender_eye=true}] at @s unless score @s achievement.story_follow_ender_eye matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:story/follow_ender_eye=true}] at @s unless score @s achievement.story_follow_ender_eye matches 1.. run scoreboard players set @s achievement.story_follow_ender_eye 1
 ## The End?
-execute as @a[advancements={minecraft:story/enter_the_end=true}] at @s unless score @s achievement.story_enter_the_end matches 1.. run scoreboard players set @s achievement.claiming_points 4
+execute as @a[advancements={minecraft:story/enter_the_end=true}] at @s unless score @s achievement.story_enter_the_end matches 1.. run scoreboard players set @s achievement.claiming_points 3
 execute as @a[advancements={minecraft:story/enter_the_end=true}] at @s unless score @s achievement.story_enter_the_end matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:story/enter_the_end=true}] at @s unless score @s achievement.story_enter_the_end matches 1.. run scoreboard players set @s achievement.story_enter_the_end 1
 ## Return to Sender
@@ -86,7 +86,7 @@ execute as @a[advancements={minecraft:nether/obtain_ancient_debris=true}] at @s 
 execute as @a[advancements={minecraft:nether/obtain_ancient_debris=true}] at @s unless score @s achievement.nether_obtain_ancient_debris matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:nether/obtain_ancient_debris=true}] at @s unless score @s achievement.nether_obtain_ancient_debris matches 1.. run scoreboard players set @s achievement.nether_obtain_ancient_debris 1
 ## Subspace Bubble
-execute as @a[advancements={minecraft:nether/fast_travel=true}] at @s unless score @s achievement.nether_fast_travel matches 1.. run scoreboard players set @s achievement.claiming_points 14
+execute as @a[advancements={minecraft:nether/fast_travel=true}] at @s unless score @s achievement.nether_fast_travel matches 1.. run scoreboard players set @s achievement.claiming_points 12
 execute as @a[advancements={minecraft:nether/fast_travel=true}] at @s unless score @s achievement.nether_fast_travel matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:nether/fast_travel=true}] at @s unless score @s achievement.nether_fast_travel matches 1.. run scoreboard players set @s achievement.nether_fast_travel 1
 ## A Terrible Fortress
@@ -94,7 +94,7 @@ execute as @a[advancements={minecraft:nether/find_fortress=true}] at @s unless s
 execute as @a[advancements={minecraft:nether/find_fortress=true}] at @s unless score @s achievement.nether_find_fortress matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:nether/find_fortress=true}] at @s unless score @s achievement.nether_find_fortress matches 1.. run scoreboard players set @s achievement.nether_find_fortress 1
 ## Who is Cutting Onions?
-execute as @a[advancements={minecraft:nether/obtain_crying_obsidian=true}] at @s unless score @s achievement.nether_obtain_crying_obsidian matches 1.. run scoreboard players set @s achievement.claiming_points 5
+execute as @a[advancements={minecraft:nether/obtain_crying_obsidian=true}] at @s unless score @s achievement.nether_obtain_crying_obsidian matches 1.. run scoreboard players set @s achievement.claiming_points 4
 execute as @a[advancements={minecraft:nether/obtain_crying_obsidian=true}] at @s unless score @s achievement.nether_obtain_crying_obsidian matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:nether/obtain_crying_obsidian=true}] at @s unless score @s achievement.nether_obtain_crying_obsidian matches 1.. run scoreboard players set @s achievement.nether_obtain_crying_obsidian 1
 ## Oh Shiny
@@ -118,7 +118,7 @@ execute as @a[advancements={minecraft:nether/use_lodestone=true}] at @s unless s
 execute as @a[advancements={minecraft:nether/use_lodestone=true}] at @s unless score @s achievement.nether_use_lodestone matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:nether/use_lodestone=true}] at @s unless score @s achievement.nether_use_lodestone matches 1.. run scoreboard players set @s achievement.nether_use_lodestone 1
 ## Cover Me in Debris
-execute as @a[advancements={minecraft:nether/netherite_armor=true}] at @s unless score @s achievement.nether_netherite_armor matches 1.. run scoreboard players set @s achievement.claiming_points 15
+execute as @a[advancements={minecraft:nether/netherite_armor=true}] at @s unless score @s achievement.nether_netherite_armor matches 1.. run scoreboard players set @s achievement.claiming_points 14
 execute as @a[advancements={minecraft:nether/netherite_armor=true}] at @s unless score @s achievement.nether_netherite_armor matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:nether/netherite_armor=true}] at @s unless score @s achievement.nether_netherite_armor matches 1.. run scoreboard players set @s achievement.nether_netherite_armor 1
 ## Spooky Scary Skeleton
@@ -162,7 +162,7 @@ execute as @a[advancements={minecraft:nether/create_full_beacon=true}] at @s unl
 execute as @a[advancements={minecraft:nether/create_full_beacon=true}] at @s unless score @s achievement.nether_create_full_beacon matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:nether/create_full_beacon=true}] at @s unless score @s achievement.nether_create_full_beacon matches 1.. run scoreboard players set @s achievement.nether_create_full_beacon 1
 ## How Did We Get Here?
-execute as @a[advancements={minecraft:nether/all_effects=true}] at @s unless score @s achievement.nether_all_effects matches 1.. run scoreboard players set @s achievement.claiming_points 727
+execute as @a[advancements={minecraft:nether/all_effects=true}] at @s unless score @s achievement.nether_all_effects matches 1.. run scoreboard players set @s achievement.claiming_points 100
 execute as @a[advancements={minecraft:nether/all_effects=true}] at @s unless score @s achievement.nether_all_effects matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:nether/all_effects=true}] at @s unless score @s achievement.nether_all_effects matches 1.. run scoreboard players set @s achievement.nether_all_effects 1
 ## Free the End
@@ -206,11 +206,11 @@ execute as @a[advancements={minecraft:adventure/spyglass_at_parrot=true}] at @s 
 execute as @a[advancements={minecraft:adventure/spyglass_at_parrot=true}] at @s unless score @s achievement.adventure_spyglass_at_parrot matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:adventure/spyglass_at_parrot=true}] at @s unless score @s achievement.adventure_spyglass_at_parrot matches 1.. run scoreboard players set @s achievement.adventure_spyglass_at_parrot 1
 ## Monster Hunter
-execute as @a[advancements={minecraft:adventure/kill_a_mob=true}] at @s unless score @s achievement.adventure_kill_a_mob matches 1.. run scoreboard players set @s achievement.claiming_points 4
+execute as @a[advancements={minecraft:adventure/kill_a_mob=true}] at @s unless score @s achievement.adventure_kill_a_mob matches 1.. run scoreboard players set @s achievement.claiming_points 3
 execute as @a[advancements={minecraft:adventure/kill_a_mob=true}] at @s unless score @s achievement.adventure_kill_a_mob matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:adventure/kill_a_mob=true}] at @s unless score @s achievement.adventure_kill_a_mob matches 1.. run scoreboard players set @s achievement.adventure_kill_a_mob 1
 ## Creeper?
-execute as @a[advancements={minecraft:adventure/kill_creeper=true}] at @s unless score @s achievement.adventure_kill_creeper matches 1.. run scoreboard players set @s achievement.claiming_points 3
+execute as @a[advancements={minecraft:adventure/kill_creeper=true}] at @s unless score @s achievement.adventure_kill_creeper matches 1.. run scoreboard players set @s achievement.claiming_points 2
 execute as @a[advancements={minecraft:adventure/kill_creeper=true}] at @s unless score @s achievement.adventure_kill_creeper matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:adventure/kill_creeper=true}] at @s unless score @s achievement.adventure_kill_creeper matches 1.. run scoreboard players set @s achievement.adventure_kill_creeper 1
 ## What a Deal!
@@ -338,7 +338,7 @@ execute as @a[advancements={minecraft:husbandry/tame_an_animal=true}] at @s unle
 execute as @a[advancements={minecraft:husbandry/tame_an_animal=true}] at @s unless score @s achievement.husbandry_tame_an_animal matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:husbandry/tame_an_animal=true}] at @s unless score @s achievement.husbandry_tame_an_animal matches 1.. run scoreboard players set @s achievement.husbandry_tame_an_animal 1
 ## Glow and Behold!
-execute as @a[advancements={minecraft:husbandry/make_a_sign_glow=true}] at @s unless score @s achievement.husbandry_make_a_sign_glow matches 1.. run scoreboard players set @s achievement.claiming_points 4
+execute as @a[advancements={minecraft:husbandry/make_a_sign_glow=true}] at @s unless score @s achievement.husbandry_make_a_sign_glow matches 1.. run scoreboard players set @s achievement.claiming_points 3
 execute as @a[advancements={minecraft:husbandry/make_a_sign_glow=true}] at @s unless score @s achievement.husbandry_make_a_sign_glow matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:husbandry/make_a_sign_glow=true}] at @s unless score @s achievement.husbandry_make_a_sign_glow matches 1.. run scoreboard players set @s achievement.husbandry_make_a_sign_glow 1
 ## Fishy Business
@@ -346,7 +346,7 @@ execute as @a[advancements={minecraft:husbandry/fishy_business=true}] at @s unle
 execute as @a[advancements={minecraft:husbandry/fishy_business=true}] at @s unless score @s achievement.husbandry_fishy_business matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:husbandry/fishy_business=true}] at @s unless score @s achievement.husbandry_fishy_business matches 1.. run scoreboard players set @s achievement.husbandry_fishy_business 1
 ## Total Beelocation
-execute as @a[advancements={minecraft:husbandry/silk_touch_nest=true}] at @s unless score @s achievement.husbandry_silk_touch_nest matches 1.. run scoreboard players set @s achievement.claiming_points 9
+execute as @a[advancements={minecraft:husbandry/silk_touch_nest=true}] at @s unless score @s achievement.husbandry_silk_touch_nest matches 1.. run scoreboard players set @s achievement.claiming_points 8
 execute as @a[advancements={minecraft:husbandry/silk_touch_nest=true}] at @s unless score @s achievement.husbandry_silk_touch_nest matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:husbandry/silk_touch_nest=true}] at @s unless score @s achievement.husbandry_silk_touch_nest matches 1.. run scoreboard players set @s achievement.husbandry_silk_touch_nest 1
 ## Bukkit Bukkit
@@ -358,7 +358,7 @@ execute as @a[advancements={minecraft:husbandry/plant_seed=true}] at @s unless s
 execute as @a[advancements={minecraft:husbandry/plant_seed=true}] at @s unless score @s achievement.husbandry_plant_seed matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:husbandry/plant_seed=true}] at @s unless score @s achievement.husbandry_plant_seed matches 1.. run scoreboard players set @s achievement.husbandry_plant_seed 1
 ## Wax On
-execute as @a[advancements={minecraft:husbandry/wax_on=true}] at @s unless score @s achievement.husbandry_wax_on matches 1.. run scoreboard players set @s achievement.claiming_points 4
+execute as @a[advancements={minecraft:husbandry/wax_on=true}] at @s unless score @s achievement.husbandry_wax_on matches 1.. run scoreboard players set @s achievement.claiming_points 3
 execute as @a[advancements={minecraft:husbandry/wax_on=true}] at @s unless score @s achievement.husbandry_wax_on matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:husbandry/wax_on=true}] at @s unless score @s achievement.husbandry_wax_on matches 1.. run scoreboard players set @s achievement.husbandry_wax_on 1
 ## Two by Two
@@ -390,7 +390,7 @@ execute as @a[advancements={minecraft:husbandry/obtain_netherite_hoe=true}] at @
 execute as @a[advancements={minecraft:husbandry/obtain_netherite_hoe=true}] at @s unless score @s achievement.husbandry_obtain_netherite_hoe matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:husbandry/obtain_netherite_hoe=true}] at @s unless score @s achievement.husbandry_obtain_netherite_hoe matches 1.. run scoreboard players set @s achievement.husbandry_obtain_netherite_hoe 1
 ## Wax Off
-execute as @a[advancements={minecraft:husbandry/wax_off=true}] at @s unless score @s achievement.husbandry_wax_off matches 1.. run scoreboard players set @s achievement.claiming_points 3
+execute as @a[advancements={minecraft:husbandry/wax_off=true}] at @s unless score @s achievement.husbandry_wax_off matches 1.. run scoreboard players set @s achievement.claiming_points 2
 execute as @a[advancements={minecraft:husbandry/wax_off=true}] at @s unless score @s achievement.husbandry_wax_off matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:husbandry/wax_off=true}] at @s unless score @s achievement.husbandry_wax_off matches 1.. run scoreboard players set @s achievement.husbandry_wax_off 1
 ## The Cutest Predator
@@ -402,6 +402,6 @@ execute as @a[advancements={minecraft:husbandry/froglights=true}] at @s unless s
 execute as @a[advancements={minecraft:husbandry/froglights=true}] at @s unless score @s achievement.husbandry_froglights matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:husbandry/froglights=true}] at @s unless score @s achievement.husbandry_froglights matches 1.. run scoreboard players set @s achievement.husbandry_froglights 1
 ## The Healing Power of Friendship!
-execute as @a[advancements={minecraft:husbandry/kill_axolotl_target=true}] at @s unless score @s achievement.husbandry_kill_axolotl_target matches 1.. run scoreboard players set @s achievement.claiming_points 9
+execute as @a[advancements={minecraft:husbandry/kill_axolotl_target=true}] at @s unless score @s achievement.husbandry_kill_axolotl_target matches 1.. run scoreboard players set @s achievement.claiming_points 7
 execute as @a[advancements={minecraft:husbandry/kill_axolotl_target=true}] at @s unless score @s achievement.husbandry_kill_axolotl_target matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:husbandry/kill_axolotl_target=true}] at @s unless score @s achievement.husbandry_kill_axolotl_target matches 1.. run scoreboard players set @s achievement.husbandry_kill_axolotl_target 1
