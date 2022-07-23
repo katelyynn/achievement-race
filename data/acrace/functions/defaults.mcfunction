@@ -22,12 +22,16 @@ scoreboard players set hide_point_gain global 0
 ## 2700 = 45 min
 scoreboard players set end_time global 2700
 
+# multipliers
+scoreboard players set multipliers global 1
+scoreboard players set multiplier global 2
+
 
 # initialise achievements
 ## create scoreboards
-function acrace:load_achievements
+function acrace:load/scores
 ## set initial values
-function acrace:set_achievements
+function acrace:load/values
 
 
 scoreboard players set defaults internal 1

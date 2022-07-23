@@ -15,6 +15,8 @@ execute as @a at @s run playsound block.note_block.pling player @s ~ ~ ~
 
 # track score
 scoreboard players set @a score 0
+## multipliers
+execute if score multipliers global matches 1.. run function acrace:load/multipliers
 
 # world
 worldborder set 10000 5
