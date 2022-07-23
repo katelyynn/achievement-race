@@ -10,8 +10,6 @@ scoreboard players set speed_uhc global 1
 
 # world
 worldborder set 10
-gamerule doImmediateRespawn true
-gamerule keepInventory false
 gamerule announceAdvancements false
 gamerule playersSleepingPercentage 25
 effect clear @a
