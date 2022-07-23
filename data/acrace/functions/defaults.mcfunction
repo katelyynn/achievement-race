@@ -19,8 +19,8 @@ gamemode adventure @a[gamemode=!spectator]
 # hide point gain
 scoreboard players set hide_point_gain global 0
 # win time
-## 2400 = 40 min
-scoreboard players set end_time global 2400
+## 2700 = 45 min
+scoreboard players set end_time global 2700
 
 
 # initialise achievements
