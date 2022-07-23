@@ -41,6 +41,9 @@ execute as @a[advancements={minecraft:story/enter_the_nether=true}] at @s unless
 ## Cover Me with Diamonds
 execute as @a[advancements={minecraft:story/shiny_gear=true}] at @s unless score @s achievement.story_shiny_gear matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:story/shiny_gear=true}] at @s unless score @s achievement.story_shiny_gear matches 1.. run scoreboard players set @s achievement.story_shiny_gear 1
+## A Full Set
+execute as @a[advancements={minecraft:story/diamond_armor=true}] at @s unless score @s achievement.story_diamond_armor matches 1.. run function acrace:pick/take
+execute as @a[advancements={minecraft:story/diamond_armor=true}] at @s unless score @s achievement.story_diamond_armor matches 1.. run scoreboard players set @s achievement.story_diamond_armor 1
 ## Enchanter
 execute as @a[advancements={minecraft:story/enchant_item=true}] at @s unless score @s achievement.story_enchant_item matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:story/enchant_item=true}] at @s unless score @s achievement.story_enchant_item matches 1.. run scoreboard players set @s achievement.story_enchant_item 1

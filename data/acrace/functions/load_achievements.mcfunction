@@ -16,6 +16,7 @@ scoreboard objectives add achievement.story_mine_diamond dummy
 scoreboard objectives add achievement.story_diamond_tools dummy
 scoreboard objectives add achievement.story_enter_the_nether dummy
 scoreboard objectives add achievement.story_shiny_gear dummy
+scoreboard objectives add achievement.story_diamond_armor dummy
 scoreboard objectives add achievement.story_enchant_item dummy
 scoreboard objectives add achievement.story_cure_zombie_villager dummy
 scoreboard objectives add achievement.story_follow_ender_eye dummy
