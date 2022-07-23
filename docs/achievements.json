@@ -271,7 +271,7 @@
             "points": "advanced_full"
         },
         {
-            "icon": "wither_skull",
+            "icon": "wither_skeleton_skull",
             "name": "Spooky Scary Skeleton",
             "description": "Obtain a Wither Skeleton's skull",
             "id": "get_wither_skull",
