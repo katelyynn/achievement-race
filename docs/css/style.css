@@ -1,6 +1,12 @@
 /* achievement list */
 
 
+.count {
+    border: 1px solid currentColor;
+}
+.count.start_less, .count.start {
+    border-color: rgba(255,255,255,0.2);
+}
 .count.mid, .count.speedrun {
     color: var(--text-main);
 }
@@ -12,11 +18,15 @@
 }
 .count.advanced {
     color: #be8bf8;
+    font-weight: 700;
 }
 .count.advanced_full {
     color: #8b6bff;
+    font-weight: 800;
+    border-width: 2px;
 }
 .count.advanced_max {
     color: #4f7eff;
     font-weight: 900;
+    border-width: 2px;
 }
