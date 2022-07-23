@@ -22,11 +22,11 @@ execute as @a[advancements={minecraft:story/obtain_armor=true}] at @s unless sco
 execute as @a[advancements={minecraft:story/obtain_armor=true}] at @s unless score @s achievement.story_obtain_armor matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:story/obtain_armor=true}] at @s unless score @s achievement.story_obtain_armor matches 1.. run scoreboard players set @s achievement.story_obtain_armor 1
 ## Hot Stuff
-execute as @a[advancements={minecraft:story/lava_bucket=true}] at @s unless score @s achievement.story_lava_bucket matches 1.. run scoreboard players set @s achievement.claiming_points 7
+execute as @a[advancements={minecraft:story/lava_bucket=true}] at @s unless score @s achievement.story_lava_bucket matches 1.. run scoreboard players set @s achievement.claiming_points 6
 execute as @a[advancements={minecraft:story/lava_bucket=true}] at @s unless score @s achievement.story_lava_bucket matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:story/lava_bucket=true}] at @s unless score @s achievement.story_lava_bucket matches 1.. run scoreboard players set @s achievement.story_lava_bucket 1
 ## Isn't It Iron Pick
-execute as @a[advancements={minecraft:story/iron_tools=true}] at @s unless score @s achievement.story_iron_tools matches 1.. run scoreboard players set @s achievement.claiming_points 9
+execute as @a[advancements={minecraft:story/iron_tools=true}] at @s unless score @s achievement.story_iron_tools matches 1.. run scoreboard players set @s achievement.claiming_points 7
 execute as @a[advancements={minecraft:story/iron_tools=true}] at @s unless score @s achievement.story_iron_tools matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:story/iron_tools=true}] at @s unless score @s achievement.story_iron_tools matches 1.. run scoreboard players set @s achievement.story_iron_tools 1
 ## Not Today, Thank You
@@ -50,7 +50,7 @@ execute as @a[advancements={minecraft:story/enter_the_nether=true}] at @s unless
 execute as @a[advancements={minecraft:story/enter_the_nether=true}] at @s unless score @s achievement.story_enter_the_nether matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:story/enter_the_nether=true}] at @s unless score @s achievement.story_enter_the_nether matches 1.. run scoreboard players set @s achievement.story_enter_the_nether 1
 ## Cover Me with Diamonds
-execute as @a[advancements={minecraft:story/shiny_gear=true}] at @s unless score @s achievement.story_shiny_gear matches 1.. run scoreboard players set @s achievement.claiming_points 7
+execute as @a[advancements={minecraft:story/shiny_gear=true}] at @s unless score @s achievement.story_shiny_gear matches 1.. run scoreboard players set @s achievement.claiming_points 9
 execute as @a[advancements={minecraft:story/shiny_gear=true}] at @s unless score @s achievement.story_shiny_gear matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:story/shiny_gear=true}] at @s unless score @s achievement.story_shiny_gear matches 1.. run scoreboard players set @s achievement.story_shiny_gear 1
 ## A Full Set

@@ -67,7 +67,7 @@
             "description": "Fill a bucket with lava",
             "id": "lava_bucket",
             "category": "story",
-            "points": "mid"
+            "points": "start_but_not"
         },
         {
             "icon": "iron_pickaxe",
@@ -75,7 +75,7 @@
             "description": "Upgrade your pickaxe",
             "id": "iron_tools",
             "category": "story",
-            "points": "speedrun_end"
+            "points": "speedrun"
         },
         {
             "icon": "shield",
@@ -125,7 +125,7 @@
             "description": "Diamond armor saves lives",
             "id": "shiny_gear",
             "category": "story",
-            "points": "speedrun"
+            "points": "speedrun_end"
         },
         {
             "icon": "diamond_chestplate",
