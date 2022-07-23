@@ -1,6 +1,9 @@
 # ACRACE main loop
 
 
+# setup
+execute as @a unless score setup internal matches 1.. run function acrace:setup/go
+
 # world
 bossbar set acrace:main players @a
 
