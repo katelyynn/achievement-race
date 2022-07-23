@@ -4,7 +4,7 @@
 .count {
     border: 1px solid currentColor;
 }
-.count.start_less, .count.start {
+.count.start_less, .count.start, .count.start_bit_less {
     border-color: rgba(255,255,255,0.2);
 }
 .count.mid, .count.speedrun {
@@ -27,6 +27,11 @@
 }
 .count.advanced_max {
     color: #4f7eff;
+    font-weight: 900;
+    border-width: 2px;
+}
+.count.what {
+    color: #4ebeff;
     font-weight: 900;
     border-width: 2px;
 }

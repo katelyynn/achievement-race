@@ -17,17 +17,24 @@
         }
     },
     "points": {
+        "easy": 1,
+        "bit_harder": 2,
         "start_less": 3,
+        "start_bit_less": 4,
         "start": 5,
         "start_but_not": 6,
         "mid": 7,
         "speedrun": 7,
+        "speedrun_a_bit": 8,
         "speedrun_end": 9,
         "normal": 10,
+        "advanced_cheat_a_bit": 11,
         "advanced_cheat": 12,
         "advanced": 14,
+        "advanced_almost_full": 15,
         "advanced_full": 16,
-        "advanced_max": 20
+        "advanced_max": 20,
+        "what": 727
     },
     "achievements": [
         {
@@ -36,7 +43,7 @@
             "description": "Mine stone with your new pickaxe",
             "id": "mine_stone",
             "category": "story",
-            "points": "start"
+            "points": "easy"
         },
         {
             "icon": "stone_pickaxe",
@@ -44,7 +51,7 @@
             "description": "Construct a better pickaxe",
             "id": "upgrade_tools",
             "category": "story",
-            "points": "start"
+            "points": "easy"
         },
         {
             "icon": "iron_ingot",
@@ -52,7 +59,7 @@
             "description": "Smelt an iron ingot",
             "id": "smelt_iron",
             "category": "story",
-            "points": "mid"
+            "points": "bit_harder"
         },
         {
             "icon": "iron_chestplate",
@@ -60,7 +67,7 @@
             "description": "Protect yourself with a piece of iron armor",
             "id": "obtain_armor",
             "category": "story",
-            "points": "mid"
+            "points": "start_less"
         },
         {
             "icon": "lava_bucket",
@@ -68,7 +75,7 @@
             "description": "Fill a bucket with lava",
             "id": "lava_bucket",
             "category": "story",
-            "points": "start_but_not"
+            "points": "start"
         },
         {
             "icon": "iron_pickaxe",
@@ -76,7 +83,7 @@
             "description": "Upgrade your pickaxe",
             "id": "iron_tools",
             "category": "story",
-            "points": "speedrun"
+            "points": "start"
         },
         {
             "icon": "shield",
@@ -84,7 +91,7 @@
             "description": "Block a projectile using your shield.",
             "id": "deflect_arrow",
             "category": "story",
-            "points": "start"
+            "points": "start_less"
         },
         {
             "icon": "obsidian",
@@ -92,7 +99,7 @@
             "description": "Obtain a block of obsidian",
             "id": "form_obsidian",
             "category": "story",
-            "points": "mid"
+            "points": "start"
         },
         {
             "icon": "diamond",
@@ -100,7 +107,7 @@
             "description": "Acquire diamonds",
             "id": "mine_diamond",
             "category": "story",
-            "points": "mid"
+            "points": "start_but_not"
         },
         {
             "icon": "diamond_pickaxe",
@@ -110,7 +117,7 @@
             "category": "story",
             "type": "goal",
             "custom": true,
-            "points": "mid"
+            "points": "start_but_not"
         },
         {
             "icon": "flint_and_steel",
@@ -126,7 +133,7 @@
             "description": "Diamond armor saves lives",
             "id": "shiny_gear",
             "category": "story",
-            "points": "speedrun_end"
+            "points": "mid"
         },
         {
             "icon": "diamond_chestplate",
@@ -143,7 +150,7 @@
             "description": "Enchant an item at an Enchantment Table",
             "id": "enchant_item",
             "category": "story",
-            "points": "speedrun"
+            "points": "speedrun_a_bit"
         },
         {
             "icon": "golden_apple",
@@ -160,7 +167,7 @@
             "description": "Follow an Ender Eye",
             "id": "follow_ender_eye",
             "category": "story",
-            "points": "speedrun"
+            "points": "speedrun_a_bit"
         },
         {
             "icon": "end_stone",
@@ -168,7 +175,7 @@
             "description": "Enter the End Portal",
             "id": "enter_the_end",
             "category": "story",
-            "points": "speedrun_end"
+            "points": "start_bit_less"
         },
         {
             "icon": "fire_charge",
@@ -177,7 +184,7 @@
             "id": "return_to_sender",
             "category": "nether",
             "type": "fancy",
-            "points": "speedrun"
+            "points": "start"
         },
         {
             "icon": "polished_blackstone_bricks",
@@ -185,7 +192,7 @@
             "description": "Enter a Bastion Remnant",
             "id": "find_bastion",
             "category": "nether",
-            "points": "speedrun"
+            "points": "start_but_not"
         },
         {
             "icon": "ancient_debris_side",
@@ -210,7 +217,7 @@
             "description": "Break your way into a Nether Fortress",
             "id": "find_fortress",
             "category": "nether",
-            "points": "speedrun"
+            "points": "mid"
         },
         {
             "icon": "crying_obsidian",
@@ -218,7 +225,7 @@
             "description": "Obtain Crying Obsidian",
             "id": "obtain_crying_obsidian",
             "category": "nether",
-            "points": "mid"
+            "points": "start"
         },
         {
             "icon": "gold_ingot",
@@ -226,7 +233,7 @@
             "description": "Distract Piglins with gold",
             "id": "distract_piglin",
             "category": "nether",
-            "points": "mid"
+            "points": "start_but_not"
         },
         {
             "icon": "warped_fungus_on_a_stick",
@@ -234,7 +241,7 @@
             "description": "Ride a Strider with a Warped Fungus on a Stick",
             "id": "ride_strider",
             "category": "nether",
-            "points": "mid"
+            "points": "start_bit_less"
         },
         {
             "icon": "ghast_tear",
@@ -251,7 +258,7 @@
             "description": "Loot a chest in a Bastion Remnant",
             "id": "loot_bastion",
             "category": "nether",
-            "points": "start_but_not"
+            "points": "start"
         },
         {
             "icon": "lodestone_side",
@@ -259,7 +266,7 @@
             "description": "Use a compass on a Lodestone",
             "id": "use_lodestone",
             "category": "nether",
-            "points": "mid"
+            "points": "start"
         },
         {
             "icon": "netherite_chestplate",
@@ -268,7 +275,7 @@
             "id": "netherite_armor",
             "category": "nether",
             "type": "fancy",
-            "points": "advanced_full"
+            "points": "advanced_almost_full"
         },
         {
             "icon": "wither_skeleton_skull",
@@ -333,7 +340,7 @@
             "description": "Construct and place a beacon",
             "id": "create_beacon",
             "category": "nether",
-            "points": "normal"
+            "points": "speedrun_a_bit"
         },
         {
             "icon": "milk_bucket",
@@ -360,15 +367,7 @@
             "id": "all_effects",
             "category": "nether",
             "type": "fancy",
-            "points": "advanced_max"
-        },
-        {
-            "icon": "end_stone",
-            "name": "The End?",
-            "description": "Or the beginning?",
-            "id": "root",
-            "category": "end",
-            "points": "speedrun"
+            "points": "what"
         },
         {
             "icon": "dragon_head",
@@ -411,7 +410,7 @@
             "id": "dragon_breath",
             "category": "end",
             "type": "oval",
-            "points": "start_but_not"
+            "points": "start"
         },
         {
             "icon": "purpur_block",
@@ -437,7 +436,7 @@
             "id": "levitate",
             "category": "end",
             "type": "fancy",
-            "points": "speedrun"
+            "points": "start_but_not"
         },
         {
             "icon": "banner",
@@ -445,7 +444,7 @@
             "description": "Kill a raid captain. Maybe consider staying away from villages for the time being...",
             "id": "voluntary_exile",
             "category": "adventure",
-            "points": "mid"
+            "points": "start_but_not"
         },
         {
             "icon": "spyglass",
@@ -453,7 +452,7 @@
             "description": "Look at a parrot through a spyglass",
             "id": "spyglass_at_parrot",
             "category": "adventure",
-            "points": "start"
+            "points": "start_less"
         },
         {
             "icon": "iron_sword",
@@ -461,7 +460,7 @@
             "description": "Kill any hostile monster",
             "id": "kill_a_mob",
             "category": "adventure",
-            "points": "start"
+            "points": "start_bit_less"
         },
         {
             "icon": "creeper_head",
@@ -477,7 +476,7 @@
             "description": "Successfully trade with a villager",
             "id": "trade",
             "category": "adventure",
-            "points": "start"
+            "points": "start_bit_less"
         },
         {
             "icon": "honey_block_side",
@@ -493,7 +492,7 @@
             "description": "Shoot a crossbow",
             "id": "ol_betsy",
             "category": "adventure",
-            "points": "start"
+            "points": "start_less"
         },
         {
             "icon": "copper_block",
@@ -501,7 +500,7 @@
             "description": "Protect a villager from an undesired shock without starting a fire",
             "id": "lightning_rod_with_villager_no_fire",
             "category": "adventure",
-            "points": "speedrun"
+            "points": "start_but_not"
         },
         {
             "icon": "water_bucket",
@@ -509,7 +508,7 @@
             "description": "Free fall from the top of the world (build limit) to the bottom of the world and survive",
             "id": "fall_from_world_height",
             "category": "adventure",
-            "points": "advanced"
+            "points": "speedrun_end"
         },
         {
             "icon": "sculk_sensor_side",
@@ -517,7 +516,7 @@
             "description": "Sneak near a Sculk Sensor or Warden to prevent it from detecting you",
             "id": "avoid_vibration",
             "category": "adventure",
-            "points": "start_but_not"
+            "points": "start_bit_less"
         },
         {
             "icon": "red_bed",
@@ -525,7 +524,7 @@
             "description": "Sleep in a bed to change your respawn point",
             "id": "sleep_in_bed",
             "category": "adventure",
-            "points": "start"
+            "points": "bit_harder"
         },
         {
             "icon": "banner",
@@ -534,7 +533,7 @@
             "id": "hero_of_the_village",
             "category": "adventure",
             "type": "fancy",
-            "points": "normal"
+            "points": "speedrun_end"
         },
         {
             "icon": "spyglass",
@@ -550,7 +549,7 @@
             "description": "Throw a trident at something. Note: Throwing away your only weapon is not a good idea.",
             "id": "throw_trident",
             "category": "adventure",
-            "points": "start_but_not"
+            "points": "start_bit_less"
         },
         {
             "icon": "sculk_catalyst_side",
@@ -559,7 +558,7 @@
             "id": "kill_mob_near_sculk_catalyst",
             "category": "adventure",
             "type": "fancy",
-            "points": "mid"
+            "points": "start_less"
         },
         {
             "icon": "bow",
@@ -567,7 +566,7 @@
             "description": "Shoot something with an arrow",
             "id": "shoot_arrow",
             "category": "adventure",
-            "points": "start"
+            "points": "bit_harder"
         },
         {
             "icon": "diamond_sword",
@@ -585,7 +584,7 @@
             "id": "totem_of_undying",
             "category": "adventure",
             "type": "oval",
-            "points": "normal"
+            "points": "speedrun_a_bit"
         },
         {
             "icon": "carved_pumpkin",
@@ -594,7 +593,7 @@
             "id": "summon_iron_golem",
             "category": "adventure",
             "type": "oval",
-            "points": "advanced_cheat"
+            "points": "normal"
         },
         {
             "icon": "emerald",
@@ -602,7 +601,7 @@
             "description": "Trade with a Villager at the build height limit",
             "id": "trade_at_world_height",
             "category": "adventure",
-            "points": "advanced_full"
+            "points": "advanced"
         },
         {
             "icon": "crossbow_standby",
@@ -645,7 +644,7 @@
             "description": "Make the Meadows come alive with the sound of music from a Jukebox",
             "id": "play_jukebox_in_meadows",
             "category": "adventure",
-            "points": "mid"
+            "points": "start_bit_less"
         },
         {
             "icon": "leather_boots",
@@ -653,7 +652,7 @@
             "description": "Walk on powder snow...without sinking in it",
             "id": "walk_on_powder_snow_with_leather_boots",
             "category": "adventure",
-            "points": "speedrun"
+            "points": "start_less"
         },
         {
             "icon": "spyglass",
@@ -661,7 +660,7 @@
             "description": "Look at the Ender Dragon through a spyglass",
             "id": "spyglass_at_dragon",
             "category": "adventure",
-            "points": "normal"
+            "points": "speedrun"
         },
         {
             "icon": "trident",
@@ -669,7 +668,7 @@
             "description": "Strike a Villager with lightning",
             "id": "very_very_frightening",
             "category": "adventure",
-            "points": "normal"
+            "points": "speedrun_a_bit"
         },
         {
             "icon": "arrow",
@@ -678,7 +677,7 @@
             "id": "sniper_duel",
             "category": "adventure",
             "type": "fancy",
-            "points": "normal"
+            "points": "start_but_not"
         },
         {
             "icon": "target_side",
@@ -687,7 +686,7 @@
             "id": "bullseye",
             "category": "adventure",
             "type": "fancy",
-            "points": "mid"
+            "points": "start"
         },
         {
             "icon": "honey_bottle",
@@ -695,7 +694,7 @@
             "description": "Use a Campfire to collect Honey from a Beehive using a Bottle without aggravating the bees",
             "id": "safely_harvest_honey",
             "category": "husbandry",
-            "points": "mid"
+            "points": "bit_harder"
         },
         {
             "icon": "wheat",
@@ -703,7 +702,7 @@
             "description": "Breed two animals together",
             "id": "breed_an_animal",
             "category": "husbandry",
-            "points": "start"
+            "points": "start_less"
         },
         {
             "icon": "cookie",
@@ -711,7 +710,7 @@
             "description": "Have an Allay deliver items to you",
             "id": "allay_deliver_item_to_player",
             "category": "husbandry",
-            "points": "mid"
+            "points": "start"
         },
         {
             "icon": "oak_boat",
@@ -719,7 +718,7 @@
             "description": "Get in a Boat and float with a Goat",
             "id": "ride_a_boat_with_a_goat",
             "category": "husbandry",
-            "points": "normal"
+            "points": "mid"
         },
         {
             "icon": "lead",
@@ -727,7 +726,7 @@
             "description": "Tame an animal",
             "id": "tame_an_animal",
             "category": "husbandry",
-            "points": "start_but_not"
+            "points": "start_less"
         },
         {
             "icon": "glow_ink_sac",
@@ -735,7 +734,7 @@
             "description": "Make the text of a sign glow",
             "id": "make_a_sign_glow",
             "category": "husbandry",
-            "points": "start_but_not"
+            "points": "start_bit_less"
         },
         {
             "icon": "fishing_rod",
@@ -743,7 +742,7 @@
             "description": "Catch a fish",
             "id": "fishy_business",
             "category": "husbandry",
-            "points": "start"
+            "points": "bit_harder"
         },
         {
             "icon": "bee_nest_front",
@@ -759,7 +758,7 @@
             "description": "Catch a Tadpole in a Bucket",
             "id": "tadpole_in_a_bucket",
             "category": "husbandry",
-            "points": "start_but_not"
+            "points": "start_less"
         },
         {
             "icon": "wheat",
@@ -767,7 +766,7 @@
             "description": "Plant a seed and watch it grow",
             "id": "plant_seed",
             "category": "husbandry",
-            "points": "start"
+            "points": "easy"
         },
         {
             "icon": "honeycomb",
@@ -775,7 +774,7 @@
             "description": "Apply Honeycomb to a Copper block!",
             "id": "wax_on",
             "category": "husbandry",
-            "points": "start"
+            "points": "start_bit_less"
         },
         {
             "icon": "golden_carrot",
@@ -793,7 +792,7 @@
             "id": "allay_deliver_cake_to_note_block",
             "category": "husbandry",
             "type": "fancy",
-            "points": "speedrun_end"
+            "points": "mid"
         },
         {
             "icon": "cod",
@@ -802,7 +801,7 @@
             "id": "complete_catalogue",
             "category": "husbandry",
             "type": "fancy",
-            "points": "normal"
+            "points": "speedrun_a_bit"
         },
         {
             "icon": "pufferfish_bucket",
@@ -810,7 +809,7 @@
             "description": "Catch a fish... without a fishing rod!",
             "id": "tactical_fishing",
             "category": "husbandry",
-            "points": "start"
+            "points": "easy"
         },
         {
             "icon": "lead",
@@ -827,7 +826,7 @@
             "id": "balanced_diet",
             "category": "husbandry",
             "type": "fancy",
-            "points": "speedrun"
+            "points": "normal"
         },
         {
             "icon": "netherite_hoe",
@@ -844,7 +843,7 @@
             "description": "Scrape Wax off of a Copper block!",
             "id": "wax_off",
             "category": "husbandry",
-            "points": "start"
+            "points": "start_less"
         },
         {
             "icon": "axolotl_bucket",
@@ -852,7 +851,7 @@
             "description": "Catch an axolotl in a bucket",
             "id": "axolotl_in_a_bucket",
             "category": "husbandry",
-            "points": "start_but_not"
+            "points": "start"
         },
         {
             "icon": "verdant_froglight_side",
@@ -861,7 +860,7 @@
             "id": "froglights",
             "category": "husbandry",
             "type": "fancy",
-            "points": "mid"
+            "points": "advanced_cheat"
         },
         {
             "icon": "tropical_fish_bucket",
