@@ -11,6 +11,10 @@ scoreboard objectives add score dummy ["",{"text":"[","color":"dark_gray"},{"tex
 scoreboard objectives setdisplay sidebar score
 # temp scoreboard for calculations
 scoreboard objectives add score.temp dummy
+# scoreboard to track points to be earned
+## as achievements have seperate points, the value
+## is temporarily stored here for calculations
+scoreboard objectives add achievement.claiming_points dummy
 
 # bossbar
 bossbar add acrace:main ""
