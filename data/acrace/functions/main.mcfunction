@@ -16,7 +16,13 @@ execute if score period internal matches 1 run function acrace:pick/checks
 # options
 execute if score cut_clean global matches 1.. run function acrace:extras/cut_clean
 execute if score speed_uhc global matches 1.. run function acrace:extras/speed_uhc
-execute if score speed_uhc global matches 1.. run function acrace:extras/grindstone
+execute if score speed_uhc global matches 1.. run function acrace:extras/grindston
+
+# trigger to display multipliers
+## /trigger multipliers
+scoreboard players enable @a multipliers
+execute as @a at @s if score @s multipliers matches 1.. run function acrace:load/multipliers_show
+execute as @a at @s if score @s multipliers matches 1.. run scoreboard players reset @s multipliers
 
 # win checks
 execute if score period internal matches 1 if score time_s internal >= end_time global run function acrace:win/checks

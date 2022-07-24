@@ -18,6 +18,8 @@ scoreboard objectives add achievement.claiming_points dummy
 # scoreboard to track achievement values
 ## used to apply multipliers
 scoreboard objectives add achievement.values dummy
+# trigger to display multipliers
+scoreboard objectives add multipliers trigger
 
 # bossbar
 bossbar add acrace:main ""
