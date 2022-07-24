@@ -110,3 +110,10 @@
     top: 6px;
     font-weight: 600;
 }
+
+
+@media (max-width: 1360px) {
+    .supports {
+        grid-gap: 10px 15px;
+    }
+}
