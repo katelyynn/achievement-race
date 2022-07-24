@@ -2,40 +2,111 @@
 
 
 .count {
-    border: 1px solid currentColor;
-}
-/* easy */
-.count.easy, .count.bit_harder, .count.start_less {
-    border-color: rgba(255,255,255,0.15);
-}
-.count.start_bit_less, .count.start {
-    border-color: rgba(255,255,255,0.3);
-}
-.count.mid, .count.speedrun, .count.speedrun_a_bit {
-    color: var(--text-main);
-}
-.count.speedrun_end, .count.normal, .count.advanced_cheat_a_bit {
-    color: var(--text-head);
-}
-.count.advanced_cheat {
-    color: #d0ade4;
-}
-.count.advanced, .count.advanced_almost_full {
-    color: #be8bf8;
-    font-weight: 700;
-}
-.count.advanced_full {
-    color: #8b6bff;
+    background-color: var(--color);
+    color: rgba(0,0,0,0.85);
     font-weight: 800;
-    border-width: 2px;
+    font-size: 12px;
 }
-.count.advanced_max {
-    color: #4f7eff;
-    font-weight: 900;
-    border-width: 2px;
+
+[data-points="1"] {
+    --color: #4290FF;
 }
-.count.what {
-    color: #4ebeff;
+[data-points="2"] {
+    --color: #4BB1FF;
+}
+[data-points="3"] {
+    --color: #4FC3FD;
+}
+[data-points="4"] {
+    --color: #4FD5F1;
+}
+[data-points="5"] {
+    --color: #4FEDE1;
+}
+[data-points="5"] {
+    --color: #57FFBC;
+}
+[data-points="6"] {
+    --color: #68FF8B;
+}
+[data-points="7"] {
+    --color: #A4FA53;
+}
+[data-points="8"] {
+    --color: #CAF557;
+}
+[data-points="9"] {
+    --color: #F3F05C;
+}
+[data-points="10"] {
+    --color: #FBB662;
+}
+[data-points="11"] {
+    --color: #FF8068;
+}
+[data-points="12"] {
+    --color: #FF616C;
+}
+[data-points="14"] {
+    --color: #F54C7C;
+}
+[data-points="15"] {
+    --color: #D9489F;
+}
+[data-points="16"] {
+    --color: #BD48BC;
+}
+[data-points="20"] {
+    --color: #785DD7;
+}
+[data-points="32"] {
+    color: #FFD966;
+    --color: #5E5CD7;
+}
+[data-points="100"] {
+    color: #FFD966;
+    --color: #18158E;
+}
+
+[data-points="1"], [data-points="2"], [data-points="3"] {
+    opacity: 0.75;
+}
+
+
+.advanced_max {
     font-weight: 900;
-    border-width: 2px;
+}
+.advanced_full_max {
+    font-weight: 900;
+}
+.what {
+    font-weight: 900;
+}
+
+
+.rate-bar {
+    display: flex;
+    height: 12px;
+    overflow: hidden;
+    gap: 3px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.rate-bar span {
+    background-color: var(--color);
+    filter: blur(14px);
+    box-shadow: 0px 0px 10px 10px var(--color);
+    flex: 1;
+}
+
+.rate-bar-text {
+    display: flex;
+    gap: 3px;
+    margin-bottom: 20px;
+}
+.rate-bar-text span {
+    flex: 1;
+    position: relative;
+    top: 6px;
+    font-weight: 600;
 }
