@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:redstone/minecart",
+  "criteria": {
+    "furnace_minecart": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:furnace_minecart"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Fossil fuels!"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:furnace_minecart"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Fuel Engine"
+    }
+  },
+  "requirements": [
+    [
+      "furnace_minecart"
+    ]
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "criteria": {
+    "redstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:redstone"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:textures/block/piston_side.png",
+    "description": {
+      "text": "Become a true Redstoner"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:redstone"
+    },
+    "show_toast": false,
+    "title": {
+      "text": "Redstone"
+    }
+  },
+  "requirements": [
+    [
+      "redstone"
+    ]
+  ]
+}

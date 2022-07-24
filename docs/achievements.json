@@ -14,6 +14,9 @@
         },
         "husbandry": {
             "name": "Husbandry"
+        },
+        "redstone": {
+            "name": "Redstone"
         }
     },
     "points": {
@@ -37,6 +40,22 @@
         "what": 100
     },
     "achievements": [
+        {
+            "icon": "oak_log",
+            "name": "Getting Wood",
+            "description": "Attack a tree until a block of wood pops out",
+            "id": "oak_log_root",
+            "category": "story",
+            "points": "easy"
+        },
+        {
+            "icon": "crafting_table_side",
+            "name": "Benchmarking",
+            "description": "Craft a workbench with four blocks of planks",
+            "id": "root",
+            "category": "story",
+            "points": "easy"
+        },
         {
             "icon": "wooden_pickaxe",
             "name": "Stone Age",
@@ -869,6 +888,46 @@
             "id": "kill_axolotl_target",
             "category": "husbandry",
             "points": "speedrun"
+        },
+        {
+            "icon": "redstone",
+            "name": "Redstone",
+            "description": "Become a true Redstoner",
+            "id": "root",
+            "category": "redstone",
+            "points": "bit_harder"
+        },
+        {
+            "icon": "rail",
+            "name": "The Groundwork",
+            "description": "Set down the rails!",
+            "id": "rail",
+            "category": "redstone",
+            "points": "easy"
+        },
+        {
+            "icon": "powered_rail",
+            "name": "An Upgrade",
+            "description": "Power up the rails!",
+            "id": "powered_rail",
+            "category": "redstone",
+            "points": "bit_harder"
+        },
+        {
+            "icon": "minecart",
+            "name": "All Aboard!",
+            "description": "Craft yourself a minecart",
+            "id": "minecart",
+            "category": "redstone",
+            "points": "bit_harder"
+        },
+        {
+            "icon": "furnace_minecart",
+            "name": "Fuel Engine",
+            "description": "Fossil fuels!",
+            "id": "furnace_minecart",
+            "category": "redstone",
+            "points": "easy"
         }
     ]
 }

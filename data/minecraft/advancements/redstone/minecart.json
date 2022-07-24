@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:redstone/rail",
+  "criteria": {
+    "minecart": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:minecart"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Craft yourself a minecart"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:minecart"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "All Aboard!"
+    }
+  },
+  "requirements": [
+    [
+      "minecart"
+    ]
+  ]
+}

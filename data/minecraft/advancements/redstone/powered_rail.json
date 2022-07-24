@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:redstone/rail",
+  "criteria": {
+    "powered_rail": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:powered_rail"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Power up the rails!"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:powered_rail"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "An Upgrade"
+    }
+  },
+  "requirements": [
+    [
+      "powered_rail"
+    ]
+  ]
+}

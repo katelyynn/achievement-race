@@ -19,16 +19,7 @@
     <section class="left header sep no-align" style="bottom: 0;">
         <h4>All achievements<span class="text-14" id="full" style="font-weight: 500; color: var(--text-main); margin-left: 10px;"></span></h4>
         <br>
-        <label class="over">Minecraft</label>
-        <div class="supports" id="story"></div>
-        <label class="over">Nether</label>
-        <div class="supports" id="nether"></div>
-        <label class="over">End</label>
-        <div class="supports" id="end"></div>
-        <label class="over">Adventure</label>
-        <div class="supports" id="adventure"></div>
-        <label class="over">Husbandry</label>
-        <div class="supports" id="husbandry"></div>
+        <div id="embed_categories"></div>
     </section>
 </body>
 <script>
@@ -37,6 +28,17 @@
 
     $.get('achievements.json', function(data) {
         document.getElementById("full").innerHTML = ` ${data.achievements.length} items`;
+
+        for (let i in data.categories) {
+            let em_category = document.createElement('div');
+            em_category.innerHTML = (`
+            <label class="over">${data.categories[i].name}</label>
+            <div class="supports" id="${i}"></div>
+            `);
+
+            document.getElementById('embed_categories').appendChild(em_category);
+        }
+
         for (let i in data.achievements) {
             if (data.achievements[i].description == "") { continue };
             let em = document.createElement('span');

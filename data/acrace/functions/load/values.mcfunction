@@ -5,6 +5,8 @@
 ## generated with index.html
 ## should not be modified directly
 
+scoreboard players set @e[tag=achievement,tag=story_oak_log_root,limit=1] achievement.values 1
+scoreboard players set @e[tag=achievement,tag=story_root,limit=1] achievement.values 1
 scoreboard players set @e[tag=achievement,tag=story_mine_stone,limit=1] achievement.values 1
 scoreboard players set @e[tag=achievement,tag=story_upgrade_tools,limit=1] achievement.values 1
 scoreboard players set @e[tag=achievement,tag=story_smelt_iron,limit=1] achievement.values 2
@@ -105,3 +107,8 @@ scoreboard players set @e[tag=achievement,tag=husbandry_wax_off,limit=1] achieve
 scoreboard players set @e[tag=achievement,tag=husbandry_axolotl_in_a_bucket,limit=1] achievement.values 5
 scoreboard players set @e[tag=achievement,tag=husbandry_froglights,limit=1] achievement.values 12
 scoreboard players set @e[tag=achievement,tag=husbandry_kill_axolotl_target,limit=1] achievement.values 7
+scoreboard players set @e[tag=achievement,tag=redstone_root,limit=1] achievement.values 2
+scoreboard players set @e[tag=achievement,tag=redstone_rail,limit=1] achievement.values 1
+scoreboard players set @e[tag=achievement,tag=redstone_powered_rail,limit=1] achievement.values 2
+scoreboard players set @e[tag=achievement,tag=redstone_minecart,limit=1] achievement.values 2
+scoreboard players set @e[tag=achievement,tag=redstone_furnace_minecart,limit=1] achievement.values 1

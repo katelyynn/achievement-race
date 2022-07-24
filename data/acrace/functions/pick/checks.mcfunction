@@ -5,6 +5,14 @@
 ## generated with index.html
 ## should not be modified directly
 
+## Getting Wood
+execute as @a[advancements={minecraft:story/oak_log_root=true}] at @s unless score @s achievement.story_oak_log_root matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=story_oak_log_root,limit=1] achievement.values
+execute as @a[advancements={minecraft:story/oak_log_root=true}] at @s unless score @s achievement.story_oak_log_root matches 1.. run function acrace:pick/take
+execute as @a[advancements={minecraft:story/oak_log_root=true}] at @s unless score @s achievement.story_oak_log_root matches 1.. run scoreboard players set @s achievement.story_oak_log_root 1
+## Benchmarking
+execute as @a[advancements={minecraft:story/root=true}] at @s unless score @s achievement.story_root matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=story_root,limit=1] achievement.values
+execute as @a[advancements={minecraft:story/root=true}] at @s unless score @s achievement.story_root matches 1.. run function acrace:pick/take
+execute as @a[advancements={minecraft:story/root=true}] at @s unless score @s achievement.story_root matches 1.. run scoreboard players set @s achievement.story_root 1
 ## Stone Age
 execute as @a[advancements={minecraft:story/mine_stone=true}] at @s unless score @s achievement.story_mine_stone matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=story_mine_stone,limit=1] achievement.values
 execute as @a[advancements={minecraft:story/mine_stone=true}] at @s unless score @s achievement.story_mine_stone matches 1.. run function acrace:pick/take
@@ -405,3 +413,23 @@ execute as @a[advancements={minecraft:husbandry/froglights=true}] at @s unless s
 execute as @a[advancements={minecraft:husbandry/kill_axolotl_target=true}] at @s unless score @s achievement.husbandry_kill_axolotl_target matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=husbandry_kill_axolotl_target,limit=1] achievement.values
 execute as @a[advancements={minecraft:husbandry/kill_axolotl_target=true}] at @s unless score @s achievement.husbandry_kill_axolotl_target matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:husbandry/kill_axolotl_target=true}] at @s unless score @s achievement.husbandry_kill_axolotl_target matches 1.. run scoreboard players set @s achievement.husbandry_kill_axolotl_target 1
+## Redstone
+execute as @a[advancements={minecraft:redstone/root=true}] at @s unless score @s achievement.redstone_root matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=redstone_root,limit=1] achievement.values
+execute as @a[advancements={minecraft:redstone/root=true}] at @s unless score @s achievement.redstone_root matches 1.. run function acrace:pick/take
+execute as @a[advancements={minecraft:redstone/root=true}] at @s unless score @s achievement.redstone_root matches 1.. run scoreboard players set @s achievement.redstone_root 1
+## The Groundwork
+execute as @a[advancements={minecraft:redstone/rail=true}] at @s unless score @s achievement.redstone_rail matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=redstone_rail,limit=1] achievement.values
+execute as @a[advancements={minecraft:redstone/rail=true}] at @s unless score @s achievement.redstone_rail matches 1.. run function acrace:pick/take
+execute as @a[advancements={minecraft:redstone/rail=true}] at @s unless score @s achievement.redstone_rail matches 1.. run scoreboard players set @s achievement.redstone_rail 1
+## An Upgrade
+execute as @a[advancements={minecraft:redstone/powered_rail=true}] at @s unless score @s achievement.redstone_powered_rail matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=redstone_powered_rail,limit=1] achievement.values
+execute as @a[advancements={minecraft:redstone/powered_rail=true}] at @s unless score @s achievement.redstone_powered_rail matches 1.. run function acrace:pick/take
+execute as @a[advancements={minecraft:redstone/powered_rail=true}] at @s unless score @s achievement.redstone_powered_rail matches 1.. run scoreboard players set @s achievement.redstone_powered_rail 1
+## All Aboard!
+execute as @a[advancements={minecraft:redstone/minecart=true}] at @s unless score @s achievement.redstone_minecart matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=redstone_minecart,limit=1] achievement.values
+execute as @a[advancements={minecraft:redstone/minecart=true}] at @s unless score @s achievement.redstone_minecart matches 1.. run function acrace:pick/take
+execute as @a[advancements={minecraft:redstone/minecart=true}] at @s unless score @s achievement.redstone_minecart matches 1.. run scoreboard players set @s achievement.redstone_minecart 1
+## Fuel Engine
+execute as @a[advancements={minecraft:redstone/furnace_minecart=true}] at @s unless score @s achievement.redstone_furnace_minecart matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=redstone_furnace_minecart,limit=1] achievement.values
+execute as @a[advancements={minecraft:redstone/furnace_minecart=true}] at @s unless score @s achievement.redstone_furnace_minecart matches 1.. run function acrace:pick/take
+execute as @a[advancements={minecraft:redstone/furnace_minecart=true}] at @s unless score @s achievement.redstone_furnace_minecart matches 1.. run scoreboard players set @s achievement.redstone_furnace_minecart 1

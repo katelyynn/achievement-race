@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:redstone/root",
+  "criteria": {
+    "rail": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:rail"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Set down the rails!"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:rail"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "The Groundwork"
+    }
+  },
+  "requirements": [
+    [
+      "rail"
+    ]
+  ]
+}

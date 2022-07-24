@@ -9,6 +9,8 @@ kill @e[tag=achievement]
 ## ' should be escaped appropriately as \'
 ## " should be replaced appropriately as \'
 
+summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Getting Wood"}',Tags:["achievement","story_oak_log_root"]}
+summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Benchmarking"}',Tags:["achievement","story_root"]}
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Stone Age"}',Tags:["achievement","story_mine_stone"]}
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Getting an Upgrade"}',Tags:["achievement","story_upgrade_tools"]}
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Acquire Hardware"}',Tags:["achievement","story_smelt_iron"]}
@@ -109,3 +111,8 @@ summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,Cu
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"The Cutest Predator"}',Tags:["achievement","husbandry_axolotl_in_a_bucket"]}
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"With Our Powers Combined!"}',Tags:["achievement","husbandry_froglights"]}
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"The Healing Power of Friendship!"}',Tags:["achievement","husbandry_kill_axolotl_target"]}
+summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Redstone"}',Tags:["achievement","redstone_root"]}
+summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"The Groundwork"}',Tags:["achievement","redstone_rail"]}
+summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"An Upgrade"}',Tags:["achievement","redstone_powered_rail"]}
+summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"All Aboard!"}',Tags:["achievement","redstone_minecart"]}
+summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Fuel Engine"}',Tags:["achievement","redstone_furnace_minecart"]}

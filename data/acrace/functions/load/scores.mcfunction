@@ -5,6 +5,8 @@
 ## generated with index.html
 ## should not be modified directly
 
+scoreboard objectives add achievement.story_oak_log_root dummy
+scoreboard objectives add achievement.story_root dummy
 scoreboard objectives add achievement.story_mine_stone dummy
 scoreboard objectives add achievement.story_upgrade_tools dummy
 scoreboard objectives add achievement.story_smelt_iron dummy
@@ -105,3 +107,8 @@ scoreboard objectives add achievement.husbandry_wax_off dummy
 scoreboard objectives add achievement.husbandry_axolotl_in_a_bucket dummy
 scoreboard objectives add achievement.husbandry_froglights dummy
 scoreboard objectives add achievement.husbandry_kill_axolotl_target dummy
+scoreboard objectives add achievement.redstone_root dummy
+scoreboard objectives add achievement.redstone_rail dummy
+scoreboard objectives add achievement.redstone_powered_rail dummy
+scoreboard objectives add achievement.redstone_minecart dummy
+scoreboard objectives add achievement.redstone_furnace_minecart dummy
