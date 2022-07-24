@@ -21,9 +21,9 @@ tellraw @s ["",{"text":"End time \u0020 \u0020","hoverEvent":{"action":"show_tex
 
 # hide point gain
 ## enabled
-execute if score hide_point_gain global matches 1.. run tellraw @s ["",{"text":"x2 Multiplier \u0020 \u0020","hoverEvent":{"action":"show_text","contents":[{"text":"Display +?? upon earning an achievement to other players."}]}},{"text":"[","color":"white"},{"text":"✔","color":"green","bold":true},{"text":"]","color":"white"},{"text":"  ","color":"dark_gray"},{"text":"X","color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/function acrace:setup/hide_point_gain/off"}},{"text":" ","color":"dark_gray"}]
+execute if score hide_point_gain global matches 1.. run tellraw @s ["",{"text":"Hide point gain \u0020 \u0020","hoverEvent":{"action":"show_text","contents":[{"text":"Display +?? (instead of eg. +5) upon earning an achievement to other players."}]}},{"text":"[","color":"white"},{"text":"✔","color":"green","bold":true},{"text":"]","color":"white"},{"text":"  ","color":"dark_gray"},{"text":"X","color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/function acrace:setup/hide_point_gain/off"}},{"text":" ","color":"dark_gray"}]
 ## disabled
-execute unless score hide_point_gain global matches 1.. run tellraw @s ["",{"text":"x2 Multiplier \u0020 \u0020","hoverEvent":{"action":"show_text","contents":[{"text":"Display +?? upon earning an achievement to other players."}]}},{"text":" ","color":"dark_gray"},{"text":"✔","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/function acrace:setup/hide_point_gain/on"}},{"text":" ","color":"dark_gray"},{"text":" [","color":"white"},{"text":"X","color":"red","bold":true},{"text":"]","color":"white"}]
+execute unless score hide_point_gain global matches 1.. run tellraw @s ["",{"text":"Hide point gain \u0020 \u0020","hoverEvent":{"action":"show_text","contents":[{"text":"Display +?? (instead of eg. +5) upon earning an achievement to other players."}]}},{"text":" ","color":"dark_gray"},{"text":"✔","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/function acrace:setup/hide_point_gain/on"}},{"text":" ","color":"dark_gray"},{"text":" [","color":"white"},{"text":"X","color":"red","bold":true},{"text":"]","color":"white"}]
 
 # cut clean
 ## enabled
