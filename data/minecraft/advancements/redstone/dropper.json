@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:redstone/rail",
+  "parent": "minecraft:redstone/root",
   "criteria": {
-    "powered_rail": {
+    "dropper": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:powered_rail"
+              "minecraft:dropper"
             ]
           }
         ]
@@ -17,21 +17,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "Power up the rails!"
+      "text": "Even more item transportation!"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "minecraft:powered_rail"
+      "item": "minecraft:dropper"
     },
     "show_toast": true,
     "title": {
-      "text": "An Upgrade"
+      "text": "Space Dropper"
     }
   },
   "requirements": [
     [
-      "powered_rail"
+      "dropper"
     ]
   ]
 }

@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:story/oak_log_root",
+  "parent": "minecraft:redstone/root",
   "criteria": {
-    "crafting_table": {
+    "hopper": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:crafting_table"
+              "minecraft:hopper"
             ]
           }
         ]
@@ -17,21 +17,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "Craft a workbench with four blocks of planks"
+      "text": "Time for item transportation!"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "minecraft:crafting_table"
+      "item": "minecraft:hopper"
     },
     "show_toast": true,
     "title": {
-      "text": "Benchmarking"
+      "text": "Space Hopper"
     }
   },
   "requirements": [
     [
-      "crafting_table"
+      "hopper"
     ]
   ]
 }

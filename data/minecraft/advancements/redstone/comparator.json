@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:story/oak_log_root",
+  "parent": "minecraft:redstone/root",
   "criteria": {
-    "crafting_table": {
+    "comparator": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:crafting_table"
+              "minecraft:comparator"
             ]
           }
         ]
@@ -17,21 +17,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "Craft a workbench with four blocks of planks"
+      "text": "Craft a comparator"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "minecraft:crafting_table"
+      "item": "minecraft:comparator"
     },
     "show_toast": true,
     "title": {
-      "text": "Benchmarking"
+      "text": "Comparisons"
     }
   },
   "requirements": [
     [
-      "crafting_table"
+      "comparator"
     ]
   ]
 }

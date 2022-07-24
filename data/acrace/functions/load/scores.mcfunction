@@ -63,6 +63,7 @@ scoreboard objectives add achievement.adventure_trade dummy
 scoreboard objectives add achievement.adventure_honey_block_slide dummy
 scoreboard objectives add achievement.adventure_ol_betsy dummy
 scoreboard objectives add achievement.adventure_lightning_rod_with_villager_no_fire dummy
+scoreboard objectives add achievement.adventure_spelunker dummy
 scoreboard objectives add achievement.adventure_fall_from_world_height dummy
 scoreboard objectives add achievement.adventure_avoid_vibration dummy
 scoreboard objectives add achievement.adventure_sleep_in_bed dummy
@@ -108,7 +109,10 @@ scoreboard objectives add achievement.husbandry_axolotl_in_a_bucket dummy
 scoreboard objectives add achievement.husbandry_froglights dummy
 scoreboard objectives add achievement.husbandry_kill_axolotl_target dummy
 scoreboard objectives add achievement.redstone_root dummy
+scoreboard objectives add achievement.redstone_repeater dummy
+scoreboard objectives add achievement.redstone_comparator dummy
+scoreboard objectives add achievement.redstone_hopper dummy
+scoreboard objectives add achievement.redstone_dropper dummy
 scoreboard objectives add achievement.redstone_rail dummy
-scoreboard objectives add achievement.redstone_powered_rail dummy
 scoreboard objectives add achievement.redstone_minecart dummy
 scoreboard objectives add achievement.redstone_furnace_minecart dummy

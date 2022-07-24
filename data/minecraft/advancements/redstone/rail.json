@@ -12,26 +12,71 @@
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "powered_rail": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:powered_rail"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "detector_rail": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:detector_rail"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "activator_rail": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:activator_rail"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "Set down the rails!"
+      "text": "Construct every type of rail"
     },
-    "frame": "task",
+    "frame": "goal",
     "hidden": false,
     "icon": {
       "item": "minecraft:rail"
     },
     "show_toast": true,
     "title": {
-      "text": "The Groundwork"
+      "text": "Railway"
     }
   },
   "requirements": [
     [
       "rail"
+    ],
+    [
+      "powered_rail"
+    ],
+    [
+      "detector_rail"
+    ],
+    [
+      "activator_rail"
     ]
   ]
 }

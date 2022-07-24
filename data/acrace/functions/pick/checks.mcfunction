@@ -5,7 +5,7 @@
 ## generated with index.html
 ## should not be modified directly
 
-## Getting Wood
+## Minecraft
 execute as @a[advancements={minecraft:story/oak_log_root=true}] at @s unless score @s achievement.story_oak_log_root matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=story_oak_log_root,limit=1] achievement.values
 execute as @a[advancements={minecraft:story/oak_log_root=true}] at @s unless score @s achievement.story_oak_log_root matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:story/oak_log_root=true}] at @s unless score @s achievement.story_oak_log_root matches 1.. run scoreboard players set @s achievement.story_oak_log_root 1
@@ -237,6 +237,10 @@ execute as @a[advancements={minecraft:adventure/ol_betsy=true}] at @s unless sco
 execute as @a[advancements={minecraft:adventure/lightning_rod_with_villager_no_fire=true}] at @s unless score @s achievement.adventure_lightning_rod_with_villager_no_fire matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=adventure_lightning_rod_with_villager_no_fire,limit=1] achievement.values
 execute as @a[advancements={minecraft:adventure/lightning_rod_with_villager_no_fire=true}] at @s unless score @s achievement.adventure_lightning_rod_with_villager_no_fire matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:adventure/lightning_rod_with_villager_no_fire=true}] at @s unless score @s achievement.adventure_lightning_rod_with_villager_no_fire matches 1.. run scoreboard players set @s achievement.adventure_lightning_rod_with_villager_no_fire 1
+## Spelunker
+execute as @a[advancements={minecraft:adventure/spelunker=true}] at @s unless score @s achievement.adventure_spelunker matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=adventure_spelunker,limit=1] achievement.values
+execute as @a[advancements={minecraft:adventure/spelunker=true}] at @s unless score @s achievement.adventure_spelunker matches 1.. run function acrace:pick/take
+execute as @a[advancements={minecraft:adventure/spelunker=true}] at @s unless score @s achievement.adventure_spelunker matches 1.. run scoreboard players set @s achievement.adventure_spelunker 1
 ## Caves & Cliffs
 execute as @a[advancements={minecraft:adventure/fall_from_world_height=true}] at @s unless score @s achievement.adventure_fall_from_world_height matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=adventure_fall_from_world_height,limit=1] achievement.values
 execute as @a[advancements={minecraft:adventure/fall_from_world_height=true}] at @s unless score @s achievement.adventure_fall_from_world_height matches 1.. run function acrace:pick/take
@@ -417,14 +421,26 @@ execute as @a[advancements={minecraft:husbandry/kill_axolotl_target=true}] at @s
 execute as @a[advancements={minecraft:redstone/root=true}] at @s unless score @s achievement.redstone_root matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=redstone_root,limit=1] achievement.values
 execute as @a[advancements={minecraft:redstone/root=true}] at @s unless score @s achievement.redstone_root matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:redstone/root=true}] at @s unless score @s achievement.redstone_root matches 1.. run scoreboard players set @s achievement.redstone_root 1
-## The Groundwork
+## Repetition
+execute as @a[advancements={minecraft:redstone/repeater=true}] at @s unless score @s achievement.redstone_repeater matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=redstone_repeater,limit=1] achievement.values
+execute as @a[advancements={minecraft:redstone/repeater=true}] at @s unless score @s achievement.redstone_repeater matches 1.. run function acrace:pick/take
+execute as @a[advancements={minecraft:redstone/repeater=true}] at @s unless score @s achievement.redstone_repeater matches 1.. run scoreboard players set @s achievement.redstone_repeater 1
+## Comparisons
+execute as @a[advancements={minecraft:redstone/comparator=true}] at @s unless score @s achievement.redstone_comparator matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=redstone_comparator,limit=1] achievement.values
+execute as @a[advancements={minecraft:redstone/comparator=true}] at @s unless score @s achievement.redstone_comparator matches 1.. run function acrace:pick/take
+execute as @a[advancements={minecraft:redstone/comparator=true}] at @s unless score @s achievement.redstone_comparator matches 1.. run scoreboard players set @s achievement.redstone_comparator 1
+## Space Hopper
+execute as @a[advancements={minecraft:redstone/hopper=true}] at @s unless score @s achievement.redstone_hopper matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=redstone_hopper,limit=1] achievement.values
+execute as @a[advancements={minecraft:redstone/hopper=true}] at @s unless score @s achievement.redstone_hopper matches 1.. run function acrace:pick/take
+execute as @a[advancements={minecraft:redstone/hopper=true}] at @s unless score @s achievement.redstone_hopper matches 1.. run scoreboard players set @s achievement.redstone_hopper 1
+## Space Dropper
+execute as @a[advancements={minecraft:redstone/dropper=true}] at @s unless score @s achievement.redstone_dropper matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=redstone_dropper,limit=1] achievement.values
+execute as @a[advancements={minecraft:redstone/dropper=true}] at @s unless score @s achievement.redstone_dropper matches 1.. run function acrace:pick/take
+execute as @a[advancements={minecraft:redstone/dropper=true}] at @s unless score @s achievement.redstone_dropper matches 1.. run scoreboard players set @s achievement.redstone_dropper 1
+## Railway
 execute as @a[advancements={minecraft:redstone/rail=true}] at @s unless score @s achievement.redstone_rail matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=redstone_rail,limit=1] achievement.values
 execute as @a[advancements={minecraft:redstone/rail=true}] at @s unless score @s achievement.redstone_rail matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:redstone/rail=true}] at @s unless score @s achievement.redstone_rail matches 1.. run scoreboard players set @s achievement.redstone_rail 1
-## An Upgrade
-execute as @a[advancements={minecraft:redstone/powered_rail=true}] at @s unless score @s achievement.redstone_powered_rail matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=redstone_powered_rail,limit=1] achievement.values
-execute as @a[advancements={minecraft:redstone/powered_rail=true}] at @s unless score @s achievement.redstone_powered_rail matches 1.. run function acrace:pick/take
-execute as @a[advancements={minecraft:redstone/powered_rail=true}] at @s unless score @s achievement.redstone_powered_rail matches 1.. run scoreboard players set @s achievement.redstone_powered_rail 1
 ## All Aboard!
 execute as @a[advancements={minecraft:redstone/minecart=true}] at @s unless score @s achievement.redstone_minecart matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=redstone_minecart,limit=1] achievement.values
 execute as @a[advancements={minecraft:redstone/minecart=true}] at @s unless score @s achievement.redstone_minecart matches 1.. run function acrace:pick/take

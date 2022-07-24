@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:story/oak_log_root",
+  "parent": "minecraft:redstone/root",
   "criteria": {
-    "crafting_table": {
+    "repeater": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:crafting_table"
+              "minecraft:repeater"
             ]
           }
         ]
@@ -17,21 +17,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "Craft a workbench with four blocks of planks"
+      "text": "Feels like we've been here before.."
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "minecraft:crafting_table"
+      "item": "minecraft:repeater"
     },
     "show_toast": true,
     "title": {
-      "text": "Benchmarking"
+      "text": "Repetition"
     }
   },
   "requirements": [
     [
-      "crafting_table"
+      "repeater"
     ]
   ]
 }

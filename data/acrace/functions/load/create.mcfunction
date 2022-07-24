@@ -6,10 +6,10 @@ kill @e[tag=achievement]
 ## generated with index.html
 ## should not be modified directly
 
-## ' should be escaped appropriately as \'
-## " should be replaced appropriately as \'
+## ' automatically escaped as \'
+## " automatically replaced as \'
 
-summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Getting Wood"}',Tags:["achievement","story_oak_log_root"]}
+summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Minecraft"}',Tags:["achievement","story_oak_log_root"]}
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Benchmarking"}',Tags:["achievement","story_root"]}
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Stone Age"}',Tags:["achievement","story_mine_stone"]}
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Getting an Upgrade"}',Tags:["achievement","story_upgrade_tools"]}
@@ -67,6 +67,7 @@ summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,Cu
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Sticky Situation"}',Tags:["achievement","adventure_honey_block_slide"]}
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Ol\' Betsy"}',Tags:["achievement","adventure_ol_betsy"]}
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Surge Protector"}',Tags:["achievement","adventure_lightning_rod_with_villager_no_fire"]}
+summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Spelunker"}',Tags:["achievement","adventure_spelunker"]}
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Caves & Cliffs"}',Tags:["achievement","adventure_fall_from_world_height"]}
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Sneak 100"}',Tags:["achievement","adventure_avoid_vibration"]}
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Sweet Dreams"}',Tags:["achievement","adventure_sleep_in_bed"]}
@@ -112,7 +113,10 @@ summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,Cu
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"With Our Powers Combined!"}',Tags:["achievement","husbandry_froglights"]}
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"The Healing Power of Friendship!"}',Tags:["achievement","husbandry_kill_axolotl_target"]}
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Redstone"}',Tags:["achievement","redstone_root"]}
-summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"The Groundwork"}',Tags:["achievement","redstone_rail"]}
-summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"An Upgrade"}',Tags:["achievement","redstone_powered_rail"]}
+summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Repetition"}',Tags:["achievement","redstone_repeater"]}
+summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Comparisons"}',Tags:["achievement","redstone_comparator"]}
+summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Space Hopper"}',Tags:["achievement","redstone_hopper"]}
+summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Space Dropper"}',Tags:["achievement","redstone_dropper"]}
+summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Railway"}',Tags:["achievement","redstone_rail"]}
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"All Aboard!"}',Tags:["achievement","redstone_minecart"]}
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Fuel Engine"}',Tags:["achievement","redstone_furnace_minecart"]}

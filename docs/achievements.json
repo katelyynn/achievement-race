@@ -37,12 +37,13 @@
         "advanced_almost_full": 15,
         "advanced_full": 16,
         "advanced_max": 20,
+        "advanced_full_max": 32,
         "what": 100
     },
     "achievements": [
         {
             "icon": "oak_log",
-            "name": "Getting Wood",
+            "name": "Minecraft",
             "description": "Attack a tree until a block of wood pops out",
             "id": "oak_log_root",
             "category": "story",
@@ -318,7 +319,7 @@
             "description": "Charge a Respawn Anchor to the maximum",
             "id": "charge_respawn_anchor",
             "category": "nether",
-            "points": "speedrun"
+            "points": "speedrun_a_bit"
         },
         {
             "icon": "warped_fungus_on_a_stick",
@@ -522,6 +523,15 @@
             "points": "start_but_not"
         },
         {
+            "icon": "golden_helmet",
+            "name": "Spelunker",
+            "description": "Discover every cave biome",
+            "id": "spelunker",
+            "category": "adventure",
+            "points": "start",
+            "type": "fancy"
+        },
+        {
             "icon": "water_bucket",
             "name": "Caves & Cliffs",
             "description": "Free fall from the top of the world (build limit) to the bottom of the world and survive",
@@ -560,7 +570,7 @@
             "description": "Look at a ghast through a spyglass",
             "id": "spyglass_at_ghast",
             "category": "adventure",
-            "points": "start"
+            "points": "start_less"
         },
         {
             "icon": "trident",
@@ -637,7 +647,7 @@
             "description": "Give a Pillager a taste of their own medicine",
             "id": "whos_the_pillager_now",
             "category": "adventure",
-            "points": "start_bit_less"
+            "points": "start_less"
         },
         {
             "icon": "crossbow_standby",
@@ -655,7 +665,7 @@
             "id": "adventuring_time",
             "category": "adventure",
             "type": "fancy",
-            "points": "advanced_almost_full"
+            "points": "advanced_full_max"
         },
         {
             "icon": "jukebox_side",
@@ -705,7 +715,7 @@
             "id": "bullseye",
             "category": "adventure",
             "type": "fancy",
-            "points": "start"
+            "points": "start_less"
         },
         {
             "icon": "honey_bottle",
@@ -836,7 +846,7 @@
             "description": "Get each Frog variant on a Lead",
             "id": "leash_all_frog_variants",
             "category": "husbandry",
-            "points": "speedrun"
+            "points": "speedrun_a_bit"
         },
         {
             "icon": "apple",
@@ -870,7 +880,7 @@
             "description": "Catch an axolotl in a bucket",
             "id": "axolotl_in_a_bucket",
             "category": "husbandry",
-            "points": "start"
+            "points": "start_less"
         },
         {
             "icon": "verdant_froglight_side",
@@ -887,7 +897,7 @@
             "description": "Team up with an axolotl and win a fight",
             "id": "kill_axolotl_target",
             "category": "husbandry",
-            "points": "speedrun"
+            "points": "start"
         },
         {
             "icon": "redstone",
@@ -898,20 +908,45 @@
             "points": "bit_harder"
         },
         {
-            "icon": "rail",
-            "name": "The Groundwork",
-            "description": "Set down the rails!",
-            "id": "rail",
+            "icon": "repeater",
+            "name": "Repetition",
+            "description": "Feels like we've been here before..",
+            "id": "repeater",
+            "category": "redstone",
+            "points": "bit_harder"
+        },
+        {
+            "icon": "comparator",
+            "name": "Comparisons",
+            "description": "Craft a comparator",
+            "id": "comparator",
+            "category": "redstone",
+            "points": "start_less"
+        },
+        {
+            "icon": "hopper",
+            "name": "Space Hopper",
+            "description": "Time for item transportation!",
+            "id": "hopper",
+            "category": "redstone",
+            "points": "bit_harder"
+        },
+        {
+            "icon": "dropper_front",
+            "name": "Space Dropper",
+            "description": "Even more item transportation!",
+            "id": "dropper",
             "category": "redstone",
             "points": "easy"
         },
         {
-            "icon": "powered_rail",
-            "name": "An Upgrade",
-            "description": "Power up the rails!",
-            "id": "powered_rail",
+            "icon": "rail",
+            "name": "Railway",
+            "description": "Construct every type of rail",
+            "id": "rail",
             "category": "redstone",
-            "points": "bit_harder"
+            "points": "start_less",
+            "type": "oval"
         },
         {
             "icon": "minecart",

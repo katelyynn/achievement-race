@@ -32,8 +32,6 @@ scoreboard players set multiplier global 2
 function acrace:load/scores
 ## create stands
 function acrace:load/create
-## set initial values
-function acrace:load/values
 
 
 scoreboard players set defaults internal 1
