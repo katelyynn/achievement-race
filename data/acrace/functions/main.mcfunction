@@ -10,6 +10,11 @@ execute as @a unless score setup internal matches 1.. run function acrace:setup/
 # world
 bossbar set acrace:main players @a
 execute store result bossbar acrace:main max run scoreboard players get end_time global
+## show score
+execute if score show_scoreboard global matches 1.. run scoreboard objectives setdisplay sidebar score
+execute unless score show_scoreboard global matches 1.. run scoreboard objectives setdisplay sidebar
+## show on actionbar
+execute if score show_score_actionbar global matches 1.. as @a run title @s actionbar ["",{"text":"[","color":"dark_gray"},{"text":"⭐","color":"green"},{"text":"] ","color":"dark_gray"},{"score":{"name":"@s","objective":"score"}}]
 
 # time loop
 function acrace:time
