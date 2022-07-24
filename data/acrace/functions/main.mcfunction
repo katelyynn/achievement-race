@@ -9,6 +9,7 @@ execute as @a unless score setup internal matches 1.. run function acrace:setup/
 
 # world
 bossbar set acrace:main players @a
+execute store result bossbar acrace:main max run scoreboard players get end_time global
 
 # time loop
 function acrace:time
