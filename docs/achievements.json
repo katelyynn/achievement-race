@@ -192,7 +192,7 @@
             "description": "Enter a Bastion Remnant",
             "id": "find_bastion",
             "category": "nether",
-            "points": "start"
+            "points": "start_bit_less"
         },
         {
             "icon": "ancient_debris_side",
@@ -209,7 +209,7 @@
             "id": "fast_travel",
             "category": "nether",
             "type": "fancy",
-            "points": "advanced_cheat_a_bit"
+            "points": "speedrun"
         },
         {
             "icon": "nether_bricks",
@@ -233,7 +233,7 @@
             "description": "Distract Piglins with gold",
             "id": "distract_piglin",
             "category": "nether",
-            "points": "start"
+            "points": "start_less"
         },
         {
             "icon": "warped_fungus_on_a_stick",
@@ -241,7 +241,7 @@
             "description": "Ride a Strider with a Warped Fungus on a Stick",
             "id": "ride_strider",
             "category": "nether",
-            "points": "start_bit_less"
+            "points": "start_less"
         },
         {
             "icon": "ghast_tear",
@@ -258,7 +258,7 @@
             "description": "Loot a chest in a Bastion Remnant",
             "id": "loot_bastion",
             "category": "nether",
-            "points": "start"
+            "points": "start_less"
         },
         {
             "icon": "lodestone_side",
@@ -266,7 +266,7 @@
             "description": "Use a compass on a Lodestone",
             "id": "use_lodestone",
             "category": "nether",
-            "points": "start"
+            "points": "start_bit_less"
         },
         {
             "icon": "netherite_chestplate",
@@ -316,7 +316,7 @@
             "id": "explore_nether",
             "category": "nether",
             "type": "fancy",
-            "points": "speedrun_end"
+            "points": "start_but_not"
         },
         {
             "icon": "nether_star",
@@ -618,7 +618,7 @@
             "description": "Give a Pillager a taste of their own medicine",
             "id": "whos_the_pillager_now",
             "category": "adventure",
-            "points": "mid"
+            "points": "start_bit_less"
         },
         {
             "icon": "crossbow_standby",
@@ -660,7 +660,7 @@
             "description": "Look at the Ender Dragon through a spyglass",
             "id": "spyglass_at_dragon",
             "category": "adventure",
-            "points": "speedrun"
+            "points": "start"
         },
         {
             "icon": "trident",
@@ -774,7 +774,7 @@
             "description": "Apply Honeycomb to a Copper block!",
             "id": "wax_on",
             "category": "husbandry",
-            "points": "start_less"
+            "points": "bit_harder"
         },
         {
             "icon": "golden_carrot",
@@ -843,7 +843,7 @@
             "description": "Scrape Wax off of a Copper block!",
             "id": "wax_off",
             "category": "husbandry",
-            "points": "bit_harder"
+            "points": "easy"
         },
         {
             "icon": "axolotl_bucket",
