@@ -94,7 +94,7 @@
 }
 .rate-bar span {
     background-color: var(--color);
-    filter: blur(14px);
+    filter: blur(6px);
     box-shadow: 0px 0px 10px 10px var(--color);
     flex: 1;
 }
