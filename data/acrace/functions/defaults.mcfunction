@@ -14,6 +14,8 @@ gamerule announceAdvancements false
 gamerule playersSleepingPercentage 25
 effect clear @a
 gamemode adventure @a[gamemode=!spectator]
+## forceload to ensure achievements are always loaded
+forceload add 0 0
 
 
 # hide point gain
