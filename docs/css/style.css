@@ -12,60 +12,60 @@
     --color: #4290FF;
 }
 [data-points="2"] {
-    --color: #4BB1FF;
+    --color: #49ABFF;
 }
 [data-points="3"] {
-    --color: #4FC3FD;
+    --color: #4FCBF8;
 }
 [data-points="4"] {
-    --color: #4FD5F1;
+    --color: #4FEAE3;
 }
 [data-points="5"] {
-    --color: #4FEDE1;
-}
-[data-points="5"] {
-    --color: #57FFBC;
+    --color: #5CFFB0;
 }
 [data-points="6"] {
-    --color: #68FF8B;
+    --color: #6CFF7D;
 }
 [data-points="7"] {
-    --color: #A4FA53;
+    --color: #8FFD51;
 }
 [data-points="8"] {
-    --color: #CAF557;
+    --color: #BEF756;
 }
 [data-points="9"] {
-    --color: #F3F05C;
+    --color: #E6F25A;
 }
 [data-points="10"] {
-    --color: #FBB662;
+    --color: #F8D45F;
 }
 [data-points="11"] {
-    --color: #FF8068;
+    --color: #FD9D65;
 }
 [data-points="12"] {
-    --color: #FF616C;
+    --color: #FF636C;
+}
+[data-points="13"] {
+    --color: #EA4B89;
 }
 [data-points="14"] {
-    --color: #F54C7C;
+    --color: #D647A4;
 }
 [data-points="15"] {
-    --color: #D9489F;
+    --color: #9B52C9;
 }
 [data-points="16"] {
-    --color: #BD48BC;
+    --color: #605ED8;
 }
 [data-points="20"] {
-    --color: #785DD7;
+    --color: #3D3BB5;
 }
 [data-points="32"] {
     color: #FFD966;
-    --color: #5E5CD7;
+    --color: #27249E;
 }
 [data-points="100"] {
     color: #FFD966;
-    --color: #18158E;
+    --color: #0E0D55;
 }
 
 [data-points="1"], [data-points="2"], [data-points="3"] {
@@ -107,11 +107,10 @@
     position: relative;
     top: 6px;
     font-weight: 600;
+    font-size: 14px;
 }
 
 
-@media (max-width: 1360px) {
-    .supports {
-        grid-gap: 10px 15px;
-    }
+.supports {
+    grid-gap: 12px 15px;
 }
