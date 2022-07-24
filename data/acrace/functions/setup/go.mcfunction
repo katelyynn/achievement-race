@@ -6,7 +6,7 @@
 ## header
 tellraw @s ["",{"text":"\nACHIEVEMENT ","color":"green","bold":true},{"text":"RACE\n","color":"yellow","bold":true}]
 ## intro
-tellraw @s ["",{"text":"Before the game begins, check your options and invite everyone to the\ngame. Hover over titles for more information.\n"}]
+tellraw @s ["",{"text":"Before the game begins, check your options and invite everyone to the game. Hover over titles for more information.\n"}]
 ## options
 tellraw @s ["",{"text":"Options:","color":"yellow"}]
 
