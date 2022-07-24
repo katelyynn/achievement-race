@@ -14,10 +14,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://plexion.dev/js/scroll.js"></script>
+    <script src="https://kit.fontawesome.com/20a071237e.js" crossorigin="anonymous"></script>
 </head>
 <body class="dark" style="--accent-page: var(--library);">
     <section class="left header sep no-align" style="bottom: 0;">
-        <h4>All achievements<span class="text-14" id="full" style="font-weight: 500; color: var(--text-main); margin-left: 10px;"></span></h4>
+        <h4>All achievements <label class="count fix" id="full"></label></h4>
         <div class="rate-bar">
             <span data-points="1"></span>
             <span data-points="2"></span>
@@ -60,6 +61,8 @@
             <span data-points="32">32</span>
             <span data-points="100">100</span>
         </div>
+        <p>In-game, 6 random achievements by default are 2x multiplied, the raw points displayed here will not reflect that.</p>
+        <br>
         <div id="embed_categories"></div>
     </section>
 </body>
@@ -68,15 +71,16 @@
     let hook = document.getElementById("hook");
 
     $.get('achievements.json', function(data) {
-        document.getElementById("full").innerHTML = ` ${data.achievements.length} items`;
+        document.getElementById("full").innerHTML = data.achievements.length;
 
         for (let i in data.categories) {
             let em_category = document.createElement('div');
             em_category.innerHTML = (`
-            <label class="over">${data.categories[i].name}</label>
+            <label class="over" id="header.${i}">${data.categories[i].name}</label>
             <div class="supports" id="${i}"></div>
             `);
 
+            localStorage.setItem(`${i}_count`,0);
             document.getElementById('embed_categories').appendChild(em_category);
         }
 
@@ -90,12 +94,21 @@
 
             em.innerHTML = (`
             <span class="icon"><img src="https://res.plexion.dev/minecraft/item/${data.achievements[i].icon}.png"></span>
-            <span class="text"><h5>${data.achievements[i].name} <label class="count ${data.achievements[i].points}" data-points="${data.points[data.achievements[i].points]}">${data.points[data.achievements[i].points]}</label></h5><p>${data.achievements[i].description}</p></span>
+            <span class="text"><h5>${data.achievements[i].name} <label class="count ${data.achievements[i].points}" data-points="${data.points[data.achievements[i].points]}">+${data.points[data.achievements[i].points]}</label></h5><p>${data.achievements[i].description}</p></span>
             `);
 
 
             // append
+            localStorage.setItem(`${data.achievements[i].category}_count`,parseInt(localStorage.getItem(`${data.achievements[i].category}_count`))+1);
             document.getElementById(data.achievements[i].category).appendChild(em);
+        }
+
+        for (let i in data.categories) {
+            let em_count = document.createElement('label');
+            em_count.classList.add('count','fix');
+            em_count.textContent = localStorage.getItem(`${i}_count`);
+
+            document.getElementById(`header.${i}`).appendChild(em_count);
         }
     });
 </script>

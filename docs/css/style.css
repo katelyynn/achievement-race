@@ -1,11 +1,18 @@
 /* achievement list */
 
 
-.count {
+.count:not(.fix) {
     background-color: var(--color);
     color: rgba(0,0,0,0.85);
     font-weight: 800;
     font-size: 12px;
+}
+.count i {
+    font-size: 10px;
+    font-weight: 600;
+    position: relative;
+    bottom: 1px;
+    margin-right: 2px;
 }
 
 [data-points="1"] {
@@ -60,11 +67,11 @@
     --color: #3D3BB5;
 }
 [data-points="32"] {
-    color: #FFD966;
+    color: #FFD966 !important;
     --color: #27249E;
 }
 [data-points="100"] {
-    color: #FFD966;
+    color: #FFD966 !important;
     --color: #0E0D55;
 }
 
