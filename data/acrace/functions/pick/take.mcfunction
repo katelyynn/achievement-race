@@ -16,3 +16,10 @@ execute unless score hide_point_gain global matches 1.. run tellraw @a ["",{"tex
 execute as @a at @s run playsound entity.arrow.hit_player player @s
 # score
 scoreboard players operation @s score += @s achievement.claiming_points
+
+# is multiplied
+## 'claimed_multiply' tag given if achievement was multiplied
+execute unless score hide_point_gain global matches 1.. if entity @s[tag=claimed_multiply] run playsound minecraft:block.brewing_stand.brew player @s
+execute unless score hide_point_gain global matches 1.. if entity @s[tag=claimed_multiply] run tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"⭐","color":"light_purple"},{"text":"] ","color":"dark_gray"},{"text":"You earned a ","color":"yellow"},{"text":"x2 multiplied","color":"light_purple"},{"text":" achievement!","color":"yellow"}]
+# remove tag
+tag @s remove claimed_multiply
