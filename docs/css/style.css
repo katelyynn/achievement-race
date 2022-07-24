@@ -88,20 +88,18 @@
     display: flex;
     height: 12px;
     overflow: hidden;
-    gap: 3px;
     border-radius: 50px;
     margin-top: 20px;
 }
 .rate-bar span {
     background-color: var(--color);
-    filter: blur(6px);
+    filter: blur(3px);
     box-shadow: 0px 0px 10px 10px var(--color);
     flex: 1;
 }
 
 .rate-bar-text {
     display: flex;
-    gap: 3px;
     margin-bottom: 20px;
 }
 .rate-bar-text span {
