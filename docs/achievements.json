@@ -369,7 +369,7 @@
             "id": "all_potions",
             "category": "nether",
             "type": "fancy",
-            "points": "advanced_full"
+            "points": "advanced_max"
         },
         {
             "icon": "beacon",

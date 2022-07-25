@@ -44,7 +44,7 @@ scoreboard players set @e[tag=achievement,tag=nether_explore_nether,limit=1] ach
 scoreboard players set @e[tag=achievement,tag=nether_summon_wither,limit=1] achievement.values 10
 scoreboard players set @e[tag=achievement,tag=nether_brew_potion,limit=1] achievement.values 7
 scoreboard players set @e[tag=achievement,tag=nether_create_beacon,limit=1] achievement.values 6
-scoreboard players set @e[tag=achievement,tag=nether_all_potions,limit=1] achievement.values 16
+scoreboard players set @e[tag=achievement,tag=nether_all_potions,limit=1] achievement.values 20
 scoreboard players set @e[tag=achievement,tag=nether_create_full_beacon,limit=1] achievement.values 12
 scoreboard players set @e[tag=achievement,tag=nether_all_effects,limit=1] achievement.values 100
 scoreboard players set @e[tag=achievement,tag=end_kill_dragon,limit=1] achievement.values 3

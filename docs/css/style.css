@@ -64,6 +64,7 @@
     --color: #605ED8;
 }
 [data-points="20"] {
+    color: #FFD966 !important;
     --color: #3D3BB5;
 }
 [data-points="32"] {
