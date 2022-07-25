@@ -10,6 +10,12 @@ tellraw @s ["",{"text":"Before the game begins, check your options and invite ev
 ## options
 tellraw @s ["",{"text":"Options:","color":"yellow"}]
 
+# allow draw
+## enabled
+execute if score allow_draw global matches 1.. run tellraw @s ["",{"text":"Allow winning draw \u0020 \u0020","hoverEvent":{"action":"show_text","contents":[{"text":"In the event of more than one winner, end in a draw rather than randomly picking."}]}},{"text":"[","color":"white"},{"text":"✔","color":"green","bold":true},{"text":"]","color":"white"},{"text":"  ","color":"dark_gray"},{"text":"X","color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/function acrace:setup/allow_draw/off"}},{"text":" ","color":"dark_gray"}]
+## disabled
+execute unless score allow_draw global matches 1.. run tellraw @s ["",{"text":"Allow winning draw \u0020 \u0020","hoverEvent":{"action":"show_text","contents":[{"text":"In the event of more than one winner, end in a draw rather than randomly picking."}]}},{"text":" ","color":"dark_gray"},{"text":"✔","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/function acrace:setup/allow_draw/on"}},{"text":" ","color":"dark_gray"},{"text":" [","color":"white"},{"text":"X","color":"red","bold":true},{"text":"]","color":"white"}]
+
 # multiplier
 ## enabled
 execute if score multiplier global matches 1.. run tellraw @s ["",{"text":"x2 Multiplier \u0020 \u0020","hoverEvent":{"action":"show_text","contents":[{"text":"Doubles the points on 6 random achievements."}]}},{"text":"[","color":"white"},{"text":"✔","color":"green","bold":true},{"text":"]","color":"white"},{"text":"  ","color":"dark_gray"},{"text":"X","color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/function acrace:setup/multiplier/off"}},{"text":" ","color":"dark_gray"}]
