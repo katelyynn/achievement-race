@@ -24,6 +24,10 @@ scoreboard players set hide_point_gain global 0
 scoreboard players set show_scoreboard global 1
 # show score on actionbar
 scoreboard players set show_score_actionbar global 1
+# allow draw
+## in the event that multiple players get the same score
+## if disabled, one player is picked randomly
+scoreboard players set allow_draw global 1
 # win time
 ## 2700 = 45 min
 scoreboard players set end_time global 2700
