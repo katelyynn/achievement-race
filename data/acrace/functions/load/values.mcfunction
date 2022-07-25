@@ -37,7 +37,7 @@ scoreboard players set @e[tag=achievement,tag=nether_loot_bastion,limit=1] achie
 scoreboard players set @e[tag=achievement,tag=nether_use_lodestone,limit=1] achievement.values 4
 scoreboard players set @e[tag=achievement,tag=nether_netherite_armor,limit=1] achievement.values 15
 scoreboard players set @e[tag=achievement,tag=nether_get_wither_skull,limit=1] achievement.values 12
-scoreboard players set @e[tag=achievement,tag=nether_obtain_blaze_rod,limit=1] achievement.values 6
+scoreboard players set @e[tag=achievement,tag=nether_obtain_blaze_rod,limit=1] achievement.values 4
 scoreboard players set @e[tag=achievement,tag=nether_charge_respawn_anchor,limit=1] achievement.values 9
 scoreboard players set @e[tag=achievement,tag=nether_ride_strider_in_overworld_lava,limit=1] achievement.values 9
 scoreboard players set @e[tag=achievement,tag=nether_explore_nether,limit=1] achievement.values 6

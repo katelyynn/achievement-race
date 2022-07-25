@@ -312,7 +312,7 @@
             "description": "Relieve a Blaze of its rod",
             "id": "obtain_blaze_rod",
             "category": "nether",
-            "points": "start_but_not"
+            "points": "start_bit_less"
         },
         {
             "icon": "respawn_anchor_side0",
