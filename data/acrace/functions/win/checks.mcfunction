@@ -13,4 +13,4 @@ execute as @a if score @s score.temp = highest_score internal run tag @s add win
 tag @a[tag=win,limit=1] add win_final
 tag @a[tag=win,tag=!win_final] remove win
 ## final winner
-execute as @a at @s if score @s score.temp = highest_score internal run function acrace:win/go
+execute as @a[tag=win,limit=1] run function acrace:win/go
