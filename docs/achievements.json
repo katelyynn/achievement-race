@@ -33,6 +33,7 @@
         "normal": 10,
         "advanced_cheat_a_bit": 11,
         "advanced_cheat": 12,
+        "advanced_almost": 13,
         "advanced": 14,
         "advanced_almost_full": 15,
         "advanced_full": 16,
@@ -103,7 +104,7 @@
             "description": "Upgrade your pickaxe",
             "id": "iron_tools",
             "category": "story",
-            "points": "start_bit_less"
+            "points": "start_less"
         },
         {
             "icon": "shield",
@@ -127,7 +128,7 @@
             "description": "Acquire diamonds",
             "id": "mine_diamond",
             "category": "story",
-            "points": "start_but_not"
+            "points": "start_bit_less"
         },
         {
             "icon": "diamond_pickaxe",
@@ -162,7 +163,7 @@
             "id": "diamond_armor",
             "category": "story",
             "custom": true,
-            "points": "advanced"
+            "points": "advanced_almost_full"
         },
         {
             "icon": "enchanted_book",
@@ -220,7 +221,7 @@
             "description": "Obtain Ancient Debris",
             "id": "obtain_ancient_debris",
             "category": "nether",
-            "points": "speedrun_end"
+            "points": "start_but_not"
         },
         {
             "icon": "paper",
@@ -295,7 +296,7 @@
             "id": "netherite_armor",
             "category": "nether",
             "type": "fancy",
-            "points": "advanced"
+            "points": "advanced_almost_full"
         },
         {
             "icon": "wither_skeleton_skull",
@@ -319,7 +320,7 @@
             "description": "Charge a Respawn Anchor to the maximum",
             "id": "charge_respawn_anchor",
             "category": "nether",
-            "points": "speedrun_a_bit"
+            "points": "speedrun_end"
         },
         {
             "icon": "warped_fungus_on_a_stick",
@@ -344,7 +345,7 @@
             "description": "Summon the Wither",
             "id": "summon_wither",
             "category": "nether",
-            "points": "normal"
+            "points": "advanced_almost"
         },
         {
             "icon": "glass_bottle",
