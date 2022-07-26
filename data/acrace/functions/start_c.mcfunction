@@ -21,7 +21,7 @@ function acrace:load/values
 execute if score multipliers global matches 1.. run function acrace:load/multipliers
 
 # world
-worldborder set 10000 5
+worldborder set 10000000 5
 gamemode survival @a[gamemode=!spectator]
 
 # set period
