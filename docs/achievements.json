@@ -138,7 +138,7 @@
             "category": "story",
             "type": "goal",
             "custom": true,
-            "points": "start_bit_less"
+            "points": "start_less"
         },
         {
             "icon": "flint_and_steel",
@@ -856,7 +856,7 @@
             "id": "balanced_diet",
             "category": "husbandry",
             "type": "fancy",
-            "points": "normal"
+            "points": "advanced_almost_full"
         },
         {
             "icon": "netherite_hoe",
