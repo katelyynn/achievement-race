@@ -25,5 +25,9 @@ scoreboard objectives add multipliers trigger
 bossbar add acrace:main ""
 bossbar set acrace:main color green
 
+# teams
+## admin, excludes gamemode-lock
+team add admin
+
 # defaults
 execute unless score defaults internal matches 1.. run function acrace:defaults
