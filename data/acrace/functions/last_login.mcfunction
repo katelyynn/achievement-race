@@ -2,7 +2,7 @@
 
 
 # -1, pre-start
-execute if score period internal matches -1 as @a[gamemode=!adventure,team=!admin] at @s run function acrace:warn_gamemode
+execute if score period internal matches -1 as @a[gamemode=!adventure,gamemode=!survival,team=!admin] at @s run function acrace:warn_gamemode
 execute if score period internal matches -1 run gamemode adventure @a[gamemode=!adventure,team=!admin]
 execute if score period internal matches -1 run effect give @a weakness 9999 255 true
 execute if score period internal matches -1 run effect give @a resistance 9999 255 true
