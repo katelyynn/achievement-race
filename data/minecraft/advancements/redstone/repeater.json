@@ -17,7 +17,7 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "Feels like we've been here before.."
+      "text": "Craft a repeater"
     },
     "frame": "task",
     "hidden": false,
@@ -26,7 +26,7 @@
     },
     "show_toast": true,
     "title": {
-      "text": "Repetition"
+      "text": "Repeater!"
     }
   },
   "requirements": [

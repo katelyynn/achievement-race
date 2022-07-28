@@ -910,15 +910,15 @@
         },
         {
             "icon": "repeater",
-            "name": "Repetition",
-            "description": "Feels like we've been here before..",
+            "name": "Repeater!",
+            "description": "Craft a repeater",
             "id": "repeater",
             "category": "redstone",
             "points": "bit_harder"
         },
         {
             "icon": "comparator",
-            "name": "Comparisons",
+            "name": "Comparator!",
             "description": "Craft a comparator",
             "id": "comparator",
             "category": "redstone",
