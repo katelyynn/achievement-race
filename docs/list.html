@@ -64,12 +64,12 @@
             </div>
             <div class="actions">
                 <a role="button" onclick="multiplier()" id="multiplier_toggle" class="button sheared small fit"><span class="content">Toggle multiplier</span></a>
-                <div class="search-wrap">
+                <!--<div class="search-wrap">
                     <div class="search sheared" style="margin-left: 10px" id="search-cont">
                         <input class="search-input" id="search" placeholder="Search for..." autofocus>
                         <button role="search" class="search-con" onclick="search()" id="search-con" aria-label="Search current text"><i class="icon w-28" icon-name="search"></i></button>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
         <div id="embed_categories"></div>
@@ -123,6 +123,31 @@
             document.getElementById('embed_categories').appendChild(em_category);
         }
 
+        for (let i in data.categories) {
+            let em_count = document.createElement('label');
+            em_count.classList.add('count','fix');
+            em_count.setAttribute('id',`${i}_count`);
+            em_count.textContent = localStorage.getItem(`${i}_count`);
+
+            document.getElementById(`header.${i}`).appendChild(em_count);
+        }
+
+        load_achievements();
+    });
+
+    function search() {
+        load_achievements(document.getElementById('search').value);
+    }
+
+    function load_achievements(search = '') {
+        search = search.replaceAll(',','');
+        data = full_data;
+
+        for (let i in data.categories) {
+            document.getElementById(`${i}`).innerHTML = '';
+            localStorage.setItem(`${i}_count`,0);
+        }
+
         for (let i in data.achievements) {
             if (data.achievements[i].description == "") { continue };
             let em = document.createElement('span');
@@ -138,18 +163,29 @@
 
 
             // append
-            localStorage.setItem(`${data.achievements[i].category}_count`,parseInt(localStorage.getItem(`${data.achievements[i].category}_count`))+1);
-            document.getElementById(data.achievements[i].category).appendChild(em);
+            if (search == '' || data.achievements[i].name.toLowerCase().includes(search.toLowerCase()) || data.achievements[i].description.toLowerCase().includes(search.toLowerCase())) {
+                localStorage.setItem(`${data.achievements[i].category}_count`,parseInt(localStorage.getItem(`${data.achievements[i].category}_count`))+1);
+                document.getElementById(data.achievements[i].category).appendChild(em);
+            }
         }
 
         for (let i in data.categories) {
-            let em_count = document.createElement('label');
-            em_count.classList.add('count','fix');
-            em_count.textContent = localStorage.getItem(`${i}_count`);
-
-            document.getElementById(`header.${i}`).appendChild(em_count);
+            document.getElementById(`${i}_count`).textContent = localStorage.getItem(`${i}_count`);
         }
-    });
+    }
+
+    /*$("#search").keyup(function(event) {
+        if (event.keyCode === 13) {
+            // enter
+            $("#search-con").click();
+        }
+        else if (event.keyCode === 27) {
+            // escape
+            clear_search();
+        } else if (event.keyCode !== 32) {
+            search();
+        }
+    });*/
 </script>
 <style>
     .supports .icon img {
