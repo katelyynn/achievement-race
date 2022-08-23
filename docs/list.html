@@ -12,66 +12,105 @@
 
     <title>Achievement list</title>
 
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://plexion.dev/js/scroll.js"></script>
     <script src="https://kit.fontawesome.com/20a071237e.js" crossorigin="anonymous"></script>
 </head>
 <body class="dark" style="--accent-page: var(--library);">
     <section class="left header sep no-align" style="bottom: 0;">
-        <h4>All achievements <label class="count fix" id="full"></label></h4>
-        <div class="rate-bar">
-            <span data-points="1"></span>
-            <span data-points="2"></span>
-            <span data-points="3"></span>
-            <span data-points="4"></span>
-            <span data-points="5"></span>
-            <span data-points="6"></span>
-            <span data-points="7"></span>
-            <span data-points="8"></span>
-            <span data-points="9"></span>
-            <span data-points="10"></span>
-            <span data-points="11"></span>
-            <span data-points="12"></span>
-            <span data-points="13"></span>
-            <span data-points="14"></span>
-            <span data-points="15"></span>
-            <span data-points="16"></span>
-            <span data-points="20"></span>
-            <span data-points="32"></span>
-            <span data-points="100"></span>
+        <div class="b4 no-padding">
+            <h4>All achievements <label class="count fix" id="full"></label></h4>
+            <div class="rate-bar">
+                <span data-points="1"></span>
+                <span data-points="2"></span>
+                <span data-points="3"></span>
+                <span data-points="4"></span>
+                <span data-points="5"></span>
+                <span data-points="6"></span>
+                <span data-points="7"></span>
+                <span data-points="8"></span>
+                <span data-points="9"></span>
+                <span data-points="10"></span>
+                <span data-points="11"></span>
+                <span data-points="12"></span>
+                <span data-points="13"></span>
+                <span data-points="14"></span>
+                <span data-points="15"></span>
+                <span data-points="16"></span>
+                <span data-points="20"></span>
+                <span data-points="32"></span>
+                <span data-points="100"></span>
+            </div>
+            <div class="rate-bar-text">
+                <span data-points="1">1</span>
+                <span data-points="2">2</span>
+                <span data-points="3">3</span>
+                <span data-points="4">4</span>
+                <span data-points="5">5</span>
+                <span data-points="6">6</span>
+                <span data-points="7">7</span>
+                <span data-points="8">8</span>
+                <span data-points="9">9</span>
+                <span data-points="10">10</span>
+                <span data-points="11">11</span>
+                <span data-points="12">12</span>
+                <span data-points="13">13</span>
+                <span data-points="14">14</span>
+                <span data-points="15">15</span>
+                <span data-points="16">16</span>
+                <span data-points="20">20</span>
+                <span data-points="32">32</span>
+                <span data-points="100">100</span>
+            </div>
+            <div class="actions">
+                <a role="button" onclick="multiplier()" id="multiplier_toggle" class="button sheared small fit"><span class="content">Toggle multiplier</span></a>
+                <div class="search-wrap">
+                    <div class="search sheared" style="margin-left: 10px" id="search-cont">
+                        <input class="search-input" id="search" placeholder="Search for..." autofocus>
+                        <button role="search" class="search-con" onclick="search()" id="search-con" aria-label="Search current text"><i class="icon w-28" icon-name="search"></i></button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="rate-bar-text">
-            <span data-points="1">1</span>
-            <span data-points="2">2</span>
-            <span data-points="3">3</span>
-            <span data-points="4">4</span>
-            <span data-points="5">5</span>
-            <span data-points="6">6</span>
-            <span data-points="7">7</span>
-            <span data-points="8">8</span>
-            <span data-points="9">9</span>
-            <span data-points="10">10</span>
-            <span data-points="11">11</span>
-            <span data-points="12">12</span>
-            <span data-points="13">13</span>
-            <span data-points="14">14</span>
-            <span data-points="15">15</span>
-            <span data-points="16">16</span>
-            <span data-points="20">20</span>
-            <span data-points="32">32</span>
-            <span data-points="100">100</span>
-        </div>
-        <p>In-game, 6 random achievements by default are 2x multiplied, the raw points displayed here will not reflect that.</p>
-        <br>
         <div id="embed_categories"></div>
     </section>
 </body>
 <script>
     // parse
     let hook = document.getElementById("hook");
+    let point_multiplier = false;
+    let full_data;
+
+    function multiplier() {
+        if (point_multiplier) {
+            // disable
+            document.getElementById('multiplier_toggle').classList.remove('focus');
+            point_multiplier = false;
+
+            for (let i in full_data.achievements) {
+                let points = full_data.points[full_data.achievements[i].points];
+
+                document.getElementById(`count_${full_data.achievements[i].id}`).setAttribute('data-points',points);
+                document.getElementById(`count_${full_data.achievements[i].id}`).textContent = `+${points}`;
+            }
+        } else {
+            // enable
+            document.getElementById('multiplier_toggle').classList.add('focus');
+            point_multiplier = true;
+
+            for (let i in full_data.achievements) {
+                let points = full_data.points[full_data.achievements[i].points];
+                points *= 2;
+
+                document.getElementById(`count_${full_data.achievements[i].id}`).setAttribute('data-points',points);
+                document.getElementById(`count_${full_data.achievements[i].id}`).textContent = `+${points}`;
+            }
+        }
+    }
 
     $.get('achievements.json', function(data) {
         document.getElementById("full").innerHTML = data.achievements.length;
+        full_data = data;
 
         for (let i in data.categories) {
             let em_category = document.createElement('div');
@@ -94,7 +133,7 @@
 
             em.innerHTML = (`
             <span class="icon"><img src="https://res.plexion.dev/minecraft/item/${data.achievements[i].icon}.png"></span>
-            <span class="text"><h5>${data.achievements[i].name} <label class="count ${data.achievements[i].points}" data-points="${data.points[data.achievements[i].points]}">+${data.points[data.achievements[i].points]}</label></h5><p>${data.achievements[i].description}</p></span>
+            <span class="text"><h5>${data.achievements[i].name} <label class="count ${data.achievements[i].points} point_${data.points[data.achievements[i].points]}" id="count_${data.achievements[i].id}" data-points="${data.points[data.achievements[i].points]}">+${data.points[data.achievements[i].points]}</label></h5><p>${data.achievements[i].description}</p></span>
             `);
 
 
@@ -142,6 +181,4 @@
         background-image: url(achievement-oval.png);
     }
 </style>
-<script>
-    feather.replace();
-</script>
+<script>lucide.createIcons();</script>
