@@ -5,7 +5,6 @@
 ## generated with index.html
 ## should not be modified directly
 
-scoreboard objectives add achievement.story_oak_log_root dummy
 scoreboard objectives add achievement.story_root dummy
 scoreboard objectives add achievement.story_mine_stone dummy
 scoreboard objectives add achievement.story_upgrade_tools dummy

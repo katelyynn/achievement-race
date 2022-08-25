@@ -43,14 +43,6 @@
     },
     "achievements": [
         {
-            "icon": "oak_log",
-            "name": "Minecraft",
-            "description": "Attack a tree until a block of wood pops out",
-            "id": "oak_log_root",
-            "category": "story",
-            "points": "easy"
-        },
-        {
             "icon": "crafting_table_side",
             "name": "Benchmarking",
             "description": "Craft a workbench with four blocks of planks",

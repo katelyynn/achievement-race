@@ -9,7 +9,6 @@ kill @e[tag=achievement]
 ## ' automatically escaped as \'
 ## " automatically replaced as \'
 
-summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Minecraft"}',Tags:["achievement","story_oak_log_root"]}
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Benchmarking"}',Tags:["achievement","story_root"]}
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Stone Age"}',Tags:["achievement","story_mine_stone"]}
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Getting an Upgrade"}',Tags:["achievement","story_upgrade_tools"]}
@@ -113,8 +112,8 @@ summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,Cu
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"With Our Powers Combined!"}',Tags:["achievement","husbandry_froglights"]}
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"The Healing Power of Friendship!"}',Tags:["achievement","husbandry_kill_axolotl_target"]}
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Redstone"}',Tags:["achievement","redstone_root"]}
-summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Repetition"}',Tags:["achievement","redstone_repeater"]}
-summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Comparisons"}',Tags:["achievement","redstone_comparator"]}
+summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Repeater!"}',Tags:["achievement","redstone_repeater"]}
+summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Comparator!"}',Tags:["achievement","redstone_comparator"]}
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Space Hopper"}',Tags:["achievement","redstone_hopper"]}
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Space Dropper"}',Tags:["achievement","redstone_dropper"]}
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Railway"}',Tags:["achievement","redstone_rail"]}

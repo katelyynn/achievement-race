@@ -5,11 +5,6 @@
 ## generated with index.html
 ## should not be modified directly
 
-## Minecraft
-execute as @a[advancements={minecraft:story/oak_log_root=true}] at @s unless score @s achievement.story_oak_log_root matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=story_oak_log_root,limit=1] achievement.values
-execute as @a[advancements={minecraft:story/oak_log_root=true}] at @s unless score @s achievement.story_oak_log_root matches 1.. if entity @e[tag=achievement,tag=story_oak_log_root,tag=multiplied,limit=1] run tag @s add claimed_multiply
-execute as @a[advancements={minecraft:story/oak_log_root=true}] at @s unless score @s achievement.story_oak_log_root matches 1.. run function acrace:pick/take
-execute as @a[advancements={minecraft:story/oak_log_root=true}] at @s unless score @s achievement.story_oak_log_root matches 1.. run scoreboard players set @s achievement.story_oak_log_root 1
 ## Benchmarking
 execute as @a[advancements={minecraft:story/root=true}] at @s unless score @s achievement.story_root matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=story_root,limit=1] achievement.values
 execute as @a[advancements={minecraft:story/root=true}] at @s unless score @s achievement.story_root matches 1.. if entity @e[tag=achievement,tag=story_root,tag=multiplied,limit=1] run tag @s add claimed_multiply
@@ -525,12 +520,12 @@ execute as @a[advancements={minecraft:redstone/root=true}] at @s unless score @s
 execute as @a[advancements={minecraft:redstone/root=true}] at @s unless score @s achievement.redstone_root matches 1.. if entity @e[tag=achievement,tag=redstone_root,tag=multiplied,limit=1] run tag @s add claimed_multiply
 execute as @a[advancements={minecraft:redstone/root=true}] at @s unless score @s achievement.redstone_root matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:redstone/root=true}] at @s unless score @s achievement.redstone_root matches 1.. run scoreboard players set @s achievement.redstone_root 1
-## Repetition
+## Repeater!
 execute as @a[advancements={minecraft:redstone/repeater=true}] at @s unless score @s achievement.redstone_repeater matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=redstone_repeater,limit=1] achievement.values
 execute as @a[advancements={minecraft:redstone/repeater=true}] at @s unless score @s achievement.redstone_repeater matches 1.. if entity @e[tag=achievement,tag=redstone_repeater,tag=multiplied,limit=1] run tag @s add claimed_multiply
 execute as @a[advancements={minecraft:redstone/repeater=true}] at @s unless score @s achievement.redstone_repeater matches 1.. run function acrace:pick/take
 execute as @a[advancements={minecraft:redstone/repeater=true}] at @s unless score @s achievement.redstone_repeater matches 1.. run scoreboard players set @s achievement.redstone_repeater 1
-## Comparisons
+## Comparator!
 execute as @a[advancements={minecraft:redstone/comparator=true}] at @s unless score @s achievement.redstone_comparator matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=redstone_comparator,limit=1] achievement.values
 execute as @a[advancements={minecraft:redstone/comparator=true}] at @s unless score @s achievement.redstone_comparator matches 1.. if entity @e[tag=achievement,tag=redstone_comparator,tag=multiplied,limit=1] run tag @s add claimed_multiply
 execute as @a[advancements={minecraft:redstone/comparator=true}] at @s unless score @s achievement.redstone_comparator matches 1.. run function acrace:pick/take

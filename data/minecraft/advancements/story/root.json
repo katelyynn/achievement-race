@@ -1,5 +1,4 @@
 {
-  "parent": "minecraft:story/oak_log_root",
   "criteria": {
     "crafting_table": {
       "conditions": {

@@ -5,7 +5,6 @@
 ## generated with index.html
 ## should not be modified directly
 
-scoreboard players set @e[tag=achievement,tag=story_oak_log_root,limit=1] achievement.values 1
 scoreboard players set @e[tag=achievement,tag=story_root,limit=1] achievement.values 1
 scoreboard players set @e[tag=achievement,tag=story_mine_stone,limit=1] achievement.values 1
 scoreboard players set @e[tag=achievement,tag=story_upgrade_tools,limit=1] achievement.values 1
