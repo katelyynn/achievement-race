@@ -15,6 +15,7 @@
   },
   "display": {
     "announce_to_chat": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "description": {
       "text": "Craft a workbench with four blocks of planks"
     },
