@@ -6,6 +6,8 @@ function acrace:last_login
 
 # setup
 execute as @a unless score setup internal matches 1.. run function acrace:setup/go
+## validate
+function acrace:setup/validate
 
 # world
 bossbar set acrace:main players @a
