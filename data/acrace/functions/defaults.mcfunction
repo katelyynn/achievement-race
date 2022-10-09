@@ -37,7 +37,7 @@ scoreboard players set end_time global 2700
 scoreboard players set multipliers global 1
 ## base multiplier (2x)
 scoreboard players set multiplier global 2
-## amount of achievements
+## multiplied achievement count
 scoreboard players set multiplied_achievements global 6
 
 
