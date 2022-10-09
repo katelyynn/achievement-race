@@ -8,9 +8,11 @@
 execute unless score @s achievement.claiming_points matches 1.. run scoreboard players set @s achievement.claiming_points 1
 
 # announce
+
 ## if hiding
 execute if score hide_point_gain global matches 1.. run tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"+","color":"green","bold":true},{"score":{"name":"@s","objective":"achievement.claiming_points"},"color":"green","bold":true},{"text":"] ","color":"dark_gray"},{"selector":"@s","color":"gold"},{"text":" earned an achievement!","color":"yellow"}]
 execute if score hide_point_gain global matches 1.. run tellraw @a[distance=1.5..] ["",{"text":"[","color":"dark_gray"},{"text":"+??","color":"green","bold":true},{"text":"] ","color":"dark_gray"},{"selector":"@s","color":"gold"},{"text":" earned an achievement!","color":"yellow"}]
+
 ## if not hiding
 ### normal
 execute unless score hide_point_gain global matches 1.. unless entity @s[tag=claimed_multiply] run tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"+","color":"green","bold":true},{"score":{"name":"@s","objective":"achievement.claiming_points"},"color":"green","bold":true},{"text":"] ","color":"dark_gray"},{"selector":"@s","color":"gold"},{"text":" earned an achievement!","color":"yellow"}]
@@ -25,6 +27,6 @@ scoreboard players operation @s score += @s achievement.claiming_points
 # is multiplied
 ## 'claimed_multiply' tag given if achievement was multiplied
 execute unless score hide_point_gain global matches 1.. if entity @s[tag=claimed_multiply] run playsound minecraft:block.brewing_stand.brew player @s
-execute unless score hide_point_gain global matches 1.. if entity @s[tag=claimed_multiply] run tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"⭐","color":"light_purple"},{"text":"] ","color":"dark_gray"},{"text":"You earned a ","color":"yellow"},{"text":"x2 multiplied","color":"light_purple"},{"text":" achievement!","color":"yellow"}]
+execute unless score hide_point_gain global matches 1.. if entity @s[tag=claimed_multiply] run tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"⭐","color":"light_purple"},{"text":"] ","color":"dark_gray"},{"text":"You earned a ","color":"yellow"},{"text":"x","color":"light_purple"},{"score":{"name":"multiplier","objective":"global"},"color":"light_purple"},{"text":" multiplied","color":"light_purple"},{"text":" achievement!","color":"yellow"}]
 # remove tag
 tag @s remove claimed_multiply
