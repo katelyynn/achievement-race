@@ -3,8 +3,9 @@
 ## ran as user
 
 
-# range check
-execute unless score @s achievement.claiming_points matches 1.. run scoreboard players set @s achievement.claiming_points 5
+# points to be claimed
+## should be set via pick/checks, if not set to base value 1
+execute unless score @s achievement.claiming_points matches 1.. run scoreboard players set @s achievement.claiming_points 1
 
 # announce
 ## if hiding
