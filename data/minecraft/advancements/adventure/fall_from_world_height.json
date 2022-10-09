@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:adventure/spelunker",
+  "parent": "minecraft:adventure/root",
   "criteria": {
     "fall_from_world_height": {
       "conditions": {

@@ -26,6 +26,7 @@ scoreboard players operation @s score += @s achievement.claiming_points
 
 # is multiplied
 ## 'claimed_multiply' tag given if achievement was multiplied
+## uses 'multiplier' score for 'x2 multiplied'
 execute unless score hide_point_gain global matches 1.. if entity @s[tag=claimed_multiply] run playsound minecraft:block.brewing_stand.brew player @s
 execute unless score hide_point_gain global matches 1.. if entity @s[tag=claimed_multiply] run tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"⭐","color":"light_purple"},{"text":"] ","color":"dark_gray"},{"text":"You earned a ","color":"yellow"},{"text":"x","color":"light_purple"},{"score":{"name":"multiplier","objective":"global"},"color":"light_purple"},{"text":" multiplied","color":"light_purple"},{"text":" achievement!","color":"yellow"}]
 # remove tag
