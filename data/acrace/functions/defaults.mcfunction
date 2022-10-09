@@ -33,8 +33,12 @@ scoreboard players set allow_draw global 1
 scoreboard players set end_time global 2700
 
 # multipliers
+## if enabled
 scoreboard players set multipliers global 1
+## base multiplier (2x)
 scoreboard players set multiplier global 2
+## amount of achievements
+scoreboard players set multiplied_achievements global 6
 
 
 # initialise achievements
