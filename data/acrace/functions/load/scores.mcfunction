@@ -6,112 +6,222 @@
 ## should not be modified directly
 
 scoreboard objectives add achievement.story_root dummy
+scoreboard players set story_root achievement.claims 0
 scoreboard objectives add achievement.story_mine_stone dummy
+scoreboard players set story_mine_stone achievement.claims 0
 scoreboard objectives add achievement.story_upgrade_tools dummy
+scoreboard players set story_upgrade_tools achievement.claims 0
 scoreboard objectives add achievement.story_smelt_iron dummy
+scoreboard players set story_smelt_iron achievement.claims 0
 scoreboard objectives add achievement.story_obtain_armor dummy
+scoreboard players set story_obtain_armor achievement.claims 0
 scoreboard objectives add achievement.story_lava_bucket dummy
+scoreboard players set story_lava_bucket achievement.claims 0
 scoreboard objectives add achievement.story_iron_tools dummy
+scoreboard players set story_iron_tools achievement.claims 0
 scoreboard objectives add achievement.story_deflect_arrow dummy
+scoreboard players set story_deflect_arrow achievement.claims 0
 scoreboard objectives add achievement.story_form_obsidian dummy
+scoreboard players set story_form_obsidian achievement.claims 0
 scoreboard objectives add achievement.story_mine_diamond dummy
+scoreboard players set story_mine_diamond achievement.claims 0
 scoreboard objectives add achievement.story_diamond_tools dummy
+scoreboard players set story_diamond_tools achievement.claims 0
 scoreboard objectives add achievement.story_enter_the_nether dummy
+scoreboard players set story_enter_the_nether achievement.claims 0
 scoreboard objectives add achievement.story_shiny_gear dummy
+scoreboard players set story_shiny_gear achievement.claims 0
 scoreboard objectives add achievement.story_diamond_armor dummy
+scoreboard players set story_diamond_armor achievement.claims 0
 scoreboard objectives add achievement.story_enchant_item dummy
+scoreboard players set story_enchant_item achievement.claims 0
 scoreboard objectives add achievement.story_cure_zombie_villager dummy
+scoreboard players set story_cure_zombie_villager achievement.claims 0
 scoreboard objectives add achievement.story_follow_ender_eye dummy
+scoreboard players set story_follow_ender_eye achievement.claims 0
 scoreboard objectives add achievement.story_enter_the_end dummy
+scoreboard players set story_enter_the_end achievement.claims 0
 scoreboard objectives add achievement.nether_return_to_sender dummy
+scoreboard players set nether_return_to_sender achievement.claims 0
 scoreboard objectives add achievement.nether_find_bastion dummy
+scoreboard players set nether_find_bastion achievement.claims 0
 scoreboard objectives add achievement.nether_obtain_ancient_debris dummy
+scoreboard players set nether_obtain_ancient_debris achievement.claims 0
 scoreboard objectives add achievement.nether_fast_travel dummy
+scoreboard players set nether_fast_travel achievement.claims 0
 scoreboard objectives add achievement.nether_find_fortress dummy
+scoreboard players set nether_find_fortress achievement.claims 0
 scoreboard objectives add achievement.nether_obtain_crying_obsidian dummy
+scoreboard players set nether_obtain_crying_obsidian achievement.claims 0
 scoreboard objectives add achievement.nether_distract_piglin dummy
+scoreboard players set nether_distract_piglin achievement.claims 0
 scoreboard objectives add achievement.nether_ride_strider dummy
+scoreboard players set nether_ride_strider achievement.claims 0
 scoreboard objectives add achievement.nether_uneasy_alliance dummy
+scoreboard players set nether_uneasy_alliance achievement.claims 0
 scoreboard objectives add achievement.nether_loot_bastion dummy
+scoreboard players set nether_loot_bastion achievement.claims 0
 scoreboard objectives add achievement.nether_use_lodestone dummy
+scoreboard players set nether_use_lodestone achievement.claims 0
 scoreboard objectives add achievement.nether_netherite_armor dummy
+scoreboard players set nether_netherite_armor achievement.claims 0
 scoreboard objectives add achievement.nether_get_wither_skull dummy
+scoreboard players set nether_get_wither_skull achievement.claims 0
 scoreboard objectives add achievement.nether_obtain_blaze_rod dummy
+scoreboard players set nether_obtain_blaze_rod achievement.claims 0
 scoreboard objectives add achievement.nether_charge_respawn_anchor dummy
+scoreboard players set nether_charge_respawn_anchor achievement.claims 0
 scoreboard objectives add achievement.nether_ride_strider_in_overworld_lava dummy
+scoreboard players set nether_ride_strider_in_overworld_lava achievement.claims 0
 scoreboard objectives add achievement.nether_explore_nether dummy
+scoreboard players set nether_explore_nether achievement.claims 0
 scoreboard objectives add achievement.nether_summon_wither dummy
+scoreboard players set nether_summon_wither achievement.claims 0
 scoreboard objectives add achievement.nether_brew_potion dummy
+scoreboard players set nether_brew_potion achievement.claims 0
 scoreboard objectives add achievement.nether_create_beacon dummy
+scoreboard players set nether_create_beacon achievement.claims 0
 scoreboard objectives add achievement.nether_all_potions dummy
+scoreboard players set nether_all_potions achievement.claims 0
 scoreboard objectives add achievement.nether_create_full_beacon dummy
+scoreboard players set nether_create_full_beacon achievement.claims 0
 scoreboard objectives add achievement.nether_all_effects dummy
+scoreboard players set nether_all_effects achievement.claims 0
 scoreboard objectives add achievement.end_kill_dragon dummy
+scoreboard players set end_kill_dragon achievement.claims 0
 scoreboard objectives add achievement.end_dragon_egg dummy
+scoreboard players set end_dragon_egg achievement.claims 0
 scoreboard objectives add achievement.end_enter_end_gateway dummy
+scoreboard players set end_enter_end_gateway achievement.claims 0
 scoreboard objectives add achievement.end_respawn_dragon dummy
+scoreboard players set end_respawn_dragon achievement.claims 0
 scoreboard objectives add achievement.end_dragon_breath dummy
+scoreboard players set end_dragon_breath achievement.claims 0
 scoreboard objectives add achievement.end_find_end_city dummy
+scoreboard players set end_find_end_city achievement.claims 0
 scoreboard objectives add achievement.end_elytra dummy
+scoreboard players set end_elytra achievement.claims 0
 scoreboard objectives add achievement.end_levitate dummy
+scoreboard players set end_levitate achievement.claims 0
 scoreboard objectives add achievement.adventure_voluntary_exile dummy
+scoreboard players set adventure_voluntary_exile achievement.claims 0
 scoreboard objectives add achievement.adventure_spyglass_at_parrot dummy
+scoreboard players set adventure_spyglass_at_parrot achievement.claims 0
 scoreboard objectives add achievement.adventure_kill_a_mob dummy
+scoreboard players set adventure_kill_a_mob achievement.claims 0
 scoreboard objectives add achievement.adventure_kill_creeper dummy
+scoreboard players set adventure_kill_creeper achievement.claims 0
 scoreboard objectives add achievement.adventure_trade dummy
+scoreboard players set adventure_trade achievement.claims 0
 scoreboard objectives add achievement.adventure_honey_block_slide dummy
+scoreboard players set adventure_honey_block_slide achievement.claims 0
 scoreboard objectives add achievement.adventure_ol_betsy dummy
+scoreboard players set adventure_ol_betsy achievement.claims 0
 scoreboard objectives add achievement.adventure_lightning_rod_with_villager_no_fire dummy
+scoreboard players set adventure_lightning_rod_with_villager_no_fire achievement.claims 0
 scoreboard objectives add achievement.adventure_spelunker dummy
+scoreboard players set adventure_spelunker achievement.claims 0
 scoreboard objectives add achievement.adventure_fall_from_world_height dummy
+scoreboard players set adventure_fall_from_world_height achievement.claims 0
 scoreboard objectives add achievement.adventure_avoid_vibration dummy
+scoreboard players set adventure_avoid_vibration achievement.claims 0
 scoreboard objectives add achievement.adventure_sleep_in_bed dummy
+scoreboard players set adventure_sleep_in_bed achievement.claims 0
 scoreboard objectives add achievement.adventure_hero_of_the_village dummy
+scoreboard players set adventure_hero_of_the_village achievement.claims 0
 scoreboard objectives add achievement.adventure_spyglass_at_ghast dummy
+scoreboard players set adventure_spyglass_at_ghast achievement.claims 0
 scoreboard objectives add achievement.adventure_throw_trident dummy
+scoreboard players set adventure_throw_trident achievement.claims 0
 scoreboard objectives add achievement.adventure_kill_mob_near_sculk_catalyst dummy
+scoreboard players set adventure_kill_mob_near_sculk_catalyst achievement.claims 0
 scoreboard objectives add achievement.adventure_shoot_arrow dummy
+scoreboard players set adventure_shoot_arrow achievement.claims 0
 scoreboard objectives add achievement.adventure_kill_all_mobs dummy
+scoreboard players set adventure_kill_all_mobs achievement.claims 0
 scoreboard objectives add achievement.adventure_totem_of_undying dummy
+scoreboard players set adventure_totem_of_undying achievement.claims 0
 scoreboard objectives add achievement.adventure_summon_iron_golem dummy
+scoreboard players set adventure_summon_iron_golem achievement.claims 0
 scoreboard objectives add achievement.adventure_trade_at_world_height dummy
+scoreboard players set adventure_trade_at_world_height achievement.claims 0
 scoreboard objectives add achievement.adventure_two_birds_one_arrow dummy
+scoreboard players set adventure_two_birds_one_arrow achievement.claims 0
 scoreboard objectives add achievement.adventure_whos_the_pillager_now dummy
+scoreboard players set adventure_whos_the_pillager_now achievement.claims 0
 scoreboard objectives add achievement.adventure_arbalistic dummy
+scoreboard players set adventure_arbalistic achievement.claims 0
 scoreboard objectives add achievement.adventure_adventuring_time dummy
+scoreboard players set adventure_adventuring_time achievement.claims 0
 scoreboard objectives add achievement.adventure_play_jukebox_in_meadows dummy
+scoreboard players set adventure_play_jukebox_in_meadows achievement.claims 0
 scoreboard objectives add achievement.adventure_walk_on_powder_snow_with_leather_boots dummy
+scoreboard players set adventure_walk_on_powder_snow_with_leather_boots achievement.claims 0
 scoreboard objectives add achievement.adventure_spyglass_at_dragon dummy
+scoreboard players set adventure_spyglass_at_dragon achievement.claims 0
 scoreboard objectives add achievement.adventure_very_very_frightening dummy
+scoreboard players set adventure_very_very_frightening achievement.claims 0
 scoreboard objectives add achievement.adventure_sniper_duel dummy
+scoreboard players set adventure_sniper_duel achievement.claims 0
 scoreboard objectives add achievement.adventure_bullseye dummy
+scoreboard players set adventure_bullseye achievement.claims 0
 scoreboard objectives add achievement.husbandry_safely_harvest_honey dummy
+scoreboard players set husbandry_safely_harvest_honey achievement.claims 0
 scoreboard objectives add achievement.husbandry_breed_an_animal dummy
+scoreboard players set husbandry_breed_an_animal achievement.claims 0
 scoreboard objectives add achievement.husbandry_allay_deliver_item_to_player dummy
+scoreboard players set husbandry_allay_deliver_item_to_player achievement.claims 0
 scoreboard objectives add achievement.husbandry_ride_a_boat_with_a_goat dummy
+scoreboard players set husbandry_ride_a_boat_with_a_goat achievement.claims 0
 scoreboard objectives add achievement.husbandry_tame_an_animal dummy
+scoreboard players set husbandry_tame_an_animal achievement.claims 0
 scoreboard objectives add achievement.husbandry_make_a_sign_glow dummy
+scoreboard players set husbandry_make_a_sign_glow achievement.claims 0
 scoreboard objectives add achievement.husbandry_fishy_business dummy
+scoreboard players set husbandry_fishy_business achievement.claims 0
 scoreboard objectives add achievement.husbandry_silk_touch_nest dummy
+scoreboard players set husbandry_silk_touch_nest achievement.claims 0
 scoreboard objectives add achievement.husbandry_tadpole_in_a_bucket dummy
+scoreboard players set husbandry_tadpole_in_a_bucket achievement.claims 0
 scoreboard objectives add achievement.husbandry_plant_seed dummy
+scoreboard players set husbandry_plant_seed achievement.claims 0
 scoreboard objectives add achievement.husbandry_wax_on dummy
+scoreboard players set husbandry_wax_on achievement.claims 0
 scoreboard objectives add achievement.husbandry_bred_all_animals dummy
+scoreboard players set husbandry_bred_all_animals achievement.claims 0
 scoreboard objectives add achievement.husbandry_allay_deliver_cake_to_note_block dummy
+scoreboard players set husbandry_allay_deliver_cake_to_note_block achievement.claims 0
 scoreboard objectives add achievement.husbandry_complete_catalogue dummy
+scoreboard players set husbandry_complete_catalogue achievement.claims 0
 scoreboard objectives add achievement.husbandry_tactical_fishing dummy
+scoreboard players set husbandry_tactical_fishing achievement.claims 0
 scoreboard objectives add achievement.husbandry_leash_all_frog_variants dummy
+scoreboard players set husbandry_leash_all_frog_variants achievement.claims 0
 scoreboard objectives add achievement.husbandry_balanced_diet dummy
+scoreboard players set husbandry_balanced_diet achievement.claims 0
 scoreboard objectives add achievement.husbandry_obtain_netherite_hoe dummy
+scoreboard players set husbandry_obtain_netherite_hoe achievement.claims 0
 scoreboard objectives add achievement.husbandry_wax_off dummy
+scoreboard players set husbandry_wax_off achievement.claims 0
 scoreboard objectives add achievement.husbandry_axolotl_in_a_bucket dummy
+scoreboard players set husbandry_axolotl_in_a_bucket achievement.claims 0
 scoreboard objectives add achievement.husbandry_froglights dummy
+scoreboard players set husbandry_froglights achievement.claims 0
 scoreboard objectives add achievement.husbandry_kill_axolotl_target dummy
+scoreboard players set husbandry_kill_axolotl_target achievement.claims 0
 scoreboard objectives add achievement.redstone_root dummy
+scoreboard players set redstone_root achievement.claims 0
 scoreboard objectives add achievement.redstone_repeater dummy
+scoreboard players set redstone_repeater achievement.claims 0
 scoreboard objectives add achievement.redstone_comparator dummy
+scoreboard players set redstone_comparator achievement.claims 0
 scoreboard objectives add achievement.redstone_hopper dummy
+scoreboard players set redstone_hopper achievement.claims 0
 scoreboard objectives add achievement.redstone_dropper dummy
+scoreboard players set redstone_dropper achievement.claims 0
 scoreboard objectives add achievement.redstone_rail dummy
+scoreboard players set redstone_rail achievement.claims 0
 scoreboard objectives add achievement.redstone_minecart dummy
+scoreboard players set redstone_minecart achievement.claims 0
 scoreboard objectives add achievement.redstone_furnace_minecart dummy
+scoreboard players set redstone_furnace_minecart achievement.claims 0

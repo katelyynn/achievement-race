@@ -35,6 +35,9 @@ scoreboard players enable @a multipliers
 execute as @a at @s if score @s multipliers matches 1.. run function acrace:load/multipliers_show
 execute as @a at @s if score @s multipliers matches 1.. run scoreboard players reset @s multipliers
 
+# detect when achievement is fully claimed
+execute if score period internal matches 1 run function acrace:taken/checks
+
 # win checks
 execute if score period internal matches 1 if score time_s internal >= end_time global run function acrace:win/checks
 
