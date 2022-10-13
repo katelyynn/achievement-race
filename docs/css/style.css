@@ -96,6 +96,10 @@
     color: #FFD966 !important;
     --color: #1d1b8d;
 }
+[data-points="52"] {
+    color: #FFD966 !important;
+    --color: #1b1983;
+}
 [data-points="64"] {
     color: #FFD966 !important;
     --color: #131177;
