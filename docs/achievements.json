@@ -700,7 +700,7 @@
             "id": "sniper_duel",
             "category": "adventure",
             "type": "fancy",
-            "points": "start_but_not"
+            "points": "start"
         },
         {
             "icon": "target_side",
