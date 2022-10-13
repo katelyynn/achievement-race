@@ -147,7 +147,7 @@
             "description": "Diamond armor saves lives",
             "id": "shiny_gear",
             "category": "story",
-            "points": "mid"
+            "points": "start_bit_less"
         },
         {
             "icon": "diamond_chestplate",
@@ -164,7 +164,7 @@
             "description": "Enchant an item at an Enchantment Table",
             "id": "enchant_item",
             "category": "story",
-            "points": "speedrun"
+            "points": "start_but_not"
         },
         {
             "icon": "golden_apple",
