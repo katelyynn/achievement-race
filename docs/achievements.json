@@ -624,7 +624,7 @@
             "description": "Trade with a Villager at the build height limit",
             "id": "trade_at_world_height",
             "category": "adventure",
-            "points": "advanced"
+            "points": "advanced_almost_full"
         },
         {
             "icon": "crossbow_standby",
