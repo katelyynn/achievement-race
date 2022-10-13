@@ -38,6 +38,7 @@
         "advanced_almost_full": 15,
         "advanced_full": 16,
         "advanced_max": 20,
+        "advanced_max_max": 26,
         "advanced_full_max": 32,
         "what": 100
     },
@@ -146,7 +147,7 @@
             "description": "Diamond armor saves lives",
             "id": "shiny_gear",
             "category": "story",
-            "points": "mid"
+            "points": "start_bit_less"
         },
         {
             "icon": "diamond_chestplate",
@@ -163,7 +164,7 @@
             "description": "Enchant an item at an Enchantment Table",
             "id": "enchant_item",
             "category": "story",
-            "points": "speedrun"
+            "points": "start_but_not"
         },
         {
             "icon": "golden_apple",
@@ -530,7 +531,7 @@
             "description": "Free fall from the top of the world (build limit) to the bottom of the world and survive",
             "id": "fall_from_world_height",
             "category": "adventure",
-            "points": "speedrun_a_bit"
+            "points": "speedrun_end"
         },
         {
             "icon": "sculk_sensor_side",
@@ -597,7 +598,7 @@
             "id": "kill_all_mobs",
             "category": "adventure",
             "type": "fancy",
-            "points": "advanced"
+            "points": "advanced_max_max"
         },
         {
             "icon": "totem_of_undying",
@@ -615,7 +616,7 @@
             "id": "summon_iron_golem",
             "category": "adventure",
             "type": "oval",
-            "points": "normal"
+            "points": "speedrun_end"
         },
         {
             "icon": "emerald",
@@ -623,7 +624,7 @@
             "description": "Trade with a Villager at the build height limit",
             "id": "trade_at_world_height",
             "category": "adventure",
-            "points": "advanced"
+            "points": "advanced_almost_full"
         },
         {
             "icon": "crossbow_standby",
@@ -699,7 +700,7 @@
             "id": "sniper_duel",
             "category": "adventure",
             "type": "fancy",
-            "points": "start_but_not"
+            "points": "start"
         },
         {
             "icon": "target_side",
@@ -708,7 +709,7 @@
             "id": "bullseye",
             "category": "adventure",
             "type": "fancy",
-            "points": "start_less"
+            "points": "bit_harder"
         },
         {
             "icon": "honey_bottle",
@@ -780,7 +781,7 @@
             "description": "Catch a Tadpole in a Bucket",
             "id": "tadpole_in_a_bucket",
             "category": "husbandry",
-            "points": "start_less"
+            "points": "bit_harder"
         },
         {
             "icon": "wheat",
@@ -805,7 +806,7 @@
             "id": "bred_all_animals",
             "category": "husbandry",
             "type": "fancy",
-            "points": "speedrun_end"
+            "points": "advanced"
         },
         {
             "icon": "note_block",
@@ -848,7 +849,7 @@
             "id": "balanced_diet",
             "category": "husbandry",
             "type": "fancy",
-            "points": "advanced_almost_full"
+            "points": "advanced_max_max"
         },
         {
             "icon": "netherite_hoe",
