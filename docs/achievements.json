@@ -531,7 +531,7 @@
             "description": "Free fall from the top of the world (build limit) to the bottom of the world and survive",
             "id": "fall_from_world_height",
             "category": "adventure",
-            "points": "speedrun_a_bit"
+            "points": "speedrun_end"
         },
         {
             "icon": "sculk_sensor_side",
