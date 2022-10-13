@@ -806,7 +806,7 @@
             "id": "bred_all_animals",
             "category": "husbandry",
             "type": "fancy",
-            "points": "speedrun_end"
+            "points": "advanced"
         },
         {
             "icon": "note_block",
@@ -849,7 +849,7 @@
             "id": "balanced_diet",
             "category": "husbandry",
             "type": "fancy",
-            "points": "advanced_almost_full"
+            "points": "advanced_max_max"
         },
         {
             "icon": "netherite_hoe",
