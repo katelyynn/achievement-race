@@ -781,7 +781,7 @@
             "description": "Catch a Tadpole in a Bucket",
             "id": "tadpole_in_a_bucket",
             "category": "husbandry",
-            "points": "start_less"
+            "points": "bit_harder"
         },
         {
             "icon": "wheat",
