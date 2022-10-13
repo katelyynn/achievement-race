@@ -38,6 +38,7 @@
         "advanced_almost_full": 15,
         "advanced_full": 16,
         "advanced_max": 20,
+        "advanced_max_max": 26,
         "advanced_full_max": 32,
         "what": 100
     },
@@ -597,7 +598,7 @@
             "id": "kill_all_mobs",
             "category": "adventure",
             "type": "fancy",
-            "points": "advanced"
+            "points": "advanced_max_max"
         },
         {
             "icon": "totem_of_undying",
@@ -615,7 +616,7 @@
             "id": "summon_iron_golem",
             "category": "adventure",
             "type": "oval",
-            "points": "normal"
+            "points": "speedrun_end"
         },
         {
             "icon": "emerald",
