@@ -15,53 +15,16 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://plexion.dev/js/scroll.js"></script>
     <script src="https://kit.fontawesome.com/20a071237e.js" crossorigin="anonymous"></script>
+
+    <!-- colours -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js"></script>
 </head>
 <body class="dark" style="--accent-page: var(--library);">
     <section class="left header sep no-align" style="bottom: 0;">
         <div class="b4 no-padding">
             <h4>All achievements <label class="count fix" id="full"></label></h4>
-            <div class="rate-bar">
-                <span data-points="1"></span>
-                <span data-points="2"></span>
-                <span data-points="3"></span>
-                <span data-points="4"></span>
-                <span data-points="5"></span>
-                <span data-points="6"></span>
-                <span data-points="7"></span>
-                <span data-points="8"></span>
-                <span data-points="9"></span>
-                <span data-points="10"></span>
-                <span data-points="11"></span>
-                <span data-points="12"></span>
-                <span data-points="13"></span>
-                <span data-points="14"></span>
-                <span data-points="15"></span>
-                <span data-points="16"></span>
-                <span data-points="20"></span>
-                <span data-points="32"></span>
-                <span data-points="100"></span>
-            </div>
-            <div class="rate-bar-text">
-                <span data-points="1">1</span>
-                <span data-points="2">2</span>
-                <span data-points="3">3</span>
-                <span data-points="4">4</span>
-                <span data-points="5">5</span>
-                <span data-points="6">6</span>
-                <span data-points="7">7</span>
-                <span data-points="8">8</span>
-                <span data-points="9">9</span>
-                <span data-points="10">10</span>
-                <span data-points="11">11</span>
-                <span data-points="12">12</span>
-                <span data-points="13">13</span>
-                <span data-points="14">14</span>
-                <span data-points="15">15</span>
-                <span data-points="16">16</span>
-                <span data-points="20">20</span>
-                <span data-points="32">32</span>
-                <span data-points="100">100</span>
-            </div>
+            <div class="rate-bar" id="spectrum"><span style="--color: #4fc0ff;"></span><span style="--color: #4fc0ff;"></span><span style="--color: #4fc0ff;"></span><span style="--color: #4fd9ee;"></span><span style="--color: #4ff3dd;"></span><span style="--color: #58ffb9;"></span><span style="--color: #6bff83;"></span><span style="--color: #7eff4f;"></span><span style="--color: #b2f855;"></span><span style="--color: #e6f25a;"></span><span style="--color: #f8dd5e;"></span><span style="--color: #fac061;"></span><span style="--color: #fca464;"></span><span style="--color: #fe8767;"></span><span style="--color: #fe8767;"></span><span style="--color: #ff716a;"></span><span style="--color: #ff5d6d;"></span><span style="--color: #ff496f;"></span><span style="--color: #ec417e;"></span><span style="--color: #b74ea4;"></span><span style="--color: #835bc9;"></span><span style="--color: #5c5ad5;"></span><span style="--color: #4846c0;"></span><span style="--color: #3431ab;"></span><span style="--color: #201d96;"></span><span style="--color: #141176;"></span><span style="--color: #0d0c4f;"></span><span style="--color: #070627;"></span><span style="--color: #000000;"></span><span style="--color: #000000;"></span></div>
+            <br>
             <div class="actions">
                 <a role="button" onclick="multiplier()" id="multiplier_toggle" class="button sheared small fit"><span class="content">Toggle multiplier</span></a>
                 <!--<div class="search-wrap">
