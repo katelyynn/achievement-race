@@ -15,7 +15,7 @@ execute if score hide_point_gain global matches 1.. run tellraw @a[distance=1.5.
 ### normal
 execute unless score hide_point_gain global matches 1.. unless entity @s[tag=claimed_multiply] run tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"+","color":"green","bold":true},{"score":{"name":"@s","objective":"achievement.claiming_points"},"color":"green","bold":true},{"text":"] ","color":"dark_gray"},{"selector":"@s","color":"gold"},{"text":" earned an achievement!","color":"yellow"}]
 ### multiplied
-execute unless score hide_point_gain global matches 1.. if entity @s[tag=claimed_multiply] run tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"+","color":"light_purple","bold":true},{"score":{"name":"@s","objective":"achievement.claiming_points"},"color":"light_purple","bold":true},{"text":"] ","color":"dark_gray"},{"selector":"@s","color":"gold"},{"text":" earned an achievement!","color":"yellow"}]
+execute unless score hide_point_gain global matches 1.. if entity @s[tag=claimed_multiply] run tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"+","color":"light_purple","bold":true},{"score":{"name":"@s","objective":"achievement.claiming_points"},"color":"light_purple","bold":true},{"text":"] ","color":"dark_gray"},{"selector":"@s","color":"gold"},{"text":" earned an achievement!","color":"yellow"},{"text":" (","color":"light_purple"},{"text":"x","color":"light_purple"},{"score":{"name":"multiplier","objective":"global"},"color":"light_purple"},{"text":" multiplied)","color":"light_purple"}]
 
 # sfx
 ## for @s only, not global
