@@ -6,6 +6,9 @@ scoreboard objectives add global dummy
 scoreboard objectives add internal dummy
 scoreboard objectives add last_login dummy
 
+# open setup
+scoreboard objectives add setup trigger
+
 # track score
 scoreboard objectives add score dummy ["",{"text":"[","color":"dark_gray"},{"text":"⭐","color":"green"},{"text":"]","color":"dark_gray"}]
 scoreboard objectives setdisplay sidebar score
