@@ -346,7 +346,7 @@
             "description": "Brew a potion",
             "id": "brew_potion",
             "category": "nether",
-            "points": "speedrun"
+            "points": "start_bit_less"
         },
         {
             "icon": "beacon",
