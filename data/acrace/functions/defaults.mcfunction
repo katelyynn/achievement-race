@@ -32,6 +32,12 @@ scoreboard players set allow_draw global 1
 ## 2700 = 45 min
 scoreboard players set end_time global 2700
 
+# lock achievements
+## the first person to get an achievement is the ONLY
+## person who can get the achievement, loosely similar
+## to achievement hunt in a way
+scoreboard players set lock_achievements global 0
+
 # multipliers
 ## if enabled
 scoreboard players set multipliers global 1
