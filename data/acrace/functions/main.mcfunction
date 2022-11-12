@@ -22,7 +22,7 @@ execute store result bossbar acrace:main max run scoreboard players get end_time
 execute if score show_scoreboard global matches 1.. run scoreboard objectives setdisplay sidebar score
 execute unless score show_scoreboard global matches 1.. run scoreboard objectives setdisplay sidebar
 ## show on actionbar
-execute if score show_score_actionbar global matches 1.. as @a run title @s actionbar ["",{"text":"[","color":"dark_gray"},{"text":"⭐","color":"green"},{"text":"] ","color":"dark_gray"},{"score":{"name":"@s","objective":"score"}}]
+execute if score period internal matches 0.. if score show_score_actionbar global matches 1.. as @a run title @s actionbar ["",{"text":"[","color":"dark_gray"},{"text":"⭐","color":"green"},{"text":"] ","color":"dark_gray"},{"score":{"name":"@s","objective":"score"}}]
 
 # time loop
 function acrace:time
