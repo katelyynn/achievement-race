@@ -98,6 +98,10 @@
     font-weight: 900;
 }
 
+.supports .desc > .icon {
+    max-height: initial;
+}
+
 
 .rate-bar {
     display: flex;
