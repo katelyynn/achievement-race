@@ -2,6 +2,12 @@
 ## page 0
 
 
+# show scoreboard
+## enabled
+execute if score show_scoreboard global matches 1.. run tellraw @s ["",{"text":"Show scoreboard \u0020 \u0020","hoverEvent":{"action":"show_text","contents":[{"text":"Displays the point scoreboard."}]}},{"text":"[","color":"white"},{"text":"✔","color":"green","bold":true},{"text":"]","color":"white"},{"text":"  ","color":"dark_gray"},{"text":"X","color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/function acrace:setup/show_scoreboard/off"}},{"text":" ","color":"dark_gray"}]
+## disabled
+execute unless score show_scoreboard global matches 1.. run tellraw @s ["",{"text":"Show scoreboard \u0020 \u0020","hoverEvent":{"action":"show_text","contents":[{"text":"Displays the point scoreboard."}]}},{"text":" ","color":"dark_gray"},{"text":"✔","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/function acrace:setup/show_scoreboard/on"}},{"text":" ","color":"dark_gray"},{"text":" [","color":"white"},{"text":"X","color":"red","bold":true},{"text":"]","color":"white"}]
+
 # show score on actionbar
 ## enabled
 execute if score show_score_actionbar global matches 1.. run tellraw @s ["",{"text":"Show score on actionbar \u0020 \u0020","hoverEvent":{"action":"show_text","contents":[{"text":"Displays your current points on your actionbar."}]}},{"text":"[","color":"white"},{"text":"✔","color":"green","bold":true},{"text":"]","color":"white"},{"text":"  ","color":"dark_gray"},{"text":"X","color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/function acrace:setup/show_score_actionbar/off"}},{"text":" ","color":"dark_gray"}]
