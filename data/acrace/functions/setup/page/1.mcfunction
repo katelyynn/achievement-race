@@ -2,6 +2,12 @@
 ## page 1
 
 
+# hide point gain
+## enabled
+execute if score hide_point_gain global matches 1.. run tellraw @s ["",{"text":"Hide point gain \u0020 \u0020","hoverEvent":{"action":"show_text","contents":[{"text":"Display +?? (instead of eg. +5) upon earning an achievement to other players."}]}},{"text":"[","color":"white"},{"text":"✔","color":"green","bold":true},{"text":"]","color":"white"},{"text":"  ","color":"dark_gray"},{"text":"X","color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/function acrace:setup/hide_point_gain/off"}},{"text":" ","color":"dark_gray"}]
+## disabled
+execute unless score hide_point_gain global matches 1.. run tellraw @s ["",{"text":"Hide point gain \u0020 \u0020","hoverEvent":{"action":"show_text","contents":[{"text":"Display +?? (instead of eg. +5) upon earning an achievement to other players."}]}},{"text":" ","color":"dark_gray"},{"text":"✔","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/function acrace:setup/hide_point_gain/on"}},{"text":" ","color":"dark_gray"},{"text":" [","color":"white"},{"text":"X","color":"red","bold":true},{"text":"]","color":"white"}]
+
 # show scoreboard
 ## enabled
 execute if score show_scoreboard global matches 1.. run tellraw @s ["",{"text":"Show scoreboard \u0020 \u0020","hoverEvent":{"action":"show_text","contents":[{"text":"Displays the point scoreboard."}]}},{"text":"[","color":"white"},{"text":"✔","color":"green","bold":true},{"text":"]","color":"white"},{"text":"  ","color":"dark_gray"},{"text":"X","color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/function acrace:setup/show_scoreboard/off"}},{"text":" ","color":"dark_gray"}]
