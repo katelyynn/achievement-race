@@ -28,7 +28,8 @@ execute if score period internal matches 0.. if score show_score_actionbar globa
 function acrace:time
 
 # achievement checks
-execute if score period internal matches 1 run function acrace:pick/checks
+execute if score period internal matches 1 unless score lock_achievements global matches 1.. run function acrace:pick/checks
+execute if score period internal matches 1 if score lock_achievements global matches 1.. run function acrace:pick/checks_locked
 
 # options
 execute if score cut_clean global matches 1.. run function acrace:extras/cut_clean
