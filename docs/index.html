@@ -24,6 +24,8 @@
         <div id="text_set"></div>
         <br><label class="overl">acrace:pick/checks</label>
         <div id="text_checks"></div>
+        <br><label class="overl">acrace:pick/checks_locked</label>
+        <div id="text_lock_checks"></div>
         <br><label class="overl">acrace:taken/checks</label>
         <div id="text_take_all_checks"></div>
     </section>
@@ -33,6 +35,7 @@
     let text_create = '';
     let text_set = '';
     let text_checks = '';
+    let text_lock_checks = '';
     let text_take_all_checks = '';
 
     $.get('achievements.json', function(data) {
@@ -51,6 +54,13 @@
             execute as @a[advancements={minecraft:${data.achievements[i].category}/${data.achievements[i].id}=true}] at @s unless score @s achievement.${data.achievements[i].category}_${data.achievements[i].id} matches 1.. run scoreboard players add ${data.achievements[i].category}_${data.achievements[i].id} achievement.claims 1<br>
             execute as @a[advancements={minecraft:${data.achievements[i].category}/${data.achievements[i].id}=true}] at @s unless score @s achievement.${data.achievements[i].category}_${data.achievements[i].id} matches 1.. run scoreboard players set @s achievement.${data.achievements[i].category}_${data.achievements[i].id} 1<br>`;
 
+            text_lock_checks = `${text_lock_checks}## ${data.achievements[i].name}<br>
+            execute unless score ${data.achievements[i].category}_${data.achievements[i].id} achievement.claims >= lock_achievements_value global as @a[advancements={minecraft:${data.achievements[i].category}/${data.achievements[i].id}=true}] at @s unless score @s achievement.${data.achievements[i].category}_${data.achievements[i].id} matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=${data.achievements[i].category}_${data.achievements[i].id},limit=1] achievement.values<br>
+            execute unless score ${data.achievements[i].category}_${data.achievements[i].id} achievement.claims >= lock_achievements_value global as @a[advancements={minecraft:${data.achievements[i].category}/${data.achievements[i].id}=true}] at @s unless score @s achievement.${data.achievements[i].category}_${data.achievements[i].id} matches 1.. if entity @e[tag=achievement,tag=${data.achievements[i].category}_${data.achievements[i].id},tag=multiplied,limit=1] run tag @s add claimed_multiply<br>
+            execute unless score ${data.achievements[i].category}_${data.achievements[i].id} achievement.claims >= lock_achievements_value global as @a[advancements={minecraft:${data.achievements[i].category}/${data.achievements[i].id}=true}] at @s unless score @s achievement.${data.achievements[i].category}_${data.achievements[i].id} matches 1.. run function acrace:pick/take<br>
+            execute unless score ${data.achievements[i].category}_${data.achievements[i].id} achievement.claims >= lock_achievements_value global as @a[advancements={minecraft:${data.achievements[i].category}/${data.achievements[i].id}=true}] at @s unless score @s achievement.${data.achievements[i].category}_${data.achievements[i].id} matches 1.. run scoreboard players set @s achievement.${data.achievements[i].category}_${data.achievements[i].id} 1<br>
+            execute unless score ${data.achievements[i].category}_${data.achievements[i].id} achievement.claims >= lock_achievements_value global as @a[advancements={minecraft:${data.achievements[i].category}/${data.achievements[i].id}=true}] at @s unless score @s achievement.${data.achievements[i].category}_${data.achievements[i].id} matches 1.. run scoreboard players add ${data.achievements[i].category}_${data.achievements[i].id} achievement.claims 1<br>`;
+
             text_take_all_checks = `${text_take_all_checks}## ${data.achievements[i].name}<br>
             execute if score ${data.achievements[i].category}_${data.achievements[i].id} achievement.claims >= players internal unless score ${data.achievements[i].category}_${data.achievements[i].id} achievement.taken matches 1.. as @a at @s run playsound entity.arrow.hit_player player @s<br>
             execute if score ${data.achievements[i].category}_${data.achievements[i].id} achievement.claims >= players internal unless score ${data.achievements[i].category}_${data.achievements[i].id} achievement.taken matches 1.. run tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"⭐","color":"green"},{"text":"] ","color":"dark_gray"},{"selector":"@e[tag=achievement,tag=${data.achievements[i].category}_${data.achievements[i].id},limit=1]","color":"gold"},{"text":" has been earned by all players!","color":"yellow"}]<br>
@@ -61,6 +71,7 @@
         document.getElementById('text_create').innerHTML = text_create;
         document.getElementById('text_set').innerHTML = text_set;
         document.getElementById('text_checks').innerHTML = text_checks;
+        document.getElementById('text_lock_checks').innerHTML = text_lock_checks;
         document.getElementById('text_take_all_checks').innerHTML = text_take_all_checks;
     });
 </script>

@@ -28,7 +28,8 @@ execute if score period internal matches 0.. if score show_score_actionbar globa
 function acrace:time
 
 # achievement checks
-execute if score period internal matches 1 run function acrace:pick/checks
+execute if score period internal matches 1 unless score lock_achievements global matches 1.. run function acrace:pick/checks
+execute if score period internal matches 1 if score lock_achievements global matches 1.. run function acrace:pick/checks_locked
 
 # options
 execute if score cut_clean global matches 1.. run function acrace:extras/cut_clean
@@ -42,7 +43,7 @@ execute as @a at @s if score @s multipliers matches 1.. run function acrace:load
 execute as @a at @s if score @s multipliers matches 1.. run scoreboard players reset @s multipliers
 
 # detect when achievement is fully claimed
-execute if score period internal matches 1 run function acrace:taken/checks
+execute if score period internal matches 1 unless score lock_achievements global matches 1.. run function acrace:taken/checks
 
 # win checks
 execute if score period internal matches 1 if score time_s internal >= end_time global run function acrace:win/checks
