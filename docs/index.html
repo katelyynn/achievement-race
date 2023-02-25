@@ -22,7 +22,88 @@
         <div id="text_create"></div>
         <br><label class="overl">acrace:load/values</label>
         <div id="text_set"></div>
-        <br><label class="overl">acrace:pick/checks</label>
+        <br><label class="overl">acrace:pick/checks<<!DOCTYPE html>
+            <head>
+                <link rel="stylesheet" href="https://plexion.dev/css/reset.css">
+                <link rel="stylesheet" href="https://plexion.dev/css/style.css">
+
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+                <title>Achievement Race generate</title>
+            </head>
+            <style>
+                section > div {
+                    font-size: 8px;
+                }
+            </style>
+            <body class="dark">
+                <section class="download-steps header-bar" style="top: initial; height: 86px;">
+                    <span class="logo"><h5>Achievement generator</h5></span>
+                </section>
+                <section style="padding: 15px var(--padding-min);">
+                    <br><label class="overl">acrace:load/scores</label>
+                    <div id="text_load"></div>
+                    <br><label class="overl">acrace:load/create</label>
+                    <div id="text_create"></div>
+                    <br><label class="overl">acrace:load/values</label>
+                    <div id="text_set"></div>
+                    <br><label class="overl">acrace:pick/checks</label>
+                    <div id="text_checks"></div>
+                    <br><label class="overl">acrace:pick/checks_locked</label>
+                    <div id="text_lock_checks"></div>
+                    <br><label class="overl">acrace:taken/checks</label>
+                    <div id="text_take_all_checks"></div>
+                </section>
+            </body>
+            <script>
+                let text_load = '';
+                let text_create = '';
+                let text_set = '';
+                let text_checks = '';
+                let text_lock_checks = '';
+                let text_take_all_checks = '';
+
+                $.get('achievements.json', function(data) {
+                    for (let i in data.achievements) {
+                        text_load = `${text_load}scoreboard objectives add achievement.${data.achievements[i].category}_${data.achievements[i].id} dummy<br>
+                        scoreboard players set ${data.achievements[i].category}_${data.achievements[i].id} achievement.claims 0<br>`;
+
+                        text_create = `${text_create}summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"${data.achievements[i].name.replaceAll("'","\\'").replaceAll('"',"\\'")}"}',Tags:["achievement","${data.achievements[i].category}_${data.achievements[i].id}"]}<br>`;
+
+                        text_set = `${text_set}scoreboard players set @e[tag=achievement,tag=${data.achievements[i].category}_${data.achievements[i].id},limit=1] achievement.values ${data.points[data.achievements[i].points]}<br>`;
+
+                        text_checks = `${text_checks}## ${data.achievements[i].name}<br>
+                        execute as @a[advancements={minecraft:${data.achievements[i].category}/${data.achievements[i].id}=true}] at @s unless score @s achievement.${data.achievements[i].category}_${data.achievements[i].id} matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=${data.achievements[i].category}_${data.achievements[i].id},limit=1] achievement.values<br>
+                        execute as @a[advancements={minecraft:${data.achievements[i].category}/${data.achievements[i].id}=true}] at @s unless score @s achievement.${data.achievements[i].category}_${data.achievements[i].id} matches 1.. if entity @e[tag=achievement,tag=${data.achievements[i].category}_${data.achievements[i].id},tag=multiplied,limit=1] run tag @s add claimed_multiply<br>
+                        execute as @a[advancements={minecraft:${data.achievements[i].category}/${data.achievements[i].id}=true}] at @s unless score @s achievement.${data.achievements[i].category}_${data.achievements[i].id} matches 1.. run function acrace:pick/take<br>
+                        execute as @a[advancements={minecraft:${data.achievements[i].category}/${data.achievements[i].id}=true}] at @s unless score @s achievement.${data.achievements[i].category}_${data.achievements[i].id} matches 1.. run scoreboard players add ${data.achievements[i].category}_${data.achievements[i].id} achievement.claims 1<br>
+                        execute as @a[advancements={minecraft:${data.achievements[i].category}/${data.achievements[i].id}=true}] at @s unless score @s achievement.${data.achievements[i].category}_${data.achievements[i].id} matches 1.. run scoreboard players set @s achievement.${data.achievements[i].category}_${data.achievements[i].id} 1<br>`;
+
+                        text_lock_checks = `${text_lock_checks}## ${data.achievements[i].name}<br>
+                        execute unless score ${data.achievements[i].category}_${data.achievements[i].id} achievement.claims >= lock_achievements_value global as @a[advancements={minecraft:${data.achievements[i].category}/${data.achievements[i].id}=true}] at @s unless score @s achievement.${data.achievements[i].category}_${data.achievements[i].id} matches 1.. run scoreboard players operation @s achievement.claiming_points = @e[tag=achievement,tag=${data.achievements[i].category}_${data.achievements[i].id},limit=1] achievement.values<br>
+                        execute unless score ${data.achievements[i].category}_${data.achievements[i].id} achievement.claims >= lock_achievements_value global as @a[advancements={minecraft:${data.achievements[i].category}/${data.achievements[i].id}=true}] at @s unless score @s achievement.${data.achievements[i].category}_${data.achievements[i].id} matches 1.. if entity @e[tag=achievement,tag=${data.achievements[i].category}_${data.achievements[i].id},tag=multiplied,limit=1] run tag @s add claimed_multiply<br>
+                        execute unless score ${data.achievements[i].category}_${data.achievements[i].id} achievement.claims >= lock_achievements_value global as @a[advancements={minecraft:${data.achievements[i].category}/${data.achievements[i].id}=true}] at @s unless score @s achievement.${data.achievements[i].category}_${data.achievements[i].id} matches 1.. run function acrace:pick/take<br>
+                        execute unless score ${data.achievements[i].category}_${data.achievements[i].id} achievement.claims >= lock_achievements_value global as @a[advancements={minecraft:${data.achievements[i].category}/${data.achievements[i].id}=true}] at @s unless score @s achievement.${data.achievements[i].category}_${data.achievements[i].id} matches 1.. run scoreboard players add ${data.achievements[i].category}_${data.achievements[i].id} achievement.claims 1<br>
+                        execute as @a[advancements={minecraft:${data.achievements[i].category}/${data.achievements[i].id}=true}] at @s unless score @s achievement.${data.achievements[i].category}_${data.achievements[i].id} matches 1.. run scoreboard players set @s achievement.${data.achievements[i].category}_${data.achievements[i].id} 1<br>`;
+
+                        text_take_all_checks = `${text_take_all_checks}## ${data.achievements[i].name}<br>
+                        execute if score ${data.achievements[i].category}_${data.achievements[i].id} achievement.claims >= players internal unless score ${data.achievements[i].category}_${data.achievements[i].id} achievement.taken matches 1.. as @a at @s run playsound entity.arrow.hit_player player @s<br>
+                        execute if score ${data.achievements[i].category}_${data.achievements[i].id} achievement.claims >= players internal unless score ${data.achievements[i].category}_${data.achievements[i].id} achievement.taken matches 1.. run tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"⭐","color":"green"},{"text":"] ","color":"dark_gray"},{"selector":"@e[tag=achievement,tag=${data.achievements[i].category}_${data.achievements[i].id},limit=1]","color":"gold"},{"text":" has been earned by all players!","color":"yellow"}]<br>
+                        execute if score ${data.achievements[i].category}_${data.achievements[i].id} achievement.claims >= players internal unless score ${data.achievements[i].category}_${data.achievements[i].id} achievement.taken matches 1.. run scoreboard players set ${data.achievements[i].category}_${data.achievements[i].id} achievement.taken 1<br>`;
+                    }
+
+                    document.getElementById('text_load').innerHTML = text_load;
+                    document.getElementById('text_create').innerHTML = text_create;
+                    document.getElementById('text_set').innerHTML = text_set;
+                    document.getElementById('text_checks').innerHTML = text_checks;
+                    document.getElementById('text_lock_checks').innerHTML = text_lock_checks;
+                    document.getElementById('text_take_all_checks').innerHTML = text_take_all_checks;
+                });
+            </script>/label>
         <div id="text_checks"></div>
         <br><label class="overl">acrace:pick/checks_locked</label>
         <div id="text_lock_checks"></div>
