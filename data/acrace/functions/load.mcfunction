@@ -8,6 +8,9 @@ scoreboard objectives add last_login dummy
 
 # open setup
 scoreboard objectives add setup trigger
+## pages
+scoreboard objectives add setup.page dummy
+scoreboard objectives add setup.page_display dummy
 
 # track score
 scoreboard objectives add score dummy ["",{"text":"[","color":"dark_gray"},{"text":"⭐","color":"green"},{"text":"]","color":"dark_gray"}]
