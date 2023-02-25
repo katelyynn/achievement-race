@@ -37,6 +37,8 @@ scoreboard players set end_time global 2700
 ## person who can get the achievement, loosely similar
 ## to achievement hunt in a way
 scoreboard players set lock_achievements global 0
+## lock achievements at:
+scoreboard players set lock_achievements_value global 1
 
 # multipliers
 ## if enabled
