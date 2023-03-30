@@ -4,54 +4,30 @@
 
 # 1.17+ ores
 ## iron
-execute as @e[type=item,name="Raw Iron"] at @s run summon item ~ ~ ~ {Item:{id:"iron_ingot",Count:2b},Motion:[0.0,0.05,0.0],PickupDelay:8s}
-execute as @e[type=item,name="Raw Iron"] at @s run particle minecraft:smoke ~ ~ ~ 0 0 0 0.01 30
-execute as @e[type=item,name="Raw Iron"] at @s run kill @s
+execute as @e[type=item,nbt={Item:{id:"minecraft:raw_iron"}}] at @s run data merge entity @s {Item:{id:"minecraft:iron_ingot"}}
 ## gold
-execute as @e[type=item,name="Raw Gold"] at @s run summon item ~ ~ ~ {Item:{id:"gold_ingot",Count:2b},Motion:[0.0,0.05,0.0],PickupDelay:8s}
-execute as @e[type=item,name="Raw Gold"] at @s run particle minecraft:smoke ~ ~ ~ 0 0 0 0.01 30
-execute as @e[type=item,name="Raw Gold"] at @s run kill @s
+execute as @e[type=item,nbt={Item:{id:"minecraft:raw_gold"}}] at @s run data merge entity @s {Item:{id:"minecraft:gold_ingot"}}
 ## copper
-execute as @e[type=item,name="Raw Copper"] at @s run summon item ~ ~ ~ {Item:{id:"copper_ingot",Count:2b},Motion:[0.0,0.05,0.0],PickupDelay:8s}
-execute as @e[type=item,name="Raw Copper"] at @s run particle minecraft:smoke ~ ~ ~ 0 0 0 0.01 30
-execute as @e[type=item,name="Raw Copper"] at @s run kill @s
+execute as @e[type=item,nbt={Item:{id:"minecraft:raw_copper"}}] at @s run data merge entity @s {Item:{id:"minecraft:copper_ingot"}}
 
 # 1.16- ores
 ## iron
-execute as @e[type=item,name="Iron Ore"] at @s run summon item ~ ~ ~ {Item:{id:"iron_ingot",Count:2b},Motion:[0.0,0.05,0.0],PickupDelay:8s}
-execute as @e[type=item,name="Iron Ore"] at @s run particle minecraft:smoke ~ ~ ~ 0 0 0 0.01 30
-execute as @e[type=item,name="Iron Ore"] at @s run kill @s
+execute as @e[type=item,nbt={Item:{id:"minecraft:iron_ore"}}] at @s run data merge entity @s {Item:{id:"minecraft:iron_ingot"}}
 ## gold
-execute as @e[type=item,name="Gold Ore"] at @s run summon item ~ ~ ~ {Item:{id:"gold_ingot",Count:2b},Motion:[0.0,0.05,0.0],PickupDelay:8s}
-execute as @e[type=item,name="Gold Ore"] at @s run particle minecraft:smoke ~ ~ ~ 0 0 0 0.01 30
-execute as @e[type=item,name="Gold Ore"] at @s run kill @s
+execute as @e[type=item,nbt={Item:{id:"minecraft:gold_ore"}}] at @s run data merge entity @s {Item:{id:"minecraft:gold_ingot"}}
 
 # food
 ## porkchop
-execute as @e[type=item,name="Raw Porkchop"] at @s run summon item ~ ~ ~ {Item:{id:"cooked_porkchop",Count:1b},Motion:[0.0,0.05,0.0],PickupDelay:8s}
-execute as @e[type=item,name="Raw Porkchop"] at @s run particle minecraft:smoke ~ ~ ~ 0 0 0 0.01 30
-execute as @e[type=item,name="Raw Porkchop"] at @s run kill @s
+execute as @e[type=item,nbt={Item:{id:"minecraft:porkchop"}}] at @s run data merge entity @s {Item:{id:"minecraft:cooked_porkchop"}}
 ## mutton
-execute as @e[type=item,name="Raw Mutton"] at @s run summon item ~ ~ ~ {Item:{id:"cooked_mutton",Count:1b},Motion:[0.0,0.05,0.0],PickupDelay:8s}
-execute as @e[type=item,name="Raw Mutton"] at @s run particle minecraft:smoke ~ ~ ~ 0 0 0 0.01 30
-execute as @e[type=item,name="Raw Mutton"] at @s run kill @s
+execute as @e[type=item,nbt={Item:{id:"minecraft:mutton"}}] at @s run data merge entity @s {Item:{id:"minecraft:cooked_mutton"}}
 ## steak
-execute as @e[type=item,name="Raw Beef"] at @s run summon item ~ ~ ~ {Item:{id:"cooked_beef",Count:1b},Motion:[0.0,0.05,0.0],PickupDelay:8s}
-execute as @e[type=item,name="Raw Beef"] at @s run particle minecraft:smoke ~ ~ ~ 0 0 0 0.01 30
-execute as @e[type=item,name="Raw Beef"] at @s run kill @s
+execute as @e[type=item,nbt={Item:{id:"minecraft:beef"}}] at @s run data merge entity @s {Item:{id:"minecraft:cooked_beef"}}
 ## chicken
-execute as @e[type=item,name="Raw Chicken"] at @s run summon item ~ ~ ~ {Item:{id:"cooked_chicken",Count:1b},Motion:[0.0,0.05,0.0],PickupDelay:8s}
-execute as @e[type=item,name="Raw Chicken"] at @s run particle minecraft:smoke ~ ~ ~ 0 0 0 0.01 30
-execute as @e[type=item,name="Raw Chicken"] at @s run kill @s
+execute as @e[type=item,nbt={Item:{id:"minecraft:chicken"}}] at @s run data merge entity @s {Item:{id:"minecraft:cooked_chicken"}}
 ## rabbit
-execute as @e[type=item,name="Raw Rabbit"] at @s run summon item ~ ~ ~ {Item:{id:"cooked_rabbit",Count:1b},Motion:[0.0,0.05,0.0],PickupDelay:8s}
-execute as @e[type=item,name="Raw Rabbit"] at @s run particle minecraft:smoke ~ ~ ~ 0 0 0 0.01 30
-execute as @e[type=item,name="Raw Rabbit"] at @s run kill @s
+execute as @e[type=item,nbt={Item:{id:"minecraft:rabbit"}}] at @s run data merge entity @s {Item:{id:"minecraft:cooked_rabbit"}}
 ## cod
-execute as @e[type=item,name="Raw Cod"] at @s run summon item ~ ~ ~ {Item:{id:"cooked_cod",Count:1b},Motion:[0.0,0.05,0.0],PickupDelay:8s}
-execute as @e[type=item,name="Raw Cod"] at @s run particle minecraft:smoke ~ ~ ~ 0 0 0 0.01 30
-execute as @e[type=item,name="Raw Cod"] at @s run kill @s
+execute as @e[type=item,nbt={Item:{id:"minecraft:cod"}}] at @s run data merge entity @s {Item:{id:"minecraft:cooked_cod"}}
 ## salmon
-execute as @e[type=item,name="Raw Salmon"] at @s run summon item ~ ~ ~ {Item:{id:"cooked_salmon",Count:1b},Motion:[0.0,0.05,0.0],PickupDelay:8s}
-execute as @e[type=item,name="Raw Salmon"] at @s run particle minecraft:smoke ~ ~ ~ 0 0 0 0.01 30
-execute as @e[type=item,name="Raw Salmon"] at @s run kill @s
+execute as @e[type=item,nbt={Item:{id:"minecraft:salmon"}}] at @s run data merge entity @s {Item:{id:"minecraft:cooked_salmon"}}
