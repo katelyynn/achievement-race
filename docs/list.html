@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="https://old.plexion.dev/css/reset.css">
-    <link rel="stylesheet" href="https://old.plexion.dev/css/style.css">
-    <link rel="stylesheet" href="css/style.css">
-
+    <!-- meta info -->
+    <title id="page-title" translate="no">achievement list - kate's achievement race</title>
+    <meta name="theme-color" content="#000000">
+    <!-- mobile iOS support -->
+    <link rel="apple-touch-icon" href="https://old.plexion.dev/img/ios.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- display -->
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
-
+    <link rel="stylesheet" href="https://plexion.dev/owo/css/reset.css">
+    <link rel="stylesheet" href="https://plexion.dev/owo/css/style.css">
+    <!-- icon -->
+    <link rel="shortcut icon" type="ico" href="https://plexion.dev/img/katie4k-small.webp"/>
+    <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <title>Achievement list</title>
-
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js" defer></script>
+    <!-- icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="https://plexion.dev/js/scroll.js"></script>
-    <script src="https://kit.fontawesome.com/20a071237e.js" crossorigin="anonymous"></script>
-
-    <!-- colours -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js"></script>
+    <!-- tooltips -->
+    <script src="https://unpkg.com/@popperjs/core@2" defer></script>
+    <script src="https://unpkg.com/tippy.js@6" defer></script>
 </head>
-<body class="dark" style="--accent-page: var(--library);">
-    <section class="left header sep no-align" style="bottom: 0;">
-        <div class="b4 no-padding">
-            <h4>All achievements <label class="count fix" id="full"></label></h4>
-            <div class="rate-bar" id="spectrum"><span style="--color: #aaaaaa;"></span><span style="--color: #4fd5f1;"></span><span style="--color: #4ff2dd;"></span><span style="--color: #5affb4;"></span><span style="--color: #6fff77;"></span><span style="--color: #c5f657;"></span><span style="--color: #f6f05c;"></span><span style="--color: #fac361;"></span><span style="--color: #fca464;"></span><span style="--color: #fe8967;"></span><span style="--color: #ff7569;"></span><span style="--color: #ff656c;"></span><span style="--color: #ff506e;"></span><span style="--color: #ff3c71;"></span><span style="--color: #d14892;"></span><span style="--color: #ba4ea2;"></span><span style="--color: #a353b2;"></span><span style="--color: #8c59c3;"></span><span style="--color: #745fd3;"></span><span style="--color: #615fda;"></span><span style="--color: #5653ce;"></span><span style="--color: #423fb9;"></span><span style="--color: #2e2ba5;"></span><span style="--color: #1a1790;"></span><span style="--color: #141176;"></span><span style="--color: #110f62;"></span><span style="--color: #0d0c4f;"></span><span style="--color: #0a093b;"></span><span style="--color: #070627;"></span><span style="--color: #030314;"></span><span style="--color: #000000;"></span></div>            <br>
-            <br>
-            <div class="actions">
-                <a role="button" onclick="multiplier()" id="multiplier_toggle" class="button sheared small fit"><span class="content">Toggle multiplier</span></a>
-                <!--<div class="search-wrap">
-                    <div class="search sheared" style="margin-left: 10px" id="search-cont">
-                        <input class="search-input" id="search" placeholder="Search for..." autofocus>
-                        <button role="search" class="search-con" onclick="search()" id="search-con" aria-label="Search current text"><i class="icon w-28" icon-name="search"></i></button>
-                    </div>
-                </div>-->
-            </div>
-        </div>
-        <div id="embed_categories"></div>
-    </section>
+<body>
+    <!-- overlays -->
+    <div class="overlay center-full" id="hook_windows"></div>
+    <div class="overlay center">
+        <div class="chips" id="hook_chips"></div>
+    </div>
+    <link rel="stylesheet" href="/owo/css/modal.css">
+    <script src="https://plexion.dev/owo/js/modal.js"></script>
+    <script src="https://plexion.dev/owo/js/input.js"></script>
+    <script src="https://plexion.dev/js/windows.js"></script>
+    <!-- content -->
+    <link rel="stylesheet" href="https://plexion.dev/owo/css/snow.css">
+    <link rel="stylesheet" href="https://plexion.dev/owo/css/landing.css">
+    <link rel="stylesheet" href="https://plexion.dev/owo/css/panel.css">
+    <link rel="stylesheet" href="https://plexion.dev/owo/css/flex.css">
+    <link rel="stylesheet" href="https://plexion.dev/owo/css/button.css">
+    <link rel="stylesheet" href="https://plexion.dev/owo/css/avatar.css">
+    <link rel="stylesheet" href="https://plexion.dev/owo/css/status.css">
+    <link rel="stylesheet" href="https://plexion.dev/owo/css/grid.css">
+    <main class="panel-container">
+        <section class="panel flex flex-column flex-gap" id="embed_categories" style="--gap: 10px;">
+            <h5 class="sub">Achievement list</h5>
+            <p>Achievements have a default value. On start, 6 achievements are randomly 2x multiplied, to see the potential values toggle below:</p>
+            <a role="button" class="btn outline" onclick="multiplier()" id="multiplier_toggle">
+                <span class="text">Toggle multiplier</span>
+            </a>
+            <div class="sep"></div>
+        </section>
+    </main>
 </body>
 <script>
     // parse
@@ -47,18 +63,22 @@
     function multiplier() {
         if (point_multiplier) {
             // disable
-            document.getElementById('multiplier_toggle').classList.remove('focus');
+            document.getElementById('multiplier_toggle').classList.remove('primary');
+            document.getElementById('multiplier_toggle').classList.add('outline');
             point_multiplier = false;
 
             for (let i in full_data.achievements) {
                 let points = full_data.points[full_data.achievements[i].points];
 
                 document.getElementById(`count_${full_data.achievements[i].id}`).setAttribute('data-points',points);
-                document.getElementById(`count_${full_data.achievements[i].id}`).textContent = `+${points}`;
+                document.getElementById(`count_${full_data.achievements[i].id}`).classList.remove('purple');
+                document.getElementById(`count_${full_data.achievements[i].id}`).classList.add('green');
+                document.getElementById(`count_${full_data.achievements[i].id}`).textContent = `${points}`;
             }
         } else {
             // enable
-            document.getElementById('multiplier_toggle').classList.add('focus');
+            document.getElementById('multiplier_toggle').classList.add('primary');
+            document.getElementById('multiplier_toggle').classList.remove('outline');
             point_multiplier = true;
 
             for (let i in full_data.achievements) {
@@ -66,20 +86,22 @@
                 points *= 2;
 
                 document.getElementById(`count_${full_data.achievements[i].id}`).setAttribute('data-points',points);
-                document.getElementById(`count_${full_data.achievements[i].id}`).textContent = `+${points}`;
+                document.getElementById(`count_${full_data.achievements[i].id}`).classList.add('purple');
+                document.getElementById(`count_${full_data.achievements[i].id}`).classList.remove('green');
+                document.getElementById(`count_${full_data.achievements[i].id}`).textContent = `${points}`;
             }
         }
     }
 
     $.get('achievements.json', function(data) {
-        document.getElementById("full").innerHTML = data.achievements.length;
+        //document.getElementById("full").innerHTML = data.achievements.length;
         full_data = data;
 
         for (let i in data.categories) {
             let em_category = document.createElement('div');
             em_category.innerHTML = (`
-            <label class="over" id="header.${i}">${data.categories[i].name}</label>
-            <div class="supports" id="${i}"></div>
+            <h5 style="margin-bottom: 10px" id="header.${i}">${data.categories[i].name}</h5>
+            <div class="item-grid" id="${i}"></div>
             `);
 
             localStorage.setItem(`${i}_count`,0);
@@ -87,8 +109,8 @@
         }
 
         for (let i in data.categories) {
-            let em_count = document.createElement('label');
-            em_count.classList.add('count','fix');
+            let em_count = document.createElement('div');
+            em_count.classList.add('badge');
             em_count.setAttribute('id',`${i}_count`);
             em_count.textContent = localStorage.getItem(`${i}_count`);
 
@@ -113,15 +135,18 @@
 
         for (let i in data.achievements) {
             if (data.achievements[i].description == "") { continue };
-            let em = document.createElement('span');
-            em.classList.add('desc');
+            let em = document.createElement('div');
+            em.classList.add('item');
             if (data.achievements[i].type != null) {
                 em.classList.add(data.achievements[i].type);
             }
 
             em.innerHTML = (`
-            <span class="icon"><img src="https://res.plexion.dev/minecraft/item/${data.achievements[i].icon}.png"></span>
-            <span class="text"><h5>${data.achievements[i].name} <label class="count ${data.achievements[i].points} point_${data.points[data.achievements[i].points]}" id="count_${data.achievements[i].id}" data-points="${data.points[data.achievements[i].points]}">+${data.points[data.achievements[i].points]}</label></h5><p>${data.achievements[i].description}</p></span>
+            <div class="image"><img class="avatar extra-extra-small square pixel" src="https://res.plexion.dev/minecraft/item/${data.achievements[i].icon}.png"></div>
+            <div class="text">
+                <h5>${data.achievements[i].name} <div class="badge green ${data.achievements[i].points} point_${data.points[data.achievements[i].points]}" id="count_${data.achievements[i].id}" data-points="${data.points[data.achievements[i].points]}">${data.points[data.achievements[i].points]}</div></h5>
+                <p class="text-14">${data.achievements[i].description}</p>
+            </div>
             `);
 
 
@@ -151,33 +176,9 @@
     });*/
 </script>
 <style>
-    .supports .icon img {
-        width: 32px !important;
-        margin: 0 10px;
-        height: 32px;
-        image-rendering: pixelated;
-        position: relative;
-        right: 1px;
-        bottom: 1px;
-    }
-    .supports .icon {
-        width: 52px !important;
-        height: 52px !important;
-        image-rendering: pixelated;
+    h5 {
         display: flex;
-        justify-content: center;
+        gap: 10px;
         align-items: center;
-        background-image: url(achievement.png);
-        background-size: 52px;
-    }
-
-    /* fancy */
-    .fancy .icon {
-        background-image: url(achievement-fancy.png);
-    }
-    /* oval */
-    .oval .icon {
-        background-image: url(achievement-oval.png);
     }
 </style>
-<script>lucide.createIcons();</script>
