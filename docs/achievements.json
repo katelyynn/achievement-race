@@ -181,7 +181,7 @@
             "description": "Follow an Ender Eye",
             "id": "follow_ender_eye",
             "category": "story",
-            "points": "start_but_not"
+            "points": "start_bit_less"
         },
         {
             "icon": "end_stone",
@@ -189,7 +189,7 @@
             "description": "Enter the End Portal",
             "id": "enter_the_end",
             "category": "story",
-            "points": "start_less"
+            "points": "start_bit_less"
         },
         {
             "icon": "fire_charge",
@@ -458,7 +458,7 @@
             "description": "Kill a raid captain. Maybe consider staying away from villages for the time being...",
             "id": "voluntary_exile",
             "category": "adventure",
-            "points": "start_but_not"
+            "points": "bit_harder"
         },
         {
             "icon": "spyglass",
@@ -474,7 +474,7 @@
             "description": "Kill any hostile monster",
             "id": "kill_a_mob",
             "category": "adventure",
-            "points": "start_less"
+            "points": "bit_harder"
         },
         {
             "icon": "creeper_head",
@@ -482,7 +482,7 @@
             "description": "Aw man.",
             "id": "kill_creeper",
             "category": "adventure",
-            "points": "bit_harder"
+            "points": "easy"
         },
         {
             "icon": "emerald",
@@ -522,7 +522,7 @@
             "description": "Discover every cave biome",
             "id": "spelunker",
             "category": "adventure",
-            "points": "start",
+            "points": "start_bit_less",
             "type": "fancy"
         },
         {
@@ -556,7 +556,7 @@
             "id": "hero_of_the_village",
             "category": "adventure",
             "type": "fancy",
-            "points": "speedrun_end"
+            "points": "speedrun"
         },
         {
             "icon": "spyglass",
@@ -717,7 +717,7 @@
             "description": "Use a Campfire to collect Honey from a Beehive using a Bottle without aggravating the bees",
             "id": "safely_harvest_honey",
             "category": "husbandry",
-            "points": "bit_harder"
+            "points": "start_bit_less"
         },
         {
             "icon": "wheat",
@@ -725,7 +725,7 @@
             "description": "Breed two animals together",
             "id": "breed_an_animal",
             "category": "husbandry",
-            "points": "start_less"
+            "points": "easy"
         },
         {
             "icon": "cookie",
@@ -741,7 +741,7 @@
             "description": "Get in a Boat and float with a Goat",
             "id": "ride_a_boat_with_a_goat",
             "category": "husbandry",
-            "points": "mid"
+            "points": "start"
         },
         {
             "icon": "lead",
@@ -749,7 +749,7 @@
             "description": "Tame an animal",
             "id": "tame_an_animal",
             "category": "husbandry",
-            "points": "start_less"
+            "points": "bit_harder"
         },
         {
             "icon": "glow_ink_sac",
@@ -957,6 +957,70 @@
             "id": "furnace_minecart",
             "category": "redstone",
             "points": "easy"
+        },
+        {
+            "icon": "sniffer_egg",
+            "name": "Smells Interesting",
+            "description": "Obtain a Sniffer Egg",
+            "id": "obtain_sniffer_egg",
+            "category": "husbandry",
+            "points": "start_bit_less"
+        },
+        {
+            "icon": "torchflower_seeds",
+            "name": "Little Sniffs",
+            "description": "Feed a Snifflet",
+            "id": "feed_snifflet",
+            "category": "husbandry",
+            "points": "speedrun_a_bit"
+        },
+        {
+            "icon": "pitcher_pod",
+            "name": "Planting the Past",
+            "description": "Plant any Sniffer seed",
+            "id": "plant_any_sniffer_seed",
+            "category": "husbandry",
+            "points": "start_less"
+        },
+        {
+            "icon": "dune_armor_trim",
+            "name": "Crafting a New Look",
+            "description": "Craft a trimmed armor at a Smithing Table",
+            "id": "trim_with_any_armor_pattern",
+            "category": "adventure",
+            "points": "start_but_not"
+        },
+        {
+            "icon": "silence_armor_trim",
+            "name": "Smithing with Style",
+            "description": "Apply these Smithing templates at least once: Spire, Snout, Rib, Ward, Silence, Vex, Tide, Wayfinder",
+            "id": "trim_with_all_exclusive_armor_patterns",
+            "category": "adventure",
+            "points": "advanced_almost"
+        },
+        {
+            "icon": "brush",
+            "name": "Respecting the Remnants",
+            "description": "Brush a Suspicious block to obtain a Pottery Sherd",
+            "id": "salvage_sherd",
+            "category": "adventure",
+            "points": "start_less"
+        },
+        {
+            "icon": "pot",
+            "name": "Careful Restoration",
+            "description": "Make a Decorated Pot out of 4 Pottery Sherds",
+            "id": "craft_decorated_pot_using_only_sherds",
+            "category": "adventure",
+            "points": "start_bit_less"
+        },
+        {
+            "icon": "chiseled_bookshelf",
+            "name": "The Power of Books",
+            "description": "Read the power signal of a Chiseled Bookshelf using a Comparator",
+            "id": "read_power_of_chiseled_bookshelf",
+            "category": "adventure",
+            "points": "start_less"
         }
     ]
 }
