@@ -225,3 +225,19 @@ scoreboard objectives add achievement.redstone_minecart dummy
 scoreboard players set redstone_minecart achievement.claims 0
 scoreboard objectives add achievement.redstone_furnace_minecart dummy
 scoreboard players set redstone_furnace_minecart achievement.claims 0
+scoreboard objectives add achievement.husbandry_obtain_sniffer_egg dummy
+scoreboard players set husbandry_obtain_sniffer_egg achievement.claims 0
+scoreboard objectives add achievement.husbandry_feed_snifflet dummy
+scoreboard players set husbandry_feed_snifflet achievement.claims 0
+scoreboard objectives add achievement.husbandry_plant_any_sniffer_seed dummy
+scoreboard players set husbandry_plant_any_sniffer_seed achievement.claims 0
+scoreboard objectives add achievement.adventure_trim_with_any_armor_pattern dummy
+scoreboard players set adventure_trim_with_any_armor_pattern achievement.claims 0
+scoreboard objectives add achievement.adventure_trim_with_all_exclusive_armor_patterns dummy
+scoreboard players set adventure_trim_with_all_exclusive_armor_patterns achievement.claims 0
+scoreboard objectives add achievement.adventure_salvage_sherd dummy
+scoreboard players set adventure_salvage_sherd achievement.claims 0
+scoreboard objectives add achievement.adventure_craft_decorated_pot_using_only_sherds dummy
+scoreboard players set adventure_craft_decorated_pot_using_only_sherds achievement.claims 0
+scoreboard objectives add achievement.adventure_read_power_of_chiseled_bookshelf dummy
+scoreboard players set adventure_read_power_of_chiseled_bookshelf achievement.claims 0

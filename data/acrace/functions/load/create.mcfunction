@@ -119,3 +119,11 @@ summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,Cu
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Railway"}',Tags:["achievement","redstone_rail"]}
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"All Aboard!"}',Tags:["achievement","redstone_minecart"]}
 summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Fuel Engine"}',Tags:["achievement","redstone_furnace_minecart"]}
+summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Smells Interesting"}',Tags:["achievement","husbandry_obtain_sniffer_egg"]}
+summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Little Sniffs"}',Tags:["achievement","husbandry_feed_snifflet"]}
+summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Planting the Past"}',Tags:["achievement","husbandry_plant_any_sniffer_seed"]}
+summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Crafting a New Look"}',Tags:["achievement","adventure_trim_with_any_armor_pattern"]}
+summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Smithing with Style"}',Tags:["achievement","adventure_trim_with_all_exclusive_armor_patterns"]}
+summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Respecting the Remnants"}',Tags:["achievement","adventure_salvage_sherd"]}
+summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"Careful Restoration"}',Tags:["achievement","adventure_craft_decorated_pot_using_only_sherds"]}
+summon area_effect_cloud 0 0 0 {Particle:"block air",Radius:0f,Age:2147483647,CustomName:'{"text":"The Power of Books"}',Tags:["achievement","adventure_read_power_of_chiseled_bookshelf"]}
